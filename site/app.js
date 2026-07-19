@@ -39,6 +39,7 @@
   const elListe = document.getElementById("liste");
   const elVide = document.getElementById("vide");
   const elCompteur = document.getElementById("compteur");
+  const elIndex = document.getElementById("mois-index");
 
   // ---------------------------------------------------------------- périodes
   // La question qu'on se pose en ouvrant la page est « qu'est-ce que je peux
@@ -199,18 +200,49 @@
       : "";
 
     let moisCourant = "";
+    let bloc = null;
+    const ancres = [];
     for (const c of list) {
       const d = new Date(c.date_debut + "T12:00:00");
       const cleMois = `${MOIS[d.getMonth()]} ${d.getFullYear()}`;
       if (cleMois !== moisCourant) {
         moisCourant = cleMois;
-        const h = document.createElement("div");
+        // Un bloc par mois : sans cela, les titres collants s'empilent tous en
+        // haut de l'écran au lieu de se relayer.
+        bloc = document.createElement("section");
+        bloc.className = "bloc-mois";
+        const h = document.createElement("h2");
         h.className = "mois";
         h.textContent = cleMois;
-        elListe.appendChild(h);
+        h.id = `mois-${d.getFullYear()}-${d.getMonth()}`;
+        bloc.appendChild(h);
+        elListe.appendChild(bloc);
+        ancres.push({ id: h.id, court: MOIS_COURT[d.getMonth()] });
       }
-      elListe.appendChild(carte(c, d));
+      bloc.appendChild(carte(c, d));
     }
+    majIndexMois(ancres, list.length);
+  }
+
+  // Passé une trentaine de résultats, faire défiler devient pénible : on offre
+  // un raccourci par mois. En deçà, la barre n'apporterait rien.
+  const SEUIL_INDEX = 30;
+
+  function majIndexMois(ancres, nbResultats) {
+    elIndex.innerHTML = "";
+    elIndex.hidden = nbResultats < SEUIL_INDEX || ancres.length < 2;
+    if (elIndex.hidden) return;
+    ancres.forEach((a) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "mois-lien";
+      b.textContent = a.court;
+      // Saut direct : sur une liste de vingt écrans, un défilement animé
+      // durerait plusieurs secondes.
+      b.onclick = () => document.getElementById(a.id)
+        ?.scrollIntoView({ block: "start" });
+      elIndex.appendChild(b);
+    });
   }
 
   const LIBELLE_TYPE = {
@@ -227,6 +259,10 @@
       ? `<div class="plage">→ ${new Date(c.date_fin + "T12:00:00").getDate()}</div>` : "";
     const meta = [c.format, c.depart, c.trous ? `${c.trous} trous` : null, c.ville]
       .filter(Boolean).join(" · ");
+    // Treize clubs sur cinq départements : « c'est où ? » est la question posée
+    // à chaque ligne. Le département y répond sans alourdir la carte.
+    const lieu = c.type === "club" && c.zone
+      ? `<span class="dept">${esc(c.zone)}</span>` : "";
     const badge = c.sponsor ? `<span class="badge">${esc(c.sponsor)}</span>` : "";
     // La catégorie est nommée en toutes lettres : la couleur seule ne suffit pas
     // à distinguer cinq natures d'épreuve, et exclurait les daltoniens.
@@ -234,7 +270,7 @@
       ? `<span class="type type-${c.type}">${esc(LIBELLE_TYPE[c.type] || c.type)}</span>` : "";
     // Le lien mène à la page du club, qui n'est pas toujours un formulaire
     // d'inscription : le libeller « S'inscrire » promettrait plus qu'il ne tient.
-    const libelleLien = c.type === "club" ? "Voir au club ↗" : "Fiche ligue ↗";
+    const libelleLien = c.type === "club" ? "Voir le site ↗" : "Fiche ligue ↗";
     const cta = c.url_inscription
       ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">${libelleLien}</a>`
       : "";
@@ -243,7 +279,7 @@
         <div class="m">${MOIS_COURT[d.getMonth()]}</div>${plage}</div>
       <div class="infos">
         <div class="nom">${etiquette}${esc(c.nom)}${badge}</div>
-        <div class="meta"><span class="golf">${esc(c.golf_nom)}</span>${meta ? " · " + esc(meta) : ""}</div>
+        <div class="meta"><span class="golf">${esc(c.golf_nom)}</span>${lieu}${meta ? " · " + esc(meta) : ""}</div>
       </div>
       <div class="cta">${cta}</div>`;
     return el;
@@ -256,6 +292,14 @@
     elVide.hidden = false;
     elVide.textContent = "Pas encore de compétition à venir. La collecte tourne chaque matin.";
   }
+  // Le pied de page listait six clubs en dur, devenus treize : on le construit
+  // à partir des données, pour qu'il ne puisse plus se désynchroniser.
+  const elPied = document.getElementById("pied-golfs");
+  if (elPied && golfs.length) {
+    elPied.textContent = `${golfs.length} clubs suivis — ` +
+      golfs.map((g) => g.nom.replace(/^Golf (Club )?(du |de la |de |des |d')?/i, "")).join(" · ");
+  }
+
   majBascule();
   render();
 })();

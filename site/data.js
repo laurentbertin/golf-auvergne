@@ -1772,7 +1772,7 @@ window.COMPETITIONS = [
     "format": null,
     "depart": null,
     "trous": null,
-    "sponsor": "DS",
+    "sponsor": null,
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",

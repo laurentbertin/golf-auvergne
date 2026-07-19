@@ -87,8 +87,23 @@ main{padding:22px 0 60px}
 .type-mid-amateurs{background:var(--mid)}
 .type-equipes{background:var(--equ)}
 
-.mois{color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
-  font-weight:700;margin:22px 2px 8px;border-bottom:1px solid var(--line);padding-bottom:6px}
+/* Raccourci vers un mois : la liste complète dépasse la trentaine d'écrans. */
+.mois-index{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 16px}
+.mois-lien{cursor:pointer;border:1px solid var(--line);background:var(--panel);
+  color:var(--muted);padding:3px 10px;border-radius:999px;font:inherit;font-size:12px;
+  text-transform:capitalize}
+.mois-lien:hover{border-color:var(--green);color:var(--ink)}
+
+/* Le titre de mois reste visible pendant le défilement : sans lui, on perd
+   vite le fil dans une liste de deux cents lignes. */
+.bloc-mois{margin:0 0 4px}
+.mois{position:sticky;top:0;z-index:2;background:var(--bg);
+  color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  font-weight:700;margin:22px 2px 8px;border-bottom:1px solid var(--line);padding:6px 0}
+
+/* Département, en complément du nom du club. */
+.dept{color:var(--muted);font-size:12px;margin-left:6px;
+  border:1px solid var(--line);border-radius:999px;padding:0 7px;white-space:nowrap}
 
 .comp{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;
   background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin:9px 0}

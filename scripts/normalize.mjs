@@ -103,9 +103,14 @@ const MARQUES = [
   "Ynov", "Volkswagen", "Toyota", "Lexus", "Jaguar",
 ];
 export function detectSponsor(nom = "") {
-  const n = nom.toLowerCase();
+  // Comparaison sur des mots entiers : une marque courte comme « DS » se
+  // retrouverait sinon dans « Bords de Loire ».
   for (const marque of MARQUES) {
-    if (n.includes(marque.toLowerCase())) return marque;
+    const motif = new RegExp(
+      `(^|[^a-zàâçéèêëîïôûùüÿñ])${marque.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}($|[^a-zàâçéèêëîïôûùüÿñ])`,
+      "i",
+    );
+    if (motif.test(nom)) return marque;
   }
   return null;
 }

@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golf Auvergne — Compétitions du bassin clermontois</title>
+<title>Golf Auvergne — Compétitions des clubs d'Auvergne et de la Loire</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="wrap">
-    <h1>⛳ Compétitions de golf<span>· bassin clermontois</span></h1>
-    <p class="tagline">Toutes les compétitions des golfs près de Clermont, sur une page. Scrambles, trophées, coupes sponsorisées — tout ce qui n'est pas sur la FFG.</p>
+    <h1>⛳ Compétitions de golf<span>· Auvergne &amp; Loire</span></h1>
+    <p class="tagline">Les compétitions des clubs d'Auvergne et de la Loire sur une page — coupes, scrambles et trophées — auxquelles s'ajoutent, si tu le demandes, les grands prix et les épreuves de la ligue AURA.</p>
   </div>
 </header>
 
@@ -39,6 +39,7 @@
   </section>
 
   <div id="compteur" class="compteur"></div>
+  <nav id="mois-index" class="mois-index" aria-label="Aller à un mois" hidden></nav>
   <section id="liste"></section>
   <p id="vide" class="vide" hidden>Aucune compétition à venir pour cette sélection.</p>
 </main>
@@ -46,7 +47,7 @@
 <footer>
   <div class="wrap">
     <p>Données mises à jour chaque matin depuis les sites des clubs. Vérifiez toujours l'horaire exact auprès du golf avant de vous déplacer.</p>
-    <p class="mini">Projet pilote — Sporting Vichy · Montpensier · Val d'Auzon · Riom · Volcans · Royat-Charade</p>
+    <p class="mini" id="pied-golfs"></p>
   </div>
 </footer>
 
