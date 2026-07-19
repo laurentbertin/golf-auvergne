@@ -1,42 +1,107 @@
 // Page publique — lit window.COMPETITIONS (injecté par data.js) et affiche
-// les compétitions VALIDÉES et À VENIR, filtrables par golf.
+// les compétitions VALIDÉES et À VENIR, filtrables par période et par golf.
 
 (function () {
   const ALL = (window.COMPETITIONS || []).filter(
     (c) => c.valide && c.date_fin >= isoToday()
   );
 
-  const golfs = [...new Map(ALL.map((c) => [c.golf_id, c.golf_nom])).entries()]
-    .sort((a, b) => a[1].localeCompare(b[1]));
-  const actifs = new Set(golfs.map(([id]) => id)); // tout coché au départ
+  const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  const MOIS_COURT = ["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
 
+  const elPeriodes = document.getElementById("periodes");
   const elFiltres = document.getElementById("filtres");
+  const elBascule = document.getElementById("bascule-golfs");
   const elListe = document.getElementById("liste");
   const elVide = document.getElementById("vide");
   const elCompteur = document.getElementById("compteur");
 
+  // ---------------------------------------------------------------- périodes
+  // La question qu'on se pose en ouvrant la page est « qu'est-ce que je peux
+  // jouer bientôt ? ». On répond d'abord par des raccourcis de temps, et non
+  // par un fil de six mois qu'il faudrait faire défiler.
+  const periodes = construirePeriodes();
+  let periode = periodes[0];
+
+  function construirePeriodes() {
+    const jours = (n) => {
+      const d = new Date();
+      d.setDate(d.getDate() + n);
+      return d.toISOString().slice(0, 10);
+    };
+    const liste = [
+      { id: "30j", label: "30 jours", jusqua: jours(30) },
+      { id: "90j", label: "3 mois", jusqua: jours(90) },
+      { id: "tout", label: "Tout", jusqua: "9999-12-31" },
+    ];
+    // Une période vide n'aide personne : on démarre sur la première qui a du contenu.
+    const premiere = liste.find((p) => ALL.some((c) => c.date_debut <= p.jusqua));
+    return premiere ? [...liste.slice(liste.indexOf(premiere))] : liste;
+  }
+
+  periodes.forEach((p) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.textContent = p.label;
+    b.setAttribute("aria-pressed", String(p === periode));
+    b.onclick = () => {
+      periode = p;
+      [...elPeriodes.children].forEach((el) =>
+        el.setAttribute("aria-pressed", String(el === b)));
+      render();
+    };
+    elPeriodes.appendChild(b);
+  });
+
+  // ------------------------------------------------------------------ golfs
+  const golfs = [...new Map(ALL.map((c) => [c.golf_id, c.golf_nom])).entries()]
+    .sort((a, b) => a[1].localeCompare(b[1]));
+  const actifs = new Set(golfs.map(([id]) => id)); // tout coché au départ
+  const boutonsGolf = new Map();
+
   golfs.forEach(([id, nom]) => {
     const b = document.createElement("button");
+    b.type = "button";
     b.className = "chip";
     b.textContent = nom;
     b.setAttribute("aria-pressed", "true");
     b.onclick = () => {
       if (actifs.has(id)) actifs.delete(id); else actifs.add(id);
       b.setAttribute("aria-pressed", actifs.has(id) ? "true" : "false");
+      majBascule();
       render();
     };
+    boutonsGolf.set(id, b);
     elFiltres.appendChild(b);
   });
 
-  const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  // Un seul bouton, dont le sens s'inverse selon l'état : tout sélectionné -> il
+  // propose de vider ; sinon -> il propose de tout reprendre.
+  function majBascule() {
+    elBascule.textContent = actifs.size === golfs.length ? "tout décocher" : "tout cocher";
+  }
 
+  elBascule.onclick = () => {
+    const toutCocher = actifs.size !== golfs.length;
+    actifs.clear();
+    if (toutCocher) golfs.forEach(([id]) => actifs.add(id));
+    boutonsGolf.forEach((b, id) =>
+      b.setAttribute("aria-pressed", actifs.has(id) ? "true" : "false"));
+    majBascule();
+    render();
+  };
+
+  // ------------------------------------------------------------------ rendu
   function render() {
-    const list = ALL.filter((c) => actifs.has(c.golf_id))
+    const list = ALL
+      .filter((c) => actifs.has(c.golf_id) && c.date_debut <= periode.jusqua)
       .sort((a, b) => (a.date_debut < b.date_debut ? -1 : 1));
+
     elListe.innerHTML = "";
     elVide.hidden = list.length > 0;
     elCompteur.textContent = list.length
-      ? `${list.length} compétition${list.length > 1 ? "s" : ""} à venir`
+      ? `${list.length} compétition${list.length > 1 ? "s" : ""}`
       : "";
 
     let moisCourant = "";
@@ -62,12 +127,14 @@
     const meta = [c.format, c.depart, c.trous ? `${c.trous} trous` : null]
       .filter(Boolean).join(" · ");
     const badge = c.sponsor ? `<span class="badge">${esc(c.sponsor)}</span>` : "";
+    // Le lien mène à la page du club, qui n'est pas toujours un formulaire
+    // d'inscription : le libeller « S'inscrire » promettrait plus qu'il ne tient.
     const cta = c.url_inscription
-      ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">S'inscrire</a>`
-      : `<span class="none">voir le club</span>`;
+      ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">Voir au club ↗</a>`
+      : "";
     el.innerHTML = `
       <div class="date"><div class="j">${d.getDate()}</div>
-        <div class="m">${MOIS[d.getMonth()].slice(0,4)}.</div>${plage}</div>
+        <div class="m">${MOIS_COURT[d.getMonth()]}</div>${plage}</div>
       <div class="infos">
         <div class="nom">${esc(c.nom)}${badge}</div>
         <div class="meta"><span class="golf">${esc(c.golf_nom)}</span>${meta ? " · " + esc(meta) : ""}</div>
@@ -81,7 +148,8 @@
 
   if (!ALL.length) {
     elVide.hidden = false;
-    elVide.textContent = "Pas encore de compétition validée. Lance la collecte puis valide les compétitions.";
+    elVide.textContent = "Pas encore de compétition à venir. La collecte tourne chaque matin.";
   }
+  majBascule();
   render();
 })();

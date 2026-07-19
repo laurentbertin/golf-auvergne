@@ -9,13 +9,24 @@
 <body>
 <header>
   <div class="wrap">
-    <h1>⛳ Compétitions de golf <span>· bassin clermontois</span></h1>
+    <h1>⛳ Compétitions de golf<span>· bassin clermontois</span></h1>
     <p class="tagline">Toutes les compétitions des golfs près de Clermont, sur une page. Scrambles, trophées, coupes sponsorisées — tout ce qui n'est pas sur la FFG.</p>
   </div>
 </header>
 
 <main class="wrap">
-  <section id="filtres" aria-label="Filtres par golf"></section>
+  <section class="filtres" aria-labelledby="titre-periode">
+    <h2 class="filtres-titre" id="titre-periode">Quand</h2>
+    <div id="periodes" class="rangee"></div>
+  </section>
+
+  <section class="filtres" aria-labelledby="titre-golfs">
+    <h2 class="filtres-titre" id="titre-golfs">Où
+      <button type="button" id="bascule-golfs" class="lien-bascule"></button>
+    </h2>
+    <div id="filtres" class="rangee"></div>
+  </section>
+
   <div id="compteur" class="compteur"></div>
   <section id="liste"></section>
   <p id="vide" class="vide" hidden>Aucune compétition à venir pour cette sélection.</p>
@@ -23,7 +34,7 @@
 
 <footer>
   <div class="wrap">
-    <p>Données mises à jour périodiquement depuis les sites des clubs. Vérifiez toujours l'horaire exact auprès du golf avant de vous déplacer.</p>
+    <p>Données mises à jour chaque matin depuis les sites des clubs. Vérifiez toujours l'horaire exact auprès du golf avant de vous déplacer.</p>
     <p class="mini">Projet pilote — Sporting Vichy · Montpensier · Val d'Auzon · Riom · Volcans · Royat-Charade</p>
   </div>
 </footer>
