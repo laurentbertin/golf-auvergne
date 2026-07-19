@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Drapeau de golf">
+  <!-- Dessiné pour 16 px avant tout : peu de marge, formes épaisses, trois
+       couleurs franches. Une colline ou une balle disparaîtraient à cette
+       taille et ne feraient que brouiller la silhouette. -->
+  <rect width="64" height="64" rx="13" fill="#12211a"/>
+  <rect x="18" y="8" width="6" height="48" rx="3" fill="#e8efe9"/>
+  <path d="M24 10h30l-9 11 9 11H24z" fill="#d8b35a"/>
+  <rect x="10" y="50" width="44" height="6" rx="3" fill="#3fa877"/>
+</svg>
