@@ -7,20 +7,20 @@ window.COMPETITIONS = [
     "date_debut": "2026-07-19",
     "date_fin": "2026-07-19",
     "format": "Scramble à 2",
-    "depart": "Départ 8h30",
+    "depart": null,
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/gold-cup/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
     "id": "vichy-sc__2026-07-26__coupe-j-e-de-boissy",
     "golf_id": "vichy-sc",
     "golf_nom": "Sporting Club de Vichy",
-    "nom": "Coupe J-E de Boissy",
+    "nom": "COUPE J-E DE BOISSY",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
     "format": "Strokeplay",
@@ -28,9 +28,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/coupe-j-e-de-boissy/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -51,6 +51,23 @@ window.COMPETITIONS = [
     "valide": true
   },
   {
+    "id": "vichy-sc__2026-08-03__ynov-8217-it",
+    "golf_id": "vichy-sc",
+    "golf_nom": "Sporting Club de Vichy",
+    "nom": "Ynov&#8217;IT",
+    "date_debut": "2026-08-03",
+    "date_fin": "2026-08-03",
+    "format": "Simple Stableford",
+    "depart": null,
+    "trous": null,
+    "sponsor": "Ynov",
+    "url_inscription": "https://golf-vichy.fr/competition/ynovit/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
+    "source_type": "events-calendar",
+    "derniere_maj": "2026-07-19",
+    "valide": true
+  },
+  {
     "id": "vichy-sc__2026-08-04__la-montagne",
     "golf_id": "vichy-sc",
     "golf_nom": "Sporting Club de Vichy",
@@ -62,9 +79,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/la-montagne-2026/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -79,9 +96,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": "Partouche",
     "url_inscription": "https://golf-vichy.fr/competition/partouche-2026/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -96,9 +113,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": "Home Box",
     "url_inscription": "https://golf-vichy.fr/competition/home-box-2026/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -113,9 +130,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/thevenet-lagarde/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -130,9 +147,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/ville-de-bellerive/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -147,9 +164,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/seguin/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -164,9 +181,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": "Thelem",
     "url_inscription": "https://golf-vichy.fr/competition/thelem-assurance/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -181,9 +198,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/ville-de-vichy/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -198,9 +215,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/auvergne-maree/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -215,9 +232,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/grand-prix-vichy-communaute-2026/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -232,9 +249,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/championnat-du-club/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -249,9 +266,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": "DS Automobiles",
     "url_inscription": "https://golf-vichy.fr/competition/ds-automobiles/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -266,9 +283,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/elsan-pergola/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -283,9 +300,9 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://golf-vichy.fr/competition/territorial-d1/",
-    "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
     "source_type": "events-calendar",
-    "derniere_maj": "2026-07-18",
+    "derniere_maj": "2026-07-19",
     "valide": true
   },
   {
@@ -303,6 +320,23 @@ window.COMPETITIONS = [
     "source_url": "https://www.golf-vichy.fr/calendrier-des-competitions/",
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-18",
+    "valide": true
+  },
+  {
+    "id": "vichy-sc__2026-10-18__pour-le-sourire-d-8217-un-enfant",
+    "golf_id": "vichy-sc",
+    "golf_nom": "Sporting Club de Vichy",
+    "nom": "Pour le sourire d&#8217;un enfant",
+    "date_debut": "2026-10-18",
+    "date_fin": "2026-10-18",
+    "format": "Scramble à 2",
+    "depart": null,
+    "trous": null,
+    "sponsor": null,
+    "url_inscription": "https://golf-vichy.fr/competition/pour-le-sourire-dun-enfant/",
+    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
+    "source_type": "events-calendar",
+    "derniere_maj": "2026-07-19",
     "valide": true
   }
 ];
