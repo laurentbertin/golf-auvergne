@@ -98,5 +98,13 @@
     "connecteur": "calendrier-image",
     "page": "https://golfdesetangs-savigneux.fr/calendrier/",
     "zone": "Loire"
+  },
+  {
+    "id": "forez",
+    "nom": "Golf Club du Forez",
+    "base": "https://www.golfclubduforez.com",
+    "connecteur": "forez",
+    "page": "https://www.golfclubduforez.com/competitions",
+    "zone": "Loire"
   }
 ]
