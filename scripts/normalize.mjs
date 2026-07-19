@@ -17,10 +17,25 @@ export function makeId(golfId, dateDebut, nom) {
   return `${golfId}__${dateDebut}__${slug(nom)}`;
 }
 
-const MOIS = {
-  janvier: 1, fevrier: 2, "février": 2, mars: 3, avril: 4, mai: 5, juin: 6,
-  juillet: 7, aout: 8, "août": 8, septembre: 9, octobre: 10, novembre: 11, decembre: 12, "décembre": 12,
-};
+// Mois de référence, sans accents (les entrées sont désaccentuées avant comparaison).
+const MOIS_CANON = [
+  "janvier", "fevrier", "mars", "avril", "mai", "juin",
+  "juillet", "aout", "septembre", "octobre", "novembre", "decembre",
+];
+
+// Résout un nom de mois FR, complet ou abrégé : "juillet", "juil", "Juil.", "sept", "fév"…
+// Les sites des clubs abrègent chacun à leur façon, d'où la comparaison par préfixe.
+// "juin"/"juillet" partagent le préfixe "jui" : on exige alors une levée d'ambiguïté.
+function moisVers(numero) {
+  const n = String(numero || "")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/\.$/, "").trim();
+  if (!n) return null;
+  const exact = MOIS_CANON.indexOf(n);
+  if (exact >= 0) return exact + 1;
+  const candidats = MOIS_CANON.filter((m) => m.startsWith(n));
+  return candidats.length === 1 ? MOIS_CANON.indexOf(candidats[0]) + 1 : null;
+}
 
 // Parse une date FR vers ISO YYYY-MM-DD. Gère "19/07/2026", "2026-07-19", "12.02", "5 juin 2026".
 // anneeParDefaut : utilisée si l'année est absente (ex "12.02").
@@ -32,8 +47,8 @@ export function toISO(input, anneeParDefaut = new Date().getFullYear()) {
   let m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
   if (m) return `${m[1]}-${m[2]}-${m[3]}`;
 
-  // JJ/MM/AAAA ou JJ/MM ou JJ.MM
-  m = s.match(/^(\d{1,2})[\/.](\d{1,2})(?:[\/.](\d{2,4}))?$/);
+  // JJ/MM/AAAA ou JJ/MM ou JJ.MM, éventuellement suivi d'une heure ("12/02/2026 10:00")
+  m = s.match(/^(\d{1,2})[\/.](\d{1,2})(?:[\/.](\d{2,4}))?(?=$|[\s,])/);
   if (m) {
     const d = +m[1], mo = +m[2];
     let y = m[3] ? +m[3] : anneeParDefaut;
@@ -41,13 +56,44 @@ export function toISO(input, anneeParDefaut = new Date().getFullYear()) {
     return `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
   }
 
-  // "5 juin 2026" / "5 juin"
-  m = s.toLowerCase().match(/^(\d{1,2})\s+([a-zûéèô]+)\.?(?:\s+(\d{4}))?/i);
-  if (m && MOIS[m[2]]) {
-    const d = +m[1], mo = MOIS[m[2]], y = m[3] ? +m[3] : anneeParDefaut;
-    return `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+  // "5 juin 2026" / "5 juin" / "3 août, 2026" / "22 Juil 2026" (abrégé)
+  // La virgule avant l'année est tolérée : plusieurs clubs l'écrivent ainsi.
+  m = s.match(/^(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\.?\s*,?\s*(\d{4})?/);
+  if (m) {
+    const mo = moisVers(m[2]);
+    if (mo) {
+      const d = +m[1], y = m[3] ? +m[3] : anneeParDefaut;
+      return `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+    }
   }
   return null;
+}
+
+// Étend toISO aux plages écrites en un seul bloc : "29-30/08", "3-4 mai 2026".
+// Renvoie { debut, fin } — fin vaut debut quand il n'y a pas de plage.
+export function toPlageISO(input, anneeParDefaut = new Date().getFullYear()) {
+  const s = String(input || "").trim();
+
+  // "29-30/08/2026" ou "29-30/08" : deux quantièmes, un seul mois.
+  let m = s.match(/^(\d{1,2})\s*[-–]\s*(\d{1,2})([\/.])(\d{1,2})(?:\3(\d{2,4}))?$/);
+  if (m) {
+    const reste = `${m[2]}${m[3]}${m[4]}${m[5] ? m[3] + m[5] : ""}`;
+    const fin = toISO(reste, anneeParDefaut);
+    const debut = toISO(`${m[1]}${m[3]}${m[4]}${m[5] ? m[3] + m[5] : ""}`, anneeParDefaut);
+    return { debut, fin: fin || debut };
+  }
+
+  // "3-4 mai 2026" : deux quantièmes, mois en toutes lettres.
+  m = s.match(/^(\d{1,2})\s*[-–]\s*(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\.?\s*,?\s*(\d{4})?$/);
+  if (m) {
+    const suffixe = `${m[3]}${m[4] ? " " + m[4] : ""}`;
+    const debut = toISO(`${m[1]} ${suffixe}`, anneeParDefaut);
+    const fin = toISO(`${m[2]} ${suffixe}`, anneeParDefaut);
+    return { debut, fin: fin || debut };
+  }
+
+  const seul = toISO(s, anneeParDefaut);
+  return { debut: seul, fin: seul };
 }
 
 // Détection légère de sponsor à partir du titre. Liste extensible.

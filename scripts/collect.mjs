@@ -10,7 +10,22 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { fetchEventsCalendar } from "./connectors/eventsCalendar.mjs";
+import { fetchVolcans } from "./connectors/volcans.mjs";
+import { fetchRoyat } from "./connectors/royat.mjs";
+import { fetchValdauzon } from "./connectors/valdauzon.mjs";
+import { fetchMontpensier } from "./connectors/montpensier.mjs";
+import { fetchRiom } from "./connectors/riom.mjs";
 import { toRecord, merge, isoToday } from "./normalize.mjs";
+
+// Chaque club a son propre outil de publication : un connecteur par site.
+// Tous lisent du balisage régulier — aucun ne dépend d'un LLM.
+const CONNECTEURS = {
+  volcans: fetchVolcans,
+  royat: fetchRoyat,
+  valdauzon: fetchValdauzon,
+  montpensier: fetchMontpensier,
+  riom: fetchRiom,
+};
 
 // Import paresseux : le connecteur LLM (et sa dépendance @anthropic-ai/sdk) n'est
 // chargé que si un golf en a besoin. Ainsi la collecte des golfs structurés
@@ -32,6 +47,10 @@ async function readJson(path, fallback) {
 
 async function collectGolf(golf, since) {
   const mode = golf.connecteur || "auto";
+
+  const dedie = CONNECTEURS[mode];
+  if (dedie) return { raws: await dedie(golf), type: mode };
+
   if (mode === "events-calendar") {
     return { raws: await fetchEventsCalendar(golf, since), type: "events-calendar" };
   }
@@ -64,10 +83,10 @@ async function main() {
       const recs = raws
         .map((r) => toRecord(r, golf, type, since))
         .filter((r) => r.date_debut && r.date_fin >= since)
-        // Politique V1 : les golfs à flux STRUCTURÉ (events-calendar) sont fiables
-        // -> publiés automatiquement. Les golfs extraits par IA (html-llm) restent
-        //    en attente de relecture humaine (valide:false).
-        .map((r) => (r.source_type === "events-calendar" ? { ...r, valide: true } : r));
+        // Tout ce qui est lu dans du balisage régulier (flux structuré ou
+        // connecteur dédié) est fiable -> publié automatiquement.
+        // Seule une extraction par IA resterait en attente de relecture humaine.
+        .map((r) => (r.source_type === "html-llm" ? r : { ...r, valide: true }));
       nouveaux.push(...recs);
       console.log(`${recs.length} compétition(s) [${type}]`);
     } catch (e) {

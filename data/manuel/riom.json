@@ -1,0 +1,24 @@
+{
+  "_lisezmoi": [
+    "Le Golf de Riom ne publie pas de calendrier lisible par une machine : sa page",
+    "/calendrier/ ne contient qu'une image (une photo du tableau des compétitions).",
+    "Ce fichier en est la transcription manuelle.",
+    "",
+    "Le connecteur surveille l'image : si le club en met une nouvelle en ligne,",
+    "la collecte le signale et il faut relire l'image puis mettre ce fichier à jour.",
+    "Renseigner alors 'image_source' avec la nouvelle adresse."
+  ],
+  "image_source": "https://www.golf-riom.fr/wp-content/uploads/2026/06/Calendrier-Mai-Juin-1.png",
+  "releve_le": "2026-07-19",
+  "annee": 2026,
+  "competitions": [
+    { "date": "23/05", "nom": "Auvergne Eco Habitat", "format": "Scramble à 2" },
+    { "date": "30/05", "nom": "Vallée Dôme Finition", "format": "Scramble à 2" },
+    { "date": "06/06", "nom": "Compétition de classement", "format": "Stableford" },
+    { "date": "13/06", "nom": "RVO", "format": "Stableford" },
+    { "date": "20/06", "nom": "Treyve Paysage", "format": "Scramble à 2" },
+    { "date": "27/06", "nom": "ETS Laurent", "format": "Stableford" },
+    { "date": "04/07", "nom": "AZERTY", "format": "Scramble à 2" },
+    { "date": "29-30/08", "nom": "Fête du Club", "format": "StrokePlay / Stableford" }
+  ]
+}

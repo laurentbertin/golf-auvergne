@@ -25,15 +25,13 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
 
       - run: npm install
 
+      # Les six golfs sont lus dans le balisage de leur site : aucune clé d'API
+      # n'est nécessaire.
       - name: Collecte des compétitions
-        env:
-          # Clé nécessaire seulement pour les golfs extraits par IA (Volcans, Royat).
-          # Vichy & co fonctionnent sans. Si le secret est vide, ces golfs sont ignorés.
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/collect.mjs
 
       - name: Committer les données rafraîchies
