@@ -2,6 +2,8 @@
 // Tente l'API REST du plugin, puis le flux iCal en secours.
 // Renvoie un tableau de "raw" { nom, date_debut, date_fin, format, depart, url_inscription, source_url }.
 
+import { texte } from "./html.mjs";
+
 const UA = "golf-auvergne-mvp/0.1 (+contact: lbertin78@gmail.com)";
 
 function dateOnly(s) {
@@ -24,7 +26,10 @@ async function viaRest(golf, since) {
   const events = data.events || [];
   if (!events.length) throw new Error("REST: 0 événement");
   return events.map((e) => ({
-    nom: (e.title || "").trim(),
+    // WordPress renvoie les titres avec leurs entités ("Ynov&#8217;IT") : sans
+    // décodage elles polluent l'affichage et créent des doublons, l'identifiant
+    // étant dérivé du nom.
+    nom: texte(e.title || ""),
     date_debut: dateOnly(e.start_date),
     date_fin: dateOnly(e.end_date) || dateOnly(e.start_date),
     format: formatFromCategories(e.categories),
@@ -43,7 +48,7 @@ function parseICal(txt) {
     const start = dt(get("DTSTART"));
     if (!start) continue;
     out.push({
-      nom: (get("SUMMARY") || "").replace(/\\,/g, ","),
+      nom: texte((get("SUMMARY") || "").replace(/\\,/g, ",")),
       date_debut: start,
       date_fin: dt(get("DTEND")) || start,
       format: null,
