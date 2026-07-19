@@ -16,7 +16,8 @@
   const ALL = (window.COMPETITIONS || [])
     .filter((c) => c.valide && c.date_debut >= PREMIER_JOUR)
     .map((c) => ({ ...c, type: c.type || "club",
-      formules: c.formules || ["autre"], moment: c.moment || "journee" }));
+      formules: c.formules || ["autre"], moment: c.moment || "journee",
+      recurrent: c.recurrent === true }));
 
   const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   const MOIS_COURT = ["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
@@ -42,12 +43,16 @@
     { id: "autre", label: "Formule non précisée" },
   ];
   const formulesActives = new Set();
-  let soireeVisible = false;
+  // Les deux cases disent « masquer » : une seule formulation, un seul sens de
+  // lecture, même si l'une est cochée d'origine et l'autre non.
+  let masquerSoiree = true;      // after work et nocturnes : rarement ce qu'on cherche
+  let masquerReguliers = false;  // 28 % du calendrier : les cacher d'office surprendrait
 
   const elPeriodes = document.getElementById("periodes");
   const elTypes = document.getElementById("types");
   const elFormules = document.getElementById("formules");
   const elSoiree = document.getElementById("soiree");
+  const elReguliers = document.getElementById("reguliers");
   const elEquipes = document.getElementById("equipes");
   const elFiltres = document.getElementById("filtres");
   const elPlier = document.getElementById("plier-golfs");
@@ -110,7 +115,12 @@
   });
 
   elSoiree.onchange = () => {
-    soireeVisible = elSoiree.checked;
+    masquerSoiree = elSoiree.checked;
+    render();
+  };
+
+  elReguliers.onchange = () => {
+    masquerReguliers = elReguliers.checked;
     render();
   };
 
@@ -268,7 +278,11 @@
   }
 
   function momentRetenu(c) {
-    return soireeVisible || c.moment !== "soiree";
+    if (masquerSoiree && c.moment === "soiree") return false;
+    // Une série récurrente n'est masquée que côté club : une épreuve fédérale
+    // n'est jamais un rendez-vous hebdomadaire.
+    if (masquerReguliers && c.type === "club" && c.recurrent) return false;
+    return true;
   }
 
   function render() {
@@ -395,6 +409,13 @@
   if (elPied && golfs.length) {
     elPied.textContent = `${golfs.length} clubs suivis — ` +
       golfs.map((g) => g.nom.replace(/^Golf (Club )?(du |de la |de |des |d')?/i, "")).join(" · ");
+  }
+
+  const nbReguliers = ALL.filter((c) => c.type === "club" && c.recurrent).length;
+  const elCompteReg = document.getElementById("compte-reguliers");
+  if (elCompteReg) {
+    elCompteReg.textContent = nbReguliers
+      ? `— ${nbReguliers} sur les prochains mois` : "— séries hebdomadaires";
   }
 
   majBascule();

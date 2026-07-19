@@ -185,6 +185,52 @@ export function isoToday() {
   return new Date().toISOString().slice(0, 10);
 }
 
+// ------------------------------------------------------------ récurrences
+// Beaucoup de clubs tiennent un rendez-vous hebdomadaire ou mensuel : « Les
+// Jeudis d'Etienne », « Compétition 9 trous », « GHA n°12 »… Ils forment près
+// d'un tiers du calendrier et noient les épreuves ponctuelles qu'on cherche.
+//
+// On les repère par répétition plutôt que par une liste de noms tenue à la
+// main : un même intitulé, dans un même club, revenant au moins deux fois.
+//
+// Deux et non trois : on ne voit que les mois à venir, et un rendez-vous
+// mensuel n'y apparaît que deux ou trois fois. À trois, « Jeudi de Champlong »
+// ou « Am-Am » des Étangs passaient au travers. Les quatre paires observées
+// étaient toutes de vraies séries — le risque d'un homonyme fortuit dans un
+// même club reste théorique, et se solderait au pire par une compétition
+// masquée quand on demande à masquer les séries.
+const SEUIL_RECURRENCE = 2;
+
+// Retire d'un intitulé ce qui varie d'une occurrence à l'autre — le numéro
+// d'ordre, la date glissée dans le nom, l'année — pour comparer le reste.
+function radical(nom = "") {
+  return nom
+    .replace(/\d{1,2}\s*[./]\s*\d{1,2}/g, " ")   // « SUNSHINE SWING 19.07 »
+    .replace(/\bn[°o]\s*\d+\b/gi, " ")           // « GHA n°12 »
+    .replace(/\b20\d\d\b/g, " ")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+// Marque en place les compétitions appartenant à une série récurrente.
+export function marquerRecurrences(liste = []) {
+  const groupes = new Map();
+  for (const c of liste) {
+    if (c.type !== "club") continue;
+    const cle = `${c.golf_id}|${radical(c.nom)}`;
+    if (!groupes.has(cle)) groupes.set(cle, []);
+    groupes.get(cle).push(c);
+  }
+  for (const c of liste) c.recurrent = false;
+  for (const groupe of groupes.values()) {
+    if (groupe.length < SEUIL_RECURRENCE) continue;
+    for (const c of groupe) c.recurrent = true;
+  }
+  return liste;
+}
+
 // Fusionne les nouvelles compétitions avec l'existant.
 // - dédup par id
 // - PRÉSERVE une validation humaine (valide:true) et les corrections manuelles déjà faites

@@ -18,7 +18,7 @@ import { fetchCalendrierImage } from "./connectors/calendrierImage.mjs";
 import { fetchChamplong } from "./connectors/champlong.mjs";
 import { fetchForez } from "./connectors/forez.mjs";
 import { fetchLigueAura } from "./connectors/ligueAura.mjs";
-import { toRecord, merge, isoToday } from "./normalize.mjs";
+import { toRecord, merge, isoToday, marquerRecurrences } from "./normalize.mjs";
 
 // Chaque club a son propre outil de publication : un connecteur par site.
 // Tous lisent du balisage régulier — aucun ne dépend d'un LLM.
@@ -119,12 +119,16 @@ async function main() {
     }
   }
 
-  const fusion = merge(existants, nouveaux);
+  // La récurrence se juge sur l'ensemble du calendrier, pas source par source :
+  // on la calcule après fusion.
+  const fusion = marquerRecurrences(merge(existants, nouveaux));
   await writeFile(F_COMPS, JSON.stringify(fusion, null, 2) + "\n");
   await writeFile(F_SITEDATA, `window.COMPETITIONS = ${JSON.stringify(fusion, null, 2)};\n`);
 
   const valides = fusion.filter((c) => c.valide).length;
+  const recurrentes = fusion.filter((c) => c.recurrent).length;
   console.log(`\n✔ ${fusion.length} compétitions au total — ${valides} validées (affichées), ${fusion.length - valides} à relire.`);
+  console.log(`  dont ${recurrentes} rendez-vous réguliers (séries repérées par répétition).`);
   console.log(`  data/competitions.json et site/data.js mis à jour.`);
 }
 
