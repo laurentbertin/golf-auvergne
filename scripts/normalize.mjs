@@ -226,7 +226,18 @@ export function marquerRecurrences(liste = []) {
   for (const c of liste) c.recurrent = false;
   for (const groupe of groupes.values()) {
     if (groupe.length < SEUIL_RECURRENCE) continue;
-    for (const c of groupe) c.recurrent = true;
+    for (const c of groupe) {
+      c.recurrent = true;
+      // Un rendez-vous de club qui revient chaque semaine se joue en individuel :
+      // c'est la compétition de classement ordinaire. On ne l'applique qu'aux
+      // séries dont le club n'annonce AUCUNE formule — plusieurs disent
+      // explicitement le contraire (« Les Jeudis d'Etienne » est un scramble
+      // à 2, l'« Am-Am » des Étangs se joue à deux), et leur mot fait foi.
+      if (c.formules?.length === 1 && c.formules[0] === "autre" && !c.format) {
+        c.formules = ["individuel"];
+        c.formule_deduite = true;
+      }
+    }
   }
   return liste;
 }

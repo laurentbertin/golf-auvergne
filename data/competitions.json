@@ -282,7 +282,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Jeudi de Champlong",
@@ -297,7 +297,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "ligue-golf-d-albon__2026-07-25__trophee-seniors-albon",
@@ -507,7 +508,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition Srixon",
@@ -522,7 +523,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "forez__2026-07-30__a-s-g-r-a-4-balles",
@@ -1007,7 +1009,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition 9 trous",
@@ -1022,7 +1024,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "vichy-sc__2026-08-12__seguin",
@@ -1207,7 +1210,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition Srixon",
@@ -1222,7 +1225,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "volcans__2026-08-16__sunshine-swing-16-08",
@@ -1432,7 +1436,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Jeudi de Champlong",
@@ -1447,7 +1451,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "ligue-golf-des-arcs__2026-08-22__trophee-seniors-les-arcs",
@@ -1658,7 +1663,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition Srixon",
@@ -1673,7 +1678,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "forez__2026-08-24__competition-9-trous",
@@ -1683,7 +1689,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition 9 trous",
@@ -1698,7 +1704,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "volcans__2026-08-25__putt-putt-championship-25-08",
@@ -2661,7 +2668,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition 9 trous",
@@ -2676,7 +2683,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "ligue-golf-de-maison-blanche__2026-09-08__trophee-seniors-maison-blanche",
@@ -2811,7 +2819,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Journée de l'amitié",
@@ -2826,7 +2834,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "volcans__2026-09-11__grand-prix-11-12-13-09",
@@ -3686,7 +3695,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition Srixon",
@@ -3701,7 +3710,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "royat__2026-09-24__les-jeudis-d-etienne",
@@ -4337,7 +4347,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition Srixon",
@@ -4352,7 +4362,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "vichy-sc__2026-10-04__elsan-pergola",
@@ -4914,7 +4925,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition 9 trous",
@@ -4929,7 +4940,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "ligue-golf-de-la-bresse__2026-10-13__trophee-seniors-2-la-bresse",
@@ -4964,7 +4976,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Journée de l'amitié",
@@ -4979,7 +4991,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "vichy-sc__2026-10-15__territorial-d1",
@@ -5515,7 +5528,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Compétition 9 trous",
@@ -5530,7 +5543,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "royat__2026-11-01__oranges-pour-tous-give-take",
@@ -5615,7 +5629,7 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "autre"
+      "individuel"
     ],
     "moment": "journee",
     "nom": "Journée de l'amitié",
@@ -5630,7 +5644,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-19",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "formule_deduite": true
   },
   {
     "id": "etangs__2026-11-07__green-cup",

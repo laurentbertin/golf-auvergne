@@ -17,7 +17,7 @@
     .filter((c) => c.valide && c.date_debut >= PREMIER_JOUR)
     .map((c) => ({ ...c, type: c.type || "club",
       formules: c.formules || ["autre"], moment: c.moment || "journee",
-      recurrent: c.recurrent === true }));
+      recurrent: c.recurrent === true, formule_deduite: c.formule_deduite === true }));
 
   const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   const MOIS_COURT = ["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
@@ -361,7 +361,11 @@
     el.className = `comp comp-${c.type}`;
     const plage = c.date_fin && c.date_fin !== c.date_debut
       ? `<div class="plage">→ ${new Date(c.date_fin + "T12:00:00").getDate()}</div>` : "";
-    const meta = [c.format, c.depart, c.trous ? `${c.trous} trous` : null, c.ville]
+    // Une formule déduite (rendez-vous régulier dont le club ne dit rien) est
+    // signalée comme telle : elle ne doit pas se lire comme une information
+    // publiée par le club.
+    const formuleAffichee = c.format || (c.formule_deduite ? "individuel (supposé)" : null);
+    const meta = [formuleAffichee, c.depart, c.trous ? `${c.trous} trous` : null, c.ville]
       .filter(Boolean).join(" · ");
     // Treize clubs sur cinq départements : « c'est où ? » est la question posée
     // à chaque ligne. Le département y répond sans alourdir la carte.
