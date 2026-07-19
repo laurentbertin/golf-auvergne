@@ -1,0 +1,20 @@
+{
+  "_lisezmoi": [
+    "Le Golf de Sainte-Agathe publie son calendrier en PDF, sous forme de",
+    "planning annuel en colonnes de mois. Transcription du second semestre 2026 ;",
+    "le premier est entièrement passé.",
+    "",
+    "Non repris ici : le Grand Prix Mid & Senior des 26-27 septembre, déjà",
+    "collecté via la ligue AURA — l'inscrire deux fois ferait un doublon."
+  ],
+  "image_source": "http://www.golf-sainte-agathe.fr/wp-content/uploads/2026/03/CALENDRIER-2026-1.pdf",
+  "releve_le": "2026-07-19",
+  "annee": 2026,
+  "competitions": [
+    { "date": "03/09", "nom": "Championnat Seniors 3", "format": null },
+    { "date": "11/09", "nom": "GE ECM", "format": null },
+    { "date": "13/09", "nom": "Iguane", "format": null },
+    { "date": "20/09", "nom": "ORPI — réciprocité Nassigny", "format": null },
+    { "date": "24/10", "nom": "Golf Entreprise D2", "format": null }
+  ]
+}

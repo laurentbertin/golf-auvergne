@@ -123,6 +123,7 @@ export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
     golf_id: golfId,
     golf_nom: golfNom,
     type: raw.type ?? "club",
+    zone: raw.zone ?? golf.zone ?? null,
     ville: raw.ville ?? null,
     nom: (raw.nom || "").trim(),
     date_debut: dateDebut,

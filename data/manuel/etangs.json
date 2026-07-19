@@ -1,0 +1,43 @@
+{
+  "_lisezmoi": [
+    "Le Golf des Étangs (Savigneux) publie son calendrier en PDF : un planning",
+    "annuel à douze colonnes. Sa page « Compétitions » existe mais n'est pas",
+    "tenue à jour — elle s'arrêtait au 10 juillet au moment du relevé.",
+    "",
+    "Chaque entrée a été vérifiée par son jour de la semaine : dans une grille",
+    "à douze colonnes, c'est le seul contrôle fiable de la colonne de mois.",
+    "",
+    "Non repris : les opérations de terrain (carottage) et les stages de l'école",
+    "de golf, qui ne sont pas des compétitions.",
+    "Incertitude assumée : « Soirée Golf » occupe les 1er et 2 août sur l'affiche,",
+    "sans qu'on puisse dire s'il s'agit d'un événement sur deux jours."
+  ],
+  "image_source": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
+  "releve_le": "2026-07-19",
+  "annee": 2026,
+  "competitions": [
+    { "date": "01-02/08", "nom": "Soirée Golf", "format": null },
+    { "date": "27/08", "nom": "Am-Am", "format": null },
+    { "date": "04/09", "nom": "CPME", "format": "Compétition fermée" },
+    { "date": "06/09", "nom": "Compétition de rentrée", "format": null },
+    { "date": "08/09", "nom": "GNTS", "format": "Compétition fermée" },
+    { "date": "10/09", "nom": "Journée de l'amitié", "format": null },
+    { "date": "13/09", "nom": "Sponsor ASGS", "format": null },
+    { "date": "17/09", "nom": "TGV", "format": "Compétition fermée" },
+    { "date": "20/09", "nom": "Guy Hoquet", "format": null },
+    { "date": "24/09", "nom": "ASGRA", "format": null },
+    { "date": "27/09", "nom": "Am-Am", "format": null },
+    { "date": "03/10", "nom": "ASPTT Coupe de la Loire", "format": "Compétition fermée" },
+    { "date": "11/10", "nom": "ASPTT x Ligue", "format": null },
+    { "date": "13/10", "nom": "Journée de l'amitié", "format": null },
+    { "date": "15/10", "nom": "GLA", "format": "Compétition fermée" },
+    { "date": "25/10", "nom": "Coupe du Président", "format": null },
+    { "date": "06/11", "nom": "Journée de l'amitié", "format": null },
+    { "date": "07/11", "nom": "Green Cup", "format": "Compétition fermée" },
+    { "date": "22/11", "nom": "Coupe Beaujolais", "format": null },
+    { "date": "28/11", "nom": "Soirée ASGS", "format": null },
+    { "date": "05/12", "nom": "Marché de Noël", "format": null },
+    { "date": "06/12", "nom": "Noël", "format": null },
+    { "date": "13/12", "nom": "Coupe de Noël", "format": null }
+  ]
+}

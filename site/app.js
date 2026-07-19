@@ -34,6 +34,7 @@
   const elTypes = document.getElementById("types");
   const elEquipes = document.getElementById("equipes");
   const elFiltres = document.getElementById("filtres");
+  const elPlier = document.getElementById("plier-golfs");
   const elBascule = document.getElementById("bascule-golfs");
   const elListe = document.getElementById("liste");
   const elVide = document.getElementById("vide");
@@ -98,37 +99,78 @@
   // Seuls les clubs suivis alimentent le filtre « Où » : le lieu d'un grand prix
   // change chaque année et n'a pas à encombrer cette liste.
   const golfs = [...new Map(
-    ALL.filter((c) => c.type === "club").map((c) => [c.golf_id, c.golf_nom])
-  ).entries()].sort((a, b) => a[1].localeCompare(b[1]));
-  const actifs = new Set(golfs.map(([id]) => id)); // tout coché au départ
+    ALL.filter((c) => c.type === "club").map((c) => [c.golf_id, c]))
+    .entries()]
+    .map(([id, c]) => ({ id, nom: c.golf_nom, zone: c.zone || "Ailleurs" }))
+    .sort((a, b) => a.nom.localeCompare(b.nom));
+  const actifs = new Set(golfs.map((g) => g.id)); // tout coché au départ
   const boutonsGolf = new Map();
 
-  golfs.forEach(([id, nom]) => {
-    const b = document.createElement("button");
-    b.type = "button";
-    b.className = "chip";
-    b.textContent = nom;
-    b.setAttribute("aria-pressed", "true");
-    b.onclick = () => {
-      if (actifs.has(id)) actifs.delete(id); else actifs.add(id);
-      b.setAttribute("aria-pressed", actifs.has(id) ? "true" : "false");
-      majBascule();
-      render();
-    };
-    boutonsGolf.set(id, b);
-    elFiltres.appendChild(b);
+  // Douze clubs en vrac ne se lisent pas. On les range par département :
+  // c'est le repère qui compte quand on décide où l'on est prêt à rouler.
+  const ORDRE_ZONES = ["Puy-de-Dôme", "Allier", "Cantal", "Haute-Loire", "Loire"];
+  const parZone = [...new Set(golfs.map((g) => g.zone))].sort(
+    (a, b) => (ORDRE_ZONES.indexOf(a) + 1 || 99) - (ORDRE_ZONES.indexOf(b) + 1 || 99),
+  );
+
+  parZone.forEach((zone) => {
+    const bloc = document.createElement("div");
+    bloc.className = "zone";
+    const titre = document.createElement("h3");
+    titre.className = "zone-titre";
+    titre.textContent = zone;
+    bloc.appendChild(titre);
+
+    const rangee = document.createElement("div");
+    rangee.className = "rangee";
+    golfs.filter((g) => g.zone === zone).forEach((g) => {
+      const b = document.createElement("button");
+      b.type = "button";
+      b.className = "chip";
+      b.textContent = g.nom;
+      b.setAttribute("aria-pressed", "true");
+      b.onclick = () => {
+        if (actifs.has(g.id)) actifs.delete(g.id); else actifs.add(g.id);
+        b.setAttribute("aria-pressed", actifs.has(g.id) ? "true" : "false");
+        majBascule();
+        render();
+      };
+      boutonsGolf.set(g.id, b);
+      rangee.appendChild(b);
+    });
+    bloc.appendChild(rangee);
+    elFiltres.appendChild(bloc);
   });
+
+  // Le détail des clubs reste replié : la page doit s'ouvrir sur des
+  // compétitions, pas sur un panneau de réglages.
+  elPlier.onclick = () => {
+    const ouvert = elFiltres.hidden;
+    elFiltres.hidden = !ouvert;
+    elPlier.setAttribute("aria-expanded", String(ouvert));
+    majPlier();
+  };
+
+  function majPlier() {
+    const n = actifs.size;
+    const tous = n === golfs.length;
+    elPlier.textContent = elFiltres.hidden
+      ? `${tous ? "les " + n : n + " / " + golfs.length} golfs — choisir`
+      : "replier";
+    elBascule.hidden = elFiltres.hidden;
+  }
 
   // Un seul bouton, dont le sens s'inverse selon l'état : tout sélectionné -> il
   // propose de vider ; sinon -> il propose de tout reprendre.
   function majBascule() {
     elBascule.textContent = actifs.size === golfs.length ? "tout décocher" : "tout cocher";
+    majPlier();
   }
 
   elBascule.onclick = () => {
     const toutCocher = actifs.size !== golfs.length;
     actifs.clear();
-    if (toutCocher) golfs.forEach(([id]) => actifs.add(id));
+    if (toutCocher) golfs.forEach((g) => actifs.add(g.id));
     boutonsGolf.forEach((b, id) =>
       b.setAttribute("aria-pressed", actifs.has(id) ? "true" : "false"));
     majBascule();

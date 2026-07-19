@@ -22,16 +22,24 @@ import { toPlageISO } from "../normalize.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
-// Retient les images qui ressemblent à un calendrier, en écartant logos et décor.
+// Retient les affiches qui ressemblent à un calendrier, en écartant logos et
+// décor. Les clubs publient indifféremment une image ou un PDF : on surveille
+// les deux, et le nom du fichier porte souvent sa date de révision.
 function imagesCalendrier(html) {
-  const srcs = [...html.matchAll(/src="([^"]+\.(?:png|jpe?g|webp))"/gi)].map((m) => m[1]);
+  const srcs = [
+    ...[...html.matchAll(/src="([^"]+\.(?:png|jpe?g|webp))"/gi)].map((m) => m[1]),
+    ...[...html.matchAll(/href="([^"]+\.pdf)"/gi)].map((m) => m[1]),
+  ];
   return srcs.filter((s) => /calendrier|competition|compet/i.test(s));
 }
 
-// L'adresse d'une image peut porter une signature temporaire (CDN) : on ne
-// compare que la partie stable, sinon l'alerte se déclencherait chaque jour.
+// L'adresse d'une affiche varie sans que l'affiche change : signature
+// temporaire des CDN, vignette WordPress (« -724x1024 »). On ramène l'adresse
+// à sa forme stable, sinon l'alerte se déclencherait chaque jour pour rien.
 function empreinte(url) {
-  return String(url || "").split("?")[0];
+  return String(url || "")
+    .split("?")[0]
+    .replace(/-\d{2,4}x\d{2,4}(?=\.[a-z]+$)/i, "");
 }
 
 export async function fetchCalendrierImage(golf) {

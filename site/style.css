@@ -51,6 +51,14 @@ main{padding:22px 0 60px}
 
 .filtres-note{font-weight:500;text-transform:none;letter-spacing:0;opacity:.75}
 
+/* Douze clubs rangés par département, dans un bloc replié par défaut.
+   `display:flex` l'emporterait sur l'attribut hidden : on le neutralise. */
+[hidden]{display:none !important}
+.zones{display:flex;flex-direction:column;gap:11px;
+  border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:var(--panel2)}
+.zone-titre{margin:0 0 6px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--muted);font-weight:700}
+
 /* Une couleur par nature d'épreuve. Le rouge est réservé aux compétitions
    d'équipe : ce sont les seules qui constituent une obligation. */
 .chip-grand-prix[aria-pressed="true"]{background:var(--gp);border-color:var(--gp);color:var(--puce-ink)}
@@ -119,6 +127,10 @@ footer .mini{font-size:12px;opacity:.7}
   .rangee{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
     padding-bottom:2px;margin:0 -18px;padding-left:18px;padding-right:18px}
   .rangee::-webkit-scrollbar{display:none}
+
+  /* Dans le panneau « Où », déplié à dessein, on veut tout voir d'un coup :
+     le défilement latéral y cacherait des clubs. */
+  .zones .rangee{flex-wrap:wrap;overflow:visible;margin:0;padding:0}
 
   /* L'étiquette de catégorie prend sa propre ligne : intercalée dans le titre,
      elle le fait s'enrouler autour et casse la lecture. */

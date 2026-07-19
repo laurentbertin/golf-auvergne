@@ -4,35 +4,40 @@
     "nom": "Sporting Club de Vichy",
     "base": "https://www.golf-vichy.fr",
     "connecteur": "events-calendar",
-    "page": "https://www.golf-vichy.fr/calendrier-des-competitions/"
+    "page": "https://www.golf-vichy.fr/calendrier-des-competitions/",
+    "zone": "Allier"
   },
   {
     "id": "montpensier",
     "nom": "Vichy Forêt de Montpensier",
     "base": "https://www.golf-vichy-montpensier.com",
     "connecteur": "montpensier",
-    "page": "https://www.golf-vichy-montpensier.com/competitions/"
+    "page": "https://www.golf-vichy-montpensier.com/competitions/",
+    "zone": "Allier"
   },
   {
     "id": "val-dauzon",
     "nom": "Golf du Val d'Auzon",
     "base": "https://www.golfduvaldauzon.fr",
     "connecteur": "valdauzon",
-    "page": "https://www.golfduvaldauzon.fr/les-competitions/"
+    "page": "https://www.golfduvaldauzon.fr/les-competitions/",
+    "zone": "Puy-de-Dôme"
   },
   {
     "id": "riom",
     "nom": "Golf de Riom",
     "base": "https://www.golf-riom.fr",
     "connecteur": "calendrier-image",
-    "page": "https://www.golf-riom.fr/calendrier/"
+    "page": "https://www.golf-riom.fr/calendrier/",
+    "zone": "Puy-de-Dôme"
   },
   {
     "id": "volcans",
     "nom": "Golf des Volcans",
     "base": "https://www.golfdesvolcans.fr",
     "connecteur": "volcans",
-    "page": "https://www.golfdesvolcans.fr/les-competitions-au-golf-des-volcans/"
+    "page": "https://www.golfdesvolcans.fr/les-competitions-au-golf-des-volcans/",
+    "zone": "Puy-de-Dôme"
   },
   {
     "id": "royat",
@@ -43,13 +48,55 @@
     "pages": [
       "https://www.golfderoyatcharade.fr/competitions",
       "https://www.golfderoyatcharade.fr/competitions1"
-    ]
+    ],
+    "zone": "Puy-de-Dôme"
   },
   {
     "id": "mont-dore",
     "nom": "Golf du Mont-Dore",
     "base": "https://www.golfdumontdore.org",
     "connecteur": "calendrier-image",
-    "page": "https://www.golfdumontdore.org/competitions-2018"
+    "page": "https://www.golfdumontdore.org/competitions-2018",
+    "zone": "Puy-de-Dôme"
+  },
+  {
+    "id": "champlong",
+    "nom": "Domaine de Champlong",
+    "base": "https://www.domaine-de-champlong.com",
+    "connecteur": "champlong",
+    "page": "https://www.domaine-de-champlong.com/les-competitions.html",
+    "zone": "Loire"
+  },
+  {
+    "id": "haute-auvergne",
+    "nom": "Golf de Haute Auvergne",
+    "base": "https://www.golfdehauteauvergne.fr",
+    "connecteur": "calendrier-image",
+    "page": "https://www.golfdehauteauvergne.fr/calendrier-résultats",
+    "zone": "Cantal"
+  },
+  {
+    "id": "puy-en-velay",
+    "nom": "Golf du Puy-en-Velay",
+    "base": "https://www.golfdupuyenvelay.com",
+    "connecteur": "calendrier-image",
+    "page": "https://www.golfdupuyenvelay.com/competitions-golf-puy-en-velay/",
+    "zone": "Haute-Loire"
+  },
+  {
+    "id": "sainte-agathe",
+    "nom": "Golf de Sainte-Agathe",
+    "base": "http://www.golf-sainte-agathe.fr",
+    "connecteur": "calendrier-image",
+    "page": "http://www.golf-sainte-agathe.fr/",
+    "zone": "Allier"
+  },
+  {
+    "id": "etangs",
+    "nom": "Golf des Étangs",
+    "base": "https://golfdesetangs-savigneux.fr",
+    "connecteur": "calendrier-image",
+    "page": "https://golfdesetangs-savigneux.fr/calendrier/",
+    "zone": "Loire"
   }
 ]

@@ -29,6 +29,7 @@ const ENTITES = {
   // Ponctuation typographique : WordPress la produit en masse dans les titres.
   rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“",
   hellip: "…", ndash: "–", mdash: "—", laquo: "«", raquo: "»",
+  euro: "€", middot: "·", times: "×", ordm: "º", sup2: "²",
 };
 
 export function decode(str = "") {

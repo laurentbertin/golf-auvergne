@@ -1,0 +1,39 @@
+{
+  "_lisezmoi": [
+    "Le Golf de Haute Auvergne publie son calendrier en PDF ; son agenda Wix",
+    "affiche « pas d'événements pour le moment ». Transcription du PDF 2026.",
+    "",
+    "Non repris ici : le Grand Prix Sénior / Classic Mid-Am des 19-20 septembre,",
+    "déjà collecté automatiquement via la ligue AURA. L'inscrire deux fois",
+    "ferait apparaître la même épreuve en double sur la page."
+  ],
+  "image_source": "https://www.golfdehauteauvergne.fr/_files/ugd/b63440_349be3d6dbcf41269e5fcd9dced583ee.pdf",
+  "releve_le": "2026-07-19",
+  "annee": 2026,
+  "competitions": [
+    { "date": "25/07", "nom": "Atol & Allianz", "format": "Scramble à 2" },
+    { "date": "26/07", "nom": "GHA n°9", "format": "Classement" },
+    { "date": "08/08", "nom": "GHA n°10", "format": "Classement" },
+    { "date": "09/08", "nom": "Win'In Cup", "format": "Scramble à 2" },
+    { "date": "15/08", "nom": "Beachcomber", "format": "Green Some Matchplay" },
+    { "date": "16/08", "nom": "GHA n°11", "format": "Classement" },
+    { "date": "23/08", "nom": "GHA n°12", "format": "Classement" },
+    { "date": "29/08", "nom": "Golfy Day's", "format": "Shamble à 2" },
+    { "date": "30/08", "nom": "Finale Tour Auvergne Jeunes", "format": "Strokeford" },
+    { "date": "30/08", "nom": "GHA n°13", "format": "Classement" },
+    { "date": "05/09", "nom": "DGM Menuiseries", "format": "Scramble à 2" },
+    { "date": "06/09", "nom": "GHA n°14", "format": "Classement" },
+    { "date": "10/09", "nom": "Tour Auvergne Sénior D2", "format": "Équipe" },
+    { "date": "12/09", "nom": "Arvern Trophy", "format": "Équipe" },
+    { "date": "13/09", "nom": "Leclerc", "format": "Scramble à 2" },
+    { "date": "26/09", "nom": "Bibou Cup", "format": "Scramble à 2" },
+    { "date": "27/09", "nom": "GHA n°15", "format": "Classement" },
+    { "date": "03/10", "nom": "Groupama", "format": "Scramble à 2" },
+    { "date": "04/10", "nom": "Championnat du club", "format": null },
+    { "date": "06-07/10", "nom": "Tour Auvergne Sénior +65", "format": "Équipe" },
+    { "date": "10/10", "nom": "Tour Auvergne Dames", "format": "Équipe" },
+    { "date": "10/10", "nom": "Finale Tour Auvergne Mid-Am", "format": "Équipe" },
+    { "date": "18/10", "nom": "Championnat du Cantal par équipes", "format": "Équipe — à Vézac" },
+    { "date": "24/10", "nom": "Coupe du personnel", "format": "Formule fun" }
+  ]
+}

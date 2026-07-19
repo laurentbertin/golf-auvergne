@@ -15,6 +15,7 @@ import { fetchRoyat } from "./connectors/royat.mjs";
 import { fetchValdauzon } from "./connectors/valdauzon.mjs";
 import { fetchMontpensier } from "./connectors/montpensier.mjs";
 import { fetchCalendrierImage } from "./connectors/calendrierImage.mjs";
+import { fetchChamplong } from "./connectors/champlong.mjs";
 import { fetchLigueAura } from "./connectors/ligueAura.mjs";
 import { toRecord, merge, isoToday } from "./normalize.mjs";
 
@@ -25,6 +26,7 @@ const CONNECTEURS = {
   royat: fetchRoyat,
   valdauzon: fetchValdauzon,
   montpensier: fetchMontpensier,
+  champlong: fetchChamplong,
   "calendrier-image": fetchCalendrierImage,
 };
 

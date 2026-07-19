@@ -1,0 +1,27 @@
+{
+  "_lisezmoi": [
+    "Le Golf du Puy-en-Velay publie son calendrier sous forme d'image (PNG).",
+    "Transcription de l'affiche 2026, qui est une simple liste — donc fiable.",
+    "",
+    "Le club précise : compétitions de classement tous les dimanches hors jour",
+    "de compétition, départ entre 9h et 10h. Ces dimanches ne sont pas datés",
+    "sur l'affiche et ne peuvent donc pas figurer ici."
+  ],
+  "image_source": "https://www.golfdupuyenvelay.com/wp-content/uploads/2026/03/calendrier-competition-golf-1.pdf-2.png",
+  "releve_le": "2026-07-19",
+  "annee": 2026,
+  "competitions": [
+    { "date": "13/08", "nom": "Rendez-vous du Jeudi", "format": "Individuel" },
+    { "date": "23/08", "nom": "Compétition le Michelet", "format": "Individuel ou Scramble à 2" },
+    { "date": "30/08", "nom": "Profession Médicale", "format": "Individuel ou Scramble à 2" },
+    { "date": "10-11/09", "nom": "5e Pro-Am du Puy-en-Velay", "format": "Am/Am" },
+    { "date": "13/09", "nom": "AXA Brindel/Montel - Intersport", "format": "Individuel" },
+    { "date": "24/09", "nom": "Rendez-vous du Jeudi", "format": "Individuel" },
+    { "date": "27/09", "nom": "Cabinet Michel - Gimbert sol - Bonnet Assure finance", "format": "Individuel ou Scramble à 2" },
+    { "date": "04/10", "nom": "AS de trèfle paysage - Patrice Thivat conseille", "format": "Individuel ou Scramble à 2" },
+    { "date": "15/10", "nom": "Rendez-vous du Jeudi", "format": "Individuel" },
+    { "date": "18/10", "nom": "Coupe des Jardiniers", "format": "Individuel ou Scramble à 2" },
+    { "date": "05/11", "nom": "Rendez-vous du Jeudi", "format": "Individuel" },
+    { "date": "08/11", "nom": "Compétition de Clôture", "format": "Scramble à 2" }
+  ]
+}
