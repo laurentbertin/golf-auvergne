@@ -2,10 +2,19 @@
 // les compétitions VALIDÉES et À VENIR, filtrables par période et par golf.
 
 (function () {
+  // Délai minimum avant le départ, en jours. Les inscriptions ferment en amont :
+  // une compétition qui se joue aujourd'hui n'est plus une information utile.
+  //   1 = on masque le jour même     2 = on masque aussi la veille
+  const DELAI_JOURS = 1;
+
+  // On compare à la date de DÉBUT, pas de fin : une épreuve sur deux jours
+  // commencée hier est déjà close aux inscriptions, même si elle finit demain.
+  const PREMIER_JOUR = dateDans(DELAI_JOURS);
+
   // `type` n'existait pas avant l'ajout des épreuves fédérales : un
   // enregistrement collecté par une version antérieure est une coupe de club.
   const ALL = (window.COMPETITIONS || [])
-    .filter((c) => c.valide && c.date_fin >= isoToday())
+    .filter((c) => c.valide && c.date_debut >= PREMIER_JOUR)
     .map((c) => ({ ...c, type: c.type || "club" }));
 
   const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
@@ -38,14 +47,9 @@
   let periode = periodes[0];
 
   function construirePeriodes() {
-    const jours = (n) => {
-      const d = new Date();
-      d.setDate(d.getDate() + n);
-      return d.toISOString().slice(0, 10);
-    };
     const liste = [
-      { id: "30j", label: "30 jours", jusqua: jours(30) },
-      { id: "90j", label: "3 mois", jusqua: jours(90) },
+      { id: "30j", label: "30 jours", jusqua: dateDans(30) },
+      { id: "90j", label: "3 mois", jusqua: dateDans(90) },
       { id: "tout", label: "Tout", jusqua: "9999-12-31" },
     ];
     // Une période vide n'aide personne : on démarre sur la première qui a du contenu.
@@ -204,7 +208,7 @@
   }
 
   function esc(s){return String(s).replace(/[&<>"]/g,(m)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));}
-  function isoToday(){return new Date().toISOString().slice(0,10);}
+  function dateDans(n){const d=new Date();d.setDate(d.getDate()+n);return d.toISOString().slice(0,10);}
 
   if (!ALL.length) {
     elVide.hidden = false;
