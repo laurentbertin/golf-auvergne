@@ -3,6 +3,8 @@
   --line:#293630; --green:#3fa877; --green2:#5cc98f; --gold:#d8b35a; --accent:#7ee0a8;
   --entete:linear-gradient(160deg,#16241c,#0f1512);
   --puce-ink:#0f1512;
+  /* Épreuves fédérales : une teinte par catégorie. */
+  --gp:#e0b455; --sen:#6db3e8; --mid:#b493e6; --equ:#e88a6d;
 }
 
 /* Le téléphone est réglé en clair : on suit, plutôt que d'imposer le sombre. */
@@ -12,6 +14,7 @@
     --line:#dae4dd; --green:#1f7d52; --green2:#2e9c68; --gold:#9a6f16; --accent:#1f7d52;
     --entete:linear-gradient(160deg,#e8f2eb,#f7faf8);
     --puce-ink:#ffffff;
+    --gp:#9a6f16; --sen:#1c6ea8; --mid:#6b46b0; --equ:#b8471f;
   }
 }
 
@@ -46,7 +49,35 @@ main{padding:22px 0 60px}
   color:var(--puce-ink);font-weight:700}
 .chip:hover{border-color:var(--green)}
 
+.filtres-note{font-weight:500;text-transform:none;letter-spacing:0;opacity:.75}
+
+/* Une couleur par nature d'épreuve. Le rouge est réservé aux compétitions
+   d'équipe : ce sont les seules qui constituent une obligation. */
+.chip-grand-prix[aria-pressed="true"]{background:var(--gp);border-color:var(--gp);color:var(--puce-ink)}
+.chip-seniors[aria-pressed="true"]{background:var(--sen);border-color:var(--sen);color:var(--puce-ink)}
+.chip-mid-amateurs[aria-pressed="true"]{background:var(--mid);border-color:var(--mid);color:var(--puce-ink)}
+
+.case{display:flex;align-items:baseline;gap:8px;margin:10px 2px 0;cursor:pointer;
+  font-size:13px;color:var(--ink)}
+.case input{accent-color:var(--equ);width:15px;height:15px;cursor:pointer;flex:none}
+.case em{color:var(--muted);font-style:normal;font-size:12px}
+
 .compteur{color:var(--muted);font-size:13px;margin:0 2px 14px}
+
+/* Liseré coloré sur la carte : lisible d'un coup d'œil en faisant défiler,
+   sans alourdir la mise en page. */
+.comp-grand-prix{border-left:3px solid var(--gp)}
+.comp-seniors{border-left:3px solid var(--sen)}
+.comp-mid-amateurs{border-left:3px solid var(--mid)}
+.comp-equipes{border-left:3px solid var(--equ)}
+
+.type{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.04em;
+  text-transform:uppercase;padding:1px 7px;border-radius:999px;margin-right:8px;
+  vertical-align:middle;color:var(--puce-ink)}
+.type-grand-prix{background:var(--gp)}
+.type-seniors{background:var(--sen)}
+.type-mid-amateurs{background:var(--mid)}
+.type-equipes{background:var(--equ)}
 
 .mois{color:var(--gold);font-size:12px;letter-spacing:.12em;text-transform:uppercase;
   font-weight:700;margin:22px 2px 8px;border-bottom:1px solid var(--line);padding-bottom:6px}
@@ -88,6 +119,10 @@ footer .mini{font-size:12px;opacity:.7}
   .rangee{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
     padding-bottom:2px;margin:0 -18px;padding-left:18px;padding-right:18px}
   .rangee::-webkit-scrollbar{display:none}
+
+  /* L'étiquette de catégorie prend sa propre ligne : intercalée dans le titre,
+     elle le fait s'enrouler autour et casse la lecture. */
+  .type{display:block;width:fit-content;margin:0 0 4px}
 
   .comp{grid-template-columns:46px 1fr;grid-template-areas:"date infos" "cta cta";
     gap:12px;padding:11px 13px}

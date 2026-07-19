@@ -2,14 +2,28 @@
 // les compétitions VALIDÉES et À VENIR, filtrables par période et par golf.
 
 (function () {
-  const ALL = (window.COMPETITIONS || []).filter(
-    (c) => c.valide && c.date_fin >= isoToday()
-  );
+  // `type` n'existait pas avant l'ajout des épreuves fédérales : un
+  // enregistrement collecté par une version antérieure est une coupe de club.
+  const ALL = (window.COMPETITIONS || [])
+    .filter((c) => c.valide && c.date_fin >= isoToday())
+    .map((c) => ({ ...c, type: c.type || "club" }));
 
   const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   const MOIS_COURT = ["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
 
+  // Épreuves de la ligue : facultatives pour le joueur, donc masquées par défaut.
+  // On ne les impose pas dans une page dont le sujet reste les coupes de club.
+  const TYPES = [
+    { id: "grand-prix", label: "Grands Prix" },
+    { id: "seniors", label: "Trophées Seniors" },
+    { id: "mid-amateurs", label: "Classic Mid-Am" },
+  ];
+  const typesActifs = new Set();
+  let equipesVisibles = false;
+
   const elPeriodes = document.getElementById("periodes");
+  const elTypes = document.getElementById("types");
+  const elEquipes = document.getElementById("equipes");
   const elFiltres = document.getElementById("filtres");
   const elBascule = document.getElementById("bascule-golfs");
   const elListe = document.getElementById("liste");
@@ -54,9 +68,34 @@
     elPeriodes.appendChild(b);
   });
 
+  // ------------------------------------------------------- épreuves fédérales
+  TYPES.forEach((t) => {
+    const dispo = ALL.some((c) => c.type === t.id);
+    if (!dispo) return; // catégorie absente de la collecte : on n'affiche pas un filtre mort
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = `chip chip-${t.id}`;
+    b.textContent = t.label;
+    b.setAttribute("aria-pressed", "false");
+    b.onclick = () => {
+      if (typesActifs.has(t.id)) typesActifs.delete(t.id); else typesActifs.add(t.id);
+      b.setAttribute("aria-pressed", typesActifs.has(t.id) ? "true" : "false");
+      render();
+    };
+    elTypes.appendChild(b);
+  });
+
+  elEquipes.onchange = () => {
+    equipesVisibles = elEquipes.checked;
+    render();
+  };
+
   // ------------------------------------------------------------------ golfs
-  const golfs = [...new Map(ALL.map((c) => [c.golf_id, c.golf_nom])).entries()]
-    .sort((a, b) => a[1].localeCompare(b[1]));
+  // Seuls les clubs suivis alimentent le filtre « Où » : le lieu d'un grand prix
+  // change chaque année et n'a pas à encombrer cette liste.
+  const golfs = [...new Map(
+    ALL.filter((c) => c.type === "club").map((c) => [c.golf_id, c.golf_nom])
+  ).entries()].sort((a, b) => a[1].localeCompare(b[1]));
   const actifs = new Set(golfs.map(([id]) => id)); // tout coché au départ
   const boutonsGolf = new Map();
 
@@ -93,9 +132,18 @@
   };
 
   // ------------------------------------------------------------------ rendu
+  // Trois régimes distincts : les coupes de club se filtrent par golf, les
+  // épreuves facultatives par catégorie, les compétitions d'équipe par leur
+  // seule case à cocher.
+  function visible(c) {
+    if (c.type === "club") return actifs.has(c.golf_id);
+    if (c.type === "equipes") return equipesVisibles;
+    return typesActifs.has(c.type);
+  }
+
   function render() {
     const list = ALL
-      .filter((c) => actifs.has(c.golf_id) && c.date_debut <= periode.jusqua)
+      .filter((c) => visible(c) && c.date_debut <= periode.jusqua)
       .sort((a, b) => (a.date_debut < b.date_debut ? -1 : 1));
 
     elListe.innerHTML = "";
@@ -119,24 +167,36 @@
     }
   }
 
+  const LIBELLE_TYPE = {
+    "grand-prix": "Grand Prix",
+    "seniors": "Trophée Seniors",
+    "mid-amateurs": "Classic Mid-Am",
+    "equipes": "Équipe",
+  };
+
   function carte(c, d) {
     const el = document.createElement("article");
-    el.className = "comp";
+    el.className = `comp comp-${c.type}`;
     const plage = c.date_fin && c.date_fin !== c.date_debut
       ? `<div class="plage">→ ${new Date(c.date_fin + "T12:00:00").getDate()}</div>` : "";
-    const meta = [c.format, c.depart, c.trous ? `${c.trous} trous` : null]
+    const meta = [c.format, c.depart, c.trous ? `${c.trous} trous` : null, c.ville]
       .filter(Boolean).join(" · ");
     const badge = c.sponsor ? `<span class="badge">${esc(c.sponsor)}</span>` : "";
+    // La catégorie est nommée en toutes lettres : la couleur seule ne suffit pas
+    // à distinguer cinq natures d'épreuve, et exclurait les daltoniens.
+    const etiquette = c.type !== "club"
+      ? `<span class="type type-${c.type}">${esc(LIBELLE_TYPE[c.type] || c.type)}</span>` : "";
     // Le lien mène à la page du club, qui n'est pas toujours un formulaire
     // d'inscription : le libeller « S'inscrire » promettrait plus qu'il ne tient.
+    const libelleLien = c.type === "club" ? "Voir au club ↗" : "Fiche ligue ↗";
     const cta = c.url_inscription
-      ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">Voir au club ↗</a>`
+      ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">${libelleLien}</a>`
       : "";
     el.innerHTML = `
       <div class="date"><div class="j">${d.getDate()}</div>
         <div class="m">${MOIS_COURT[d.getMonth()]}</div>${plage}</div>
       <div class="infos">
-        <div class="nom">${esc(c.nom)}${badge}</div>
+        <div class="nom">${etiquette}${esc(c.nom)}${badge}</div>
         <div class="meta"><span class="golf">${esc(c.golf_nom)}</span>${meta ? " · " + esc(meta) : ""}</div>
       </div>
       <div class="cta">${cta}</div>`;

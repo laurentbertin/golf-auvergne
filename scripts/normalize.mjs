@@ -114,10 +114,16 @@ export function detectSponsor(nom = "") {
 export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
   const dateDebut = toISO(raw.date_debut);
   const dateFin = toISO(raw.date_fin) || dateDebut;
+  // Les épreuves fédérales portent leur propre lieu et leur catégorie : elles
+  // ne se rattachent pas à un club suivi, contrairement aux coupes de club.
+  const golfId = raw.golf_id ?? golf.id;
+  const golfNom = raw.golf_nom ?? golf.nom;
   return {
-    id: makeId(golf.id, dateDebut, raw.nom),
-    golf_id: golf.id,
-    golf_nom: golf.nom,
+    id: makeId(golfId, dateDebut, raw.nom),
+    golf_id: golfId,
+    golf_nom: golfNom,
+    type: raw.type ?? "club",
+    ville: raw.ville ?? null,
     nom: (raw.nom || "").trim(),
     date_debut: dateDebut,
     date_fin: dateFin,

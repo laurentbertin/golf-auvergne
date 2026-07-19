@@ -15,6 +15,7 @@ import { fetchRoyat } from "./connectors/royat.mjs";
 import { fetchValdauzon } from "./connectors/valdauzon.mjs";
 import { fetchMontpensier } from "./connectors/montpensier.mjs";
 import { fetchRiom } from "./connectors/riom.mjs";
+import { fetchLigueAura } from "./connectors/ligueAura.mjs";
 import { toRecord, merge, isoToday } from "./normalize.mjs";
 
 // Chaque club a son propre outil de publication : un connecteur par site.
@@ -37,6 +38,7 @@ async function loadHtmlLlm() {
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const F_GOLFS = join(ROOT, "data", "golfs.json");
+const F_LIGUE = join(ROOT, "data", "ligue.json");
 const F_COMPS = join(ROOT, "data", "competitions.json");
 const F_SITEDATA = join(ROOT, "site", "data.js");
 
@@ -91,6 +93,25 @@ async function main() {
       console.log(`${recs.length} compétition(s) [${type}]`);
     } catch (e) {
       console.log(`ERREUR — ${e.message}`);
+    }
+  }
+
+  // La ligue est une source transverse : ses épreuves ne dépendent d'aucun des
+  // clubs suivis, on la collecte donc à part (sauf filtre explicite en argument).
+  if (!filtre.length || filtre.includes("ligue")) {
+    process.stdout.write("• Ligue Auvergne-Rhône-Alpes …\n");
+    try {
+      const source = await readJson(F_LIGUE, null);
+      if (!source) throw new Error("data/ligue.json introuvable");
+      const raws = await fetchLigueAura(source);
+      const recs = raws
+        .map((r) => toRecord(r, { id: "ligue", nom: "Ligue AURA" }, "ligue-aura", since))
+        .filter((r) => r.date_debut && r.date_fin >= since)
+        .map((r) => ({ ...r, valide: true }));
+      nouveaux.push(...recs);
+      console.log(`  → ${recs.length} épreuve(s) fédérale(s) à venir`);
+    } catch (e) {
+      console.log(`  ERREUR — ${e.message}`);
     }
   }
 

@@ -1,0 +1,37 @@
+{
+  "_lisezmoi": [
+    "Épreuves fédérales de la Ligue Auvergne-Rhône-Alpes.",
+    "Elles ne relèvent pas d'un club en particulier : on les collecte par catégorie,",
+    "sur toute la ligue, et c'est le visiteur qui choisit de les afficher ou non.",
+    "",
+    "Deux natures différentes, d'où deux traitements sur la page :",
+    "  - grand-prix / seniors / mid-amateurs : facultatives, on s'y inscrit si on veut ;",
+    "  - equipes : obligatoires dès lors qu'on joue en équipe.",
+    "",
+    "Le site de la ligue publie ces pages en HTML balisé (schema.org) : dates ISO,",
+    "intitulé, lieu et lien y sont directement lisibles."
+  ],
+  "base": "https://www.liguegolfaura.com",
+  "categories": [
+    {
+      "type": "grand-prix",
+      "libelle": "Grand Prix",
+      "page": "https://www.liguegolfaura.com/competitions/grand-prix"
+    },
+    {
+      "type": "seniors",
+      "libelle": "Trophée Seniors",
+      "page": "https://www.liguegolfaura.com/competitions/seniors"
+    },
+    {
+      "type": "mid-amateurs",
+      "libelle": "Classic Mid-Am",
+      "page": "https://www.liguegolfaura.com/competitions/mid-amateurs"
+    },
+    {
+      "type": "equipes",
+      "libelle": "Compétition d'équipe",
+      "page": "https://www.liguegolfaura.com/competitions/equipes"
+    }
+  ]
+}
