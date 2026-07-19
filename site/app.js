@@ -270,9 +270,16 @@
       ? `<span class="type type-${c.type}">${esc(LIBELLE_TYPE[c.type] || c.type)}</span>` : "";
     // Le lien mène à la page du club, qui n'est pas toujours un formulaire
     // d'inscription : le libeller « S'inscrire » promettrait plus qu'il ne tient.
-    const libelleLien = c.type === "club" ? "Voir le site ↗" : "Fiche ligue ↗";
+    const libelleLien = c.type === "club" ? "Voir le site" : "Fiche ligue";
+    // Sur téléphone, le libellé cède la place à un chevron et c'est toute la
+    // carte qui devient cliquable (voir .cta a::after) : sur près de 200 lignes,
+    // une ligne de lien par carte coûtait un écran et demi de défilement.
+    // Le lien reste un vrai lien, donc utilisable au clavier et par un lecteur
+    // d'écran, où seul le libellé est annoncé.
     const cta = c.url_inscription
-      ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">${libelleLien}</a>`
+      ? `<a href="${esc(c.url_inscription)}" target="_blank" rel="noopener">` +
+        `<span class="cta-texte">${libelleLien} ↗</span>` +
+        `<span class="chevron" aria-hidden="true">›</span></a>`
       : "";
     el.innerHTML = `
       <div class="date"><div class="j">${d.getDate()}</div>

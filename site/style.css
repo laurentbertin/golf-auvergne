@@ -105,7 +105,7 @@ main{padding:22px 0 60px}
 .dept{color:var(--muted);font-size:12px;margin-left:6px;
   border:1px solid var(--line);border-radius:999px;padding:0 7px;white-space:nowrap}
 
-.comp{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;
+.comp{position:relative;display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;
   background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin:9px 0}
 .date{text-align:center;line-height:1.1}
 .date .j{font-size:22px;font-weight:800}
@@ -122,6 +122,7 @@ main{padding:22px 0 60px}
 .cta{white-space:nowrap}
 .cta a{color:var(--green2);text-decoration:none;font-weight:600;font-size:13px}
 .cta a:hover{color:var(--ink);text-decoration:underline}
+.chevron{display:none}
 
 .vide{color:var(--muted);text-align:center;padding:40px 0}
 footer{border-top:1px solid var(--line);padding:22px 0 40px}
@@ -151,8 +152,20 @@ footer .mini{font-size:12px;opacity:.7}
      elle le fait s'enrouler autour et casse la lecture. */
   .type{display:block;width:fit-content;margin:0 0 4px}
 
-  .comp{grid-template-columns:46px 1fr;grid-template-areas:"date infos" "cta cta";
+  /* Le lien passe de sa propre ligne à un chevron en bout de rangée : la carte
+     perd 31 px, soit un écran et demi sur la vue par défaut. */
+  .comp{grid-template-columns:46px 1fr auto;grid-template-areas:"date infos cta";
     gap:12px;padding:11px 13px}
   .date{grid-area:date}.infos{grid-area:infos}
-  .cta{grid-area:cta;text-align:left;margin-top:6px}
+  .cta{grid-area:cta;margin:0;align-self:center}
+
+  .cta-texte{position:absolute;width:1px;height:1px;overflow:hidden;
+    clip-path:inset(50%);white-space:nowrap}      /* lu par les lecteurs d'écran */
+  .chevron{display:block;font-size:26px;line-height:1;color:var(--muted);
+    padding:0 2px 3px}
+
+  /* Toute la carte devient la zone de clic, le lien restant un vrai lien. */
+  .cta a::after{content:"";position:absolute;inset:0;border-radius:13px}
+  .cta a:hover{text-decoration:none}
+  .comp:has(.cta a:active){background:var(--panel2)}
 }
