@@ -1,0 +1,44 @@
+[
+  {
+    "id": "vichy-sc",
+    "nom": "Sporting Club de Vichy",
+    "base": "https://www.golf-vichy.fr",
+    "connecteur": "events-calendar",
+    "page": "https://www.golf-vichy.fr/calendrier-des-competitions/"
+  },
+  {
+    "id": "montpensier",
+    "nom": "Vichy Forêt de Montpensier",
+    "base": "https://www.golf-vichy-montpensier.com",
+    "connecteur": "auto",
+    "page": "https://www.golf-vichy-montpensier.com/competitions/"
+  },
+  {
+    "id": "val-dauzon",
+    "nom": "Golf du Val d'Auzon",
+    "base": "https://www.golfduvaldauzon.fr",
+    "connecteur": "auto",
+    "page": "https://www.golfduvaldauzon.fr/les-competitions/"
+  },
+  {
+    "id": "riom",
+    "nom": "Golf de Riom",
+    "base": "https://www.golf-riom.fr",
+    "connecteur": "auto",
+    "page": "https://www.golf-riom.fr/calendrier/"
+  },
+  {
+    "id": "volcans",
+    "nom": "Golf des Volcans",
+    "base": "https://www.golfdesvolcans.fr",
+    "connecteur": "html-llm",
+    "page": "https://www.golfdesvolcans.fr/les-competitions-au-golf-des-volcans/"
+  },
+  {
+    "id": "royat",
+    "nom": "Golf de Royat-Charade",
+    "base": "https://www.golfderoyatcharade.fr",
+    "connecteur": "html-llm",
+    "page": "https://www.golfderoyatcharade.fr/competitions"
+  }
+]

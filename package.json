@@ -1,0 +1,16 @@
+{
+  "name": "golf-auvergne",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agrégateur des compétitions de golf du bassin clermontois (MVP)",
+  "scripts": {
+    "seed": "node scripts/seed-vichy.mjs",
+    "collect": "node scripts/collect.mjs",
+    "validate": "node scripts/validate.mjs",
+    "serve": "node --version >/dev/null && npx --yes serve site"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1"
+  }
+}

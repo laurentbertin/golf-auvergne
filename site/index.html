@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golf Auvergne — Compétitions du bassin clermontois</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>⛳ Compétitions de golf <span>· bassin clermontois</span></h1>
+    <p class="tagline">Toutes les compétitions des golfs près de Clermont, sur une page. Scrambles, trophées, coupes sponsorisées — tout ce qui n'est pas sur la FFG.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="filtres" aria-label="Filtres par golf"></section>
+  <div id="compteur" class="compteur"></div>
+  <section id="liste"></section>
+  <p id="vide" class="vide" hidden>Aucune compétition à venir pour cette sélection.</p>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Données mises à jour périodiquement depuis les sites des clubs. Vérifiez toujours l'horaire exact auprès du golf avant de vous déplacer.</p>
+    <p class="mini">Projet pilote — Sporting Vichy · Montpensier · Val d'Auzon · Riom · Volcans · Royat-Charade</p>
+  </div>
+</footer>
+
+<!-- Données injectées par scripts/collect.mjs (ou seed-vichy.mjs) -->
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
