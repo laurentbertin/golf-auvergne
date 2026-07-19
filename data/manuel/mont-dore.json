@@ -1,0 +1,36 @@
+{
+  "_lisezmoi": [
+    "Le Golf du Mont-Dore publie son calendrier sous forme d'affiche (image),",
+    "sur une page qui se construit dans le navigateur : ni le texte ni l'image",
+    "n'apparaissent dans le HTML servi. La surveillance automatique est donc",
+    "impossible ici — c'est la seule source du projet dans ce cas.",
+    "",
+    "À vérifier une fois par saison, ou quand le club annonce un nouveau calendrier.",
+    "Page : https://www.golfdumontdore.org/competitions-2018"
+  ],
+  "image_source": "https://le-cdn.website-editor.net/s/c2b01b9bd5c74c959292e70fa719ebf4/dms3rep/multi/opt/35D876E8-6BAC-436B-8FEF-D6948F5AFF00-1920w.PNG",
+  "releve_le": "2026-07-19",
+  "annee": 2026,
+  "competitions": [
+    { "date": "19/04", "nom": "Coupe d'ouverture de l'Association Sportive", "format": "Scramble à 2" },
+    { "date": "26/04", "nom": "Give and Take", "format": "Simple Stableford" },
+    { "date": "03/05", "nom": "Coupe de classement", "format": "Simple Stableford" },
+    { "date": "17/05", "nom": "Coupe de classement", "format": "Simple Stableford" },
+    { "date": "31/05", "nom": "Coupe de classement", "format": "Simple Stableford" },
+    { "date": "07/06", "nom": "Championnat du club (double)", "format": "Scramble à 2" },
+    { "date": "14/06", "nom": "Monsieur Golf Tour 2026", "format": "Scramble à 2" },
+    { "date": "20/06", "nom": "Coupe du Rotary Club", "format": "Compétition caritative" },
+    { "date": "21-22/06", "nom": "9e Pro-Am du Mont-Dore", "format": null },
+    { "date": "03/07", "nom": "Anciens & Amis de la Casamance", "format": "Scramble à 2" },
+    { "date": "11/07", "nom": "Trophée Auvergnat Cola", "format": "Scramble à 2" },
+    { "date": "19/07", "nom": "Give and Take", "format": "Simple Stableford" },
+    { "date": "26/07", "nom": "9e Trophée Laurent Perrier", "format": "Scramble à 2" },
+    { "date": "02/08", "nom": "Coupe Lacoste", "format": "Simple Stableford" },
+    { "date": "09/08", "nom": "Coupe de classement", "format": "Simple Stableford" },
+    { "date": "15/08", "nom": "Coupe de la Ville du Mont-Dore", "format": "Scramble à 2" },
+    { "date": "16/08", "nom": "Coupe Monsieur Golf Tour 2026", "format": "Scramble à 2" },
+    { "date": "06/09", "nom": "Coupe du Borsalino", "format": "Simple Stableford" },
+    { "date": "19/09", "nom": "Les Greens de l'Espoir", "format": "Simple Stableford" },
+    { "date": "20/09", "nom": "Coupe de l'Association Sportive", "format": "Simple Stableford" }
+  ]
+}

@@ -24,7 +24,7 @@
     "id": "riom",
     "nom": "Golf de Riom",
     "base": "https://www.golf-riom.fr",
-    "connecteur": "riom",
+    "connecteur": "calendrier-image",
     "page": "https://www.golf-riom.fr/calendrier/"
   },
   {
@@ -44,5 +44,12 @@
       "https://www.golfderoyatcharade.fr/competitions",
       "https://www.golfderoyatcharade.fr/competitions1"
     ]
+  },
+  {
+    "id": "mont-dore",
+    "nom": "Golf du Mont-Dore",
+    "base": "https://www.golfdumontdore.org",
+    "connecteur": "calendrier-image",
+    "page": "https://www.golfdumontdore.org/competitions-2018"
   }
 ]

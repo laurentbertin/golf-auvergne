@@ -14,7 +14,7 @@ import { fetchVolcans } from "./connectors/volcans.mjs";
 import { fetchRoyat } from "./connectors/royat.mjs";
 import { fetchValdauzon } from "./connectors/valdauzon.mjs";
 import { fetchMontpensier } from "./connectors/montpensier.mjs";
-import { fetchRiom } from "./connectors/riom.mjs";
+import { fetchCalendrierImage } from "./connectors/calendrierImage.mjs";
 import { fetchLigueAura } from "./connectors/ligueAura.mjs";
 import { toRecord, merge, isoToday } from "./normalize.mjs";
 
@@ -25,7 +25,7 @@ const CONNECTEURS = {
   royat: fetchRoyat,
   valdauzon: fetchValdauzon,
   montpensier: fetchMontpensier,
-  riom: fetchRiom,
+  "calendrier-image": fetchCalendrierImage,
 };
 
 // Import paresseux : le connecteur LLM (et sa dépendance @anthropic-ai/sdk) n'est
