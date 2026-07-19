@@ -6,6 +6,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "CONDEISSIAT",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix - La Bresse",
     "date_debut": "2026-07-17",
     "date_fin": "2026-07-19",
@@ -26,6 +30,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "VILETTE D'ANTHON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - GCL",
     "date_debut": "2026-07-18",
     "date_fin": "2026-07-19",
@@ -46,6 +54,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Coupe du restaurateur",
     "date_debut": "2026-07-19",
     "date_fin": "2026-07-19",
@@ -66,6 +78,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "SUNSHINE SWING 19.07",
     "date_debut": "2026-07-19",
     "date_fin": "2026-07-19",
@@ -86,6 +102,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Pitch & Putt",
     "date_debut": "2026-07-19",
     "date_fin": "2026-07-19",
@@ -106,6 +126,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Give and Take",
     "date_debut": "2026-07-19",
     "date_fin": "2026-07-19",
@@ -126,6 +150,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "PUTT PUTT CHAMPIONSHIP 21.07",
     "date_debut": "2026-07-21",
     "date_fin": "2026-07-21",
@@ -146,6 +174,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "scramble"
+    ],
+    "moment": "journee",
     "nom": "Seniors scramble",
     "date_debut": "2026-07-21",
     "date_fin": "2026-07-21",
@@ -166,6 +198,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "TROPHEE DU GALOP",
     "date_debut": "2026-07-22",
     "date_fin": "2026-07-22",
@@ -186,6 +222,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "soiree",
     "nom": "After Work",
     "date_debut": "2026-07-22",
     "date_fin": "2026-07-24",
@@ -206,6 +246,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-07-23",
     "date_fin": "2026-07-23",
@@ -226,6 +270,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Jeudi de Champlong",
     "date_debut": "2026-07-24",
     "date_fin": "2026-07-24",
@@ -246,6 +294,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "ALBON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Albon",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-26",
@@ -266,6 +318,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "ALBON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Albon",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-26",
@@ -286,6 +342,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "ECHENEVEX",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Maison Blanche",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-26",
@@ -306,6 +366,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Atol & Allianz",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-25",
@@ -326,6 +390,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "COUPE J-E DE BOISSY",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -346,6 +414,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe du Jambon 26.07",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -366,6 +438,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "9e Trophée Laurent Perrier",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -386,6 +462,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°9",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -406,6 +486,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Srixon",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -426,6 +510,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "A S G R A 4 balles",
     "date_debut": "2026-07-30",
     "date_fin": "2026-07-30",
@@ -446,6 +534,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "soiree",
     "nom": "Soirée Golf",
     "date_debut": "2026-08-01",
     "date_fin": "2026-08-02",
@@ -466,6 +558,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "SUNSHINE SWING 02.08",
     "date_debut": "2026-08-02",
     "date_fin": "2026-08-02",
@@ -486,6 +582,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe Lacoste",
     "date_debut": "2026-08-02",
     "date_fin": "2026-08-02",
@@ -506,6 +606,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Ynov’IT",
     "date_debut": "2026-08-03",
     "date_fin": "2026-08-03",
@@ -526,6 +630,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Compétition de classement",
     "date_debut": "2026-08-03",
     "date_fin": "2026-08-03",
@@ -546,6 +654,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "La Montagne",
     "date_debut": "2026-08-04",
     "date_fin": "2026-08-04",
@@ -566,6 +678,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "PUTT PUTT CHAMPIONSHIP 04.08",
     "date_debut": "2026-08-04",
     "date_fin": "2026-08-04",
@@ -586,6 +702,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Seniors stableford",
     "date_debut": "2026-08-04",
     "date_fin": "2026-08-04",
@@ -606,6 +726,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Partouche",
     "date_debut": "2026-08-05",
     "date_fin": "2026-08-05",
@@ -626,6 +750,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Home Box",
     "date_debut": "2026-08-07",
     "date_fin": "2026-08-07",
@@ -646,6 +774,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Thevenet/Lagarde",
     "date_debut": "2026-08-08",
     "date_fin": "2026-08-09",
@@ -666,6 +798,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "CROTTET",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - La Commanderie",
     "date_debut": "2026-08-08",
     "date_fin": "2026-08-09",
@@ -686,6 +822,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°10",
     "date_debut": "2026-08-08",
     "date_fin": "2026-08-08",
@@ -706,6 +846,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "SUNSHINE SWING 09.08",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -726,6 +870,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de classement",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -746,6 +894,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de classement",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -766,6 +918,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Win'In Cup",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -786,6 +942,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Ville de Bellerive",
     "date_debut": "2026-08-10",
     "date_fin": "2026-08-10",
@@ -806,6 +966,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition 9 trous",
     "date_debut": "2026-08-10",
     "date_fin": "2026-08-10",
@@ -826,6 +990,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Seguin",
     "date_debut": "2026-08-12",
     "date_fin": "2026-08-12",
@@ -846,6 +1014,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Thelem Assurance",
     "date_debut": "2026-08-13",
     "date_fin": "2026-08-13",
@@ -866,6 +1038,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-08-13",
     "date_fin": "2026-08-13",
@@ -886,6 +1062,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Ville de Vichy",
     "date_debut": "2026-08-14",
     "date_fin": "2026-08-14",
@@ -906,6 +1086,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "Auvergne Marée",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -926,6 +1110,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Coupe de la Ville du Mont-Dore",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -946,6 +1134,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "Beachcomber",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -966,6 +1158,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Srixon",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -986,6 +1182,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "SUNSHINE SWING 16.08",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1006,6 +1206,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Coupe Monsieur Golf Tour 2026",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1026,6 +1230,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de classement",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1046,6 +1254,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°11",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1066,6 +1278,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "PUTT PUTT CHAMPIONSHIP 18.08",
     "date_debut": "2026-08-18",
     "date_fin": "2026-08-18",
@@ -1086,6 +1302,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix Vichy Communauté 2026",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-23",
@@ -1106,6 +1326,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "BELLERIVE SUR ALLIER",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix - Vichy",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-23",
@@ -1126,6 +1350,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "CHARPEY",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Valence St Didier",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-23",
@@ -1146,6 +1374,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Jeudi de Champlong",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-21",
@@ -1166,6 +1398,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "BOURG SAINT MAURICE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Les Arcs",
     "date_debut": "2026-08-22",
     "date_fin": "2026-08-23",
@@ -1186,6 +1422,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "BOURG SAINT MAURICE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Les Arcs",
     "date_debut": "2026-08-22",
     "date_fin": "2026-08-23",
@@ -1206,6 +1446,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition conviviale & repas",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1226,6 +1470,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "SUNSHINE SWING 23.08",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1246,6 +1494,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Ringer Score By Allianz",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1266,6 +1518,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de classement",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1286,6 +1542,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°12",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1306,6 +1566,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Compétition le Michelet",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1326,6 +1591,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Srixon",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1346,6 +1615,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition 9 trous",
     "date_debut": "2026-08-24",
     "date_fin": "2026-08-24",
@@ -1366,6 +1639,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "PUTT PUTT CHAMPIONSHIP 25.08",
     "date_debut": "2026-08-25",
     "date_fin": "2026-08-25",
@@ -1386,6 +1663,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "INTERCLUB CONTRE LE BEAUJOLAIS 27.08",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-27",
@@ -1406,6 +1688,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "CHARA'DAYS Jour 1 - Coupe Decathlon",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-27",
@@ -1426,6 +1712,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "LE CHAMBON SUR LIGNON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Chambon",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-28",
@@ -1446,6 +1736,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "Am-Am",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-27",
@@ -1466,6 +1760,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "CHARA'DAYS Jour 2 - Coupe du Crédit Mutuel",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-28",
@@ -1486,6 +1784,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "CRAINTILLEUX",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix de la Loire",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-30",
@@ -1506,6 +1808,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Pitch & Putt compétition sur le parcours Compact",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-28",
@@ -1526,6 +1832,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix de la Loire",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-30",
@@ -1546,6 +1856,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Fête du Club",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-30",
@@ -1566,6 +1880,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "CHARA'DAYS Jour 3 - journée Pitch & Putt",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-29",
@@ -1586,6 +1904,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "MEGEVE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Mont d'Arbois",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-30",
@@ -1606,6 +1928,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "CROTTET",
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Qualif. Promotion Seniors Messieurs",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-30",
@@ -1626,6 +1952,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "Golfy Day's",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-29",
@@ -1646,6 +1976,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "COTÉ PARTICULIERS 30.08",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -1666,6 +2000,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "CHARA'DAYS Jour 4 - Coupe du casino de Royat",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -1686,6 +2024,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de classement",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -1706,6 +2048,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel",
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Finale Tour Auvergne Jeunes",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -1726,6 +2073,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°13",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -1746,6 +2097,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Profession Médicale",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -1766,6 +2122,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "TGV Bords de Loire",
     "date_debut": "2026-09-01",
     "date_fin": "2026-09-01",
@@ -1786,6 +2146,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "VILETTE D'ANTHON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - GCL",
     "date_debut": "2026-09-02",
     "date_fin": "2026-09-03",
@@ -1806,6 +2170,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Inter club Sénior Auvergne Pitch&Putt",
     "date_debut": "2026-09-03",
     "date_fin": "2026-09-03",
@@ -1826,6 +2194,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-09-03",
     "date_fin": "2026-09-03",
@@ -1846,6 +2218,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Championnat Seniors 3",
     "date_debut": "2026-09-03",
     "date_fin": "2026-09-03",
@@ -1866,6 +2242,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "CPME",
     "date_debut": "2026-09-04",
     "date_fin": "2026-09-04",
@@ -1886,6 +2266,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "COMPETITION FONTANON",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -1906,6 +2290,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "CHPT DU CLUB 05 & 06.09",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -1926,6 +2314,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Mes premiers parcours",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -1946,6 +2338,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "VILLARS LES DOMBES",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix - Le Clou",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-06",
@@ -1966,6 +2362,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "AIX LES BAINS",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Aix les Bains",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-06",
@@ -1986,6 +2386,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "AIX LES BAINS",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Aix les Bains",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-06",
@@ -2006,6 +2410,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "DGM Menuiseries",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -2026,6 +2434,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition du Restaurant Au Fil du Green",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -2046,6 +2458,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de la ville de Royat et des commerçants",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2066,6 +2482,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe du Borsalino",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2086,6 +2506,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°14",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2106,6 +2530,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition de rentrée",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2126,6 +2554,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition 9 trous",
     "date_debut": "2026-09-07",
     "date_fin": "2026-09-07",
@@ -2146,6 +2578,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "ECHENEVEX",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Maison Blanche",
     "date_debut": "2026-09-08",
     "date_fin": "2026-09-09",
@@ -2166,6 +2602,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "GNTS",
     "date_debut": "2026-09-08",
     "date_fin": "2026-09-08",
@@ -2186,6 +2626,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-10",
@@ -2206,6 +2650,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Tour Auvergne Sénior D2",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-10",
@@ -2226,6 +2674,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "5e Pro-Am du Puy-en-Velay",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-11",
@@ -2246,6 +2698,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Journée de l'amitié",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-10",
@@ -2266,6 +2722,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GRAND PRIX 11, 12 & 13.09",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-11",
@@ -2286,6 +2746,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "ORCINES",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix - Les Volcans",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-13",
@@ -2306,6 +2770,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "GE ECM",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-11",
@@ -2326,6 +2794,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Vert for ever",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-13",
@@ -2346,6 +2818,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Championnat du club",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-13",
@@ -2366,6 +2842,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "La compet Miss Tee 2026",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-12",
@@ -2386,6 +2866,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "CLANSAYES",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Golfs 9 trous",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-13",
@@ -2406,6 +2890,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Arvern Trophy",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-12",
@@ -2426,6 +2914,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Ringer Score By Allianz",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -2446,6 +2938,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Leclerc",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -2466,6 +2962,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "AXA Brindel/Montel - Intersport",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -2486,6 +2986,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Iguane",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -2506,6 +3010,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Sponsor ASGS",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -2526,6 +3034,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "PUTT PUTT CHAMPIONSHIP 15.09",
     "date_debut": "2026-09-15",
     "date_fin": "2026-09-15",
@@ -2546,6 +3058,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "scramble"
+    ],
+    "moment": "journee",
     "nom": "Seniors Scramble",
     "date_debut": "2026-09-15",
     "date_fin": "2026-09-15",
@@ -2566,6 +3082,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "MEGEVE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Mont d'Arbois",
     "date_debut": "2026-09-16",
     "date_fin": "2026-09-17",
@@ -2586,6 +3106,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "TGV",
     "date_debut": "2026-09-17",
     "date_fin": "2026-09-17",
@@ -2606,6 +3130,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Interclub St Clair ​ au Forez",
     "date_debut": "2026-09-17",
     "date_fin": "2026-09-17",
@@ -2626,6 +3154,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "FUVEAU",
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Promotion Seniors Messieurs",
     "date_debut": "2026-09-18",
     "date_fin": "2026-09-20",
@@ -2646,6 +3178,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "DS automobiles",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -2666,6 +3202,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "FINALE LIPP DE FRANCE Pitch&Putt",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -2686,6 +3226,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble"
+    ],
+    "moment": "journee",
     "nom": "HANDIGOLF 19.09",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -2706,6 +3250,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "ALBON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix - Albon",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -2726,6 +3274,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "SANSAC DE MARMIESSE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Haute Auvergne",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -2746,6 +3298,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "TALLOIRES MONTMIN",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Lac d'Annecy",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -2766,6 +3322,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "SANSAC DE MARMIESSE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Haute Auvergne",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -2786,6 +3346,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "TALLOIRES MONTMIN",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Lac d'Annecy",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -2806,6 +3370,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Greens de l'Espoir",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -2826,6 +3394,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée REVES",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -2846,6 +3418,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "ROTARY CLUB CHAMALIERES 20.09",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -2866,6 +3442,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Coupe au profit de la ligue contre le cancer",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -2886,6 +3466,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe de l'Association Sportive",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -2906,6 +3490,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "ORPI — réciprocité Nassigny",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -2926,6 +3514,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Guy Hoquet",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -2946,6 +3538,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Srixon",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -2966,6 +3562,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-09-24",
     "date_fin": "2026-09-24",
@@ -2986,6 +3586,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-09-24",
     "date_fin": "2026-09-24",
@@ -3006,6 +3610,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "ASGRA",
     "date_debut": "2026-09-24",
     "date_fin": "2026-09-24",
@@ -3026,6 +3634,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "MONTHIEUX",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix - Gouverneur",
     "date_debut": "2026-09-25",
     "date_fin": "2026-09-27",
@@ -3046,6 +3658,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "NERIS LES BAINS",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Sainte Agathe",
     "date_debut": "2026-09-26",
     "date_fin": "2026-09-27",
@@ -3066,6 +3682,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "NERIS LES BAINS",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Sainte Agathe",
     "date_debut": "2026-09-26",
     "date_fin": "2026-09-27",
@@ -3086,6 +3706,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Bibou Cup",
     "date_debut": "2026-09-26",
     "date_fin": "2026-09-26",
@@ -3106,6 +3730,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Ringer Score By Allianz",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3126,6 +3754,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "GHA n°15",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3146,6 +3778,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Cabinet Michel - Gimbert sol - Bonnet Assure finance",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3166,6 +3803,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "double"
+    ],
+    "moment": "journee",
     "nom": "Am-Am",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3186,6 +3827,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "PUTT PUTT CHAMPIONSHIP 29.09",
     "date_debut": "2026-09-29",
     "date_fin": "2026-09-29",
@@ -3206,6 +3851,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-10-01",
     "date_fin": "2026-10-01",
@@ -3226,6 +3875,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "CONDEISSIAT",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Golfs de Montagne",
     "date_debut": "2026-10-01",
     "date_fin": "2026-10-02",
@@ -3246,6 +3899,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Interclub seniors Montpensier au Forez",
     "date_debut": "2026-10-01",
     "date_fin": "2026-10-01",
@@ -3266,6 +3923,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "CHAMONIX MONT-BLANC",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Grand Prix Messieurs - Chamonix",
     "date_debut": "2026-10-02",
     "date_fin": "2026-10-04",
@@ -3286,6 +3947,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Police",
     "date_debut": "2026-10-02",
     "date_fin": "2026-10-02",
@@ -3306,6 +3971,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition CRUZILLES",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -3326,6 +3995,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Mes premiers parcours",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -3346,6 +4019,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "BOURG LES VALENCE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Les Chanalets",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-04",
@@ -3366,6 +4043,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "BOURG LES VALENCE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Les Chanalets",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-04",
@@ -3386,6 +4067,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "SAINT QUENTIN SUR ISERE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Dames - Div. 1",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-04",
@@ -3406,6 +4091,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "ALBON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Dames - Div. 2",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-04",
@@ -3426,6 +4115,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Groupama",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -3446,6 +4139,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "ASPTT Coupe de la Loire",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -3466,6 +4163,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Srixon",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -3486,6 +4187,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Elsan/Pergola",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -3506,6 +4211,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "SOROPTIMIST 4.10",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -3526,6 +4235,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble"
+    ],
+    "moment": "journee",
     "nom": "Coupe du PRO",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -3546,6 +4259,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Championnat du club",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -3566,6 +4283,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "AS de trèfle paysage - Patrice Thivat conseille",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -3586,6 +4308,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Tour Auvergne Sénior +65",
     "date_debut": "2026-10-06",
     "date_fin": "2026-10-07",
@@ -3606,6 +4332,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Seniors Stableford",
     "date_debut": "2026-10-06",
     "date_fin": "2026-10-06",
@@ -3626,6 +4356,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "MONTHIEUX",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Gouverneur",
     "date_debut": "2026-10-07",
     "date_fin": "2026-10-08",
@@ -3646,6 +4380,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "INTERCLUB AU FOREZ 8.10",
     "date_debut": "2026-10-08",
     "date_fin": "2026-10-08",
@@ -3666,6 +4405,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-10-08",
     "date_fin": "2026-10-08",
@@ -3686,6 +4429,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Interclub seniors Volcans au Forez",
     "date_debut": "2026-10-08",
     "date_fin": "2026-10-08",
@@ -3706,6 +4453,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "SAINT CLAIR",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - Saint Clair",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -3726,6 +4477,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "SAINT CLAIR",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - Saint Clair",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -3746,6 +4501,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "CROTTET",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Messieurs - Div. 1",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -3766,6 +4525,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "LUCENAY",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Messieurs - Div. 2",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -3786,6 +4549,10 @@ window.COMPETITIONS = [
     "type": "equipes",
     "zone": null,
     "ville": "SAINT SYMPHORIEN D'OZON",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Champ. Messieurs - Div. 3",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -3806,6 +4573,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Tour Auvergne Dames",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-10",
@@ -3826,6 +4597,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Finale Tour Auvergne Mid-Am",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-10",
@@ -3846,6 +4621,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble"
+    ],
+    "moment": "journee",
     "nom": "COUPE DU PRÉSIDENT 11.10",
     "date_debut": "2026-10-11",
     "date_fin": "2026-10-11",
@@ -3866,6 +4645,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Coupe du personnel",
     "date_debut": "2026-10-11",
     "date_fin": "2026-10-11",
@@ -3886,6 +4669,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "ASPTT x Ligue",
     "date_debut": "2026-10-11",
     "date_fin": "2026-10-11",
@@ -3906,6 +4693,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "FINALE DAMES DU PUY DE DÔME",
     "date_debut": "2026-10-12",
     "date_fin": "2026-10-12",
@@ -3926,6 +4717,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition 9 trous",
     "date_debut": "2026-10-12",
     "date_fin": "2026-10-12",
@@ -3946,6 +4741,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "CONDEISSIAT",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors 2 - La Bresse",
     "date_debut": "2026-10-13",
     "date_fin": "2026-10-14",
@@ -3966,6 +4765,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Journée de l'amitié",
     "date_debut": "2026-10-13",
     "date_fin": "2026-10-13",
@@ -3986,6 +4789,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Territorial D1",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -4006,6 +4813,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -4026,6 +4837,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "GLA",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -4046,6 +4861,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Finale TGV",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -4066,6 +4885,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Championnat Du Club. Et si c’était vous!",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-17",
@@ -4086,6 +4909,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "SAINT ETIENNE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors - St Etienne",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-18",
@@ -4106,6 +4933,10 @@ window.COMPETITIONS = [
     "type": "mid-amateurs",
     "zone": null,
     "ville": "SAINT ETIENNE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Classic Mid Amateur - St Etienne",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-18",
@@ -4126,6 +4957,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Finale Srixon",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-17",
@@ -4146,6 +4981,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Pour le sourire d’un enfant",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -4166,6 +5005,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Finale du Ringer Score By Allianz Coupe de la commission sportive",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -4186,6 +5029,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "equipe"
+    ],
+    "moment": "journee",
     "nom": "Championnat du Cantal par équipes",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -4206,6 +5053,11 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "scramble-2",
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe des Jardiniers",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -4226,6 +5078,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Octobre rose",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -4246,6 +5102,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "scramble"
+    ],
+    "moment": "journee",
     "nom": "Seniors Scramble",
     "date_debut": "2026-10-20",
     "date_fin": "2026-10-20",
@@ -4266,6 +5126,10 @@ window.COMPETITIONS = [
     "type": "seniors",
     "zone": null,
     "ville": "BOURG LES VALENCE",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Trophée Seniors 2 - Les Chanalets",
     "date_debut": "2026-10-21",
     "date_fin": "2026-10-22",
@@ -4286,6 +5150,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-10-22",
     "date_fin": "2026-10-22",
@@ -4306,6 +5174,10 @@ window.COMPETITIONS = [
     "type": "grand-prix",
     "zone": null,
     "ville": "CHASSIEU",
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "GP International Paragolf - Chassieu",
     "date_debut": "2026-10-23",
     "date_fin": "2026-10-25",
@@ -4326,6 +5198,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Babut Literie & Aquatech SPA",
     "date_debut": "2026-10-24",
     "date_fin": "2026-10-24",
@@ -4346,6 +5222,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Cantal",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Coupe du personnel",
     "date_debut": "2026-10-24",
     "date_fin": "2026-10-24",
@@ -4366,6 +5246,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Allier",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Golf Entreprise D2",
     "date_debut": "2026-10-24",
     "date_fin": "2026-10-24",
@@ -4386,6 +5270,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Coupe du Président",
     "date_debut": "2026-10-25",
     "date_fin": "2026-10-25",
@@ -4406,6 +5294,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition 9 trous",
     "date_debut": "2026-10-26",
     "date_fin": "2026-10-26",
@@ -4426,6 +5318,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Oranges pour tous : Give & Take",
     "date_debut": "2026-11-01",
     "date_fin": "2026-11-01",
@@ -4446,6 +5342,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-11-05",
     "date_fin": "2026-11-05",
@@ -4466,6 +5366,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-11-05",
     "date_fin": "2026-11-05",
@@ -4486,6 +5390,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Journée de l'amitié",
     "date_debut": "2026-11-06",
     "date_fin": "2026-11-06",
@@ -4506,6 +5414,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Green Cup",
     "date_debut": "2026-11-07",
     "date_fin": "2026-11-07",
@@ -4526,6 +5438,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Course au drapeau - matin seulement",
     "date_debut": "2026-11-08",
     "date_fin": "2026-11-08",
@@ -4546,6 +5462,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Haute-Loire",
     "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
     "nom": "Compétition de Clôture",
     "date_debut": "2026-11-08",
     "date_fin": "2026-11-08",
@@ -4566,6 +5486,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-11-12",
     "date_fin": "2026-11-12",
@@ -4586,6 +5510,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Course à la ficelle - matin seulement",
     "date_debut": "2026-11-15",
     "date_fin": "2026-11-15",
@@ -4606,6 +5534,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis d'Etienne - la dernière : Coupe de l'amitié et remise des prix",
     "date_debut": "2026-11-19",
     "date_fin": "2026-11-19",
@@ -4626,6 +5558,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Compétition Beaujolais",
     "date_debut": "2026-11-21",
     "date_fin": "2026-11-21",
@@ -4646,6 +5582,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Coupe du Beaujolais",
     "date_debut": "2026-11-22",
     "date_fin": "2026-11-22",
@@ -4666,6 +5606,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Coupe Beaujolais",
     "date_debut": "2026-11-22",
     "date_fin": "2026-11-22",
@@ -4686,6 +5630,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "soiree",
     "nom": "Soirée ASGS",
     "date_debut": "2026-11-28",
     "date_fin": "2026-11-28",
@@ -4706,6 +5654,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Puy-de-Dôme",
     "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-12-03",
     "date_fin": "2026-12-03",
@@ -4726,6 +5678,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Marché de Noël",
     "date_debut": "2026-12-05",
     "date_fin": "2026-12-05",
@@ -4746,6 +5702,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Noël",
     "date_debut": "2026-12-06",
     "date_fin": "2026-12-06",
@@ -4766,6 +5726,10 @@ window.COMPETITIONS = [
     "type": "club",
     "zone": "Loire",
     "ville": null,
+    "formules": [
+      "autre"
+    ],
+    "moment": "journee",
     "nom": "Coupe de Noël",
     "date_debut": "2026-12-13",
     "date_fin": "2026-12-13",

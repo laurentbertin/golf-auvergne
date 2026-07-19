@@ -124,6 +124,13 @@ main{padding:22px 0 60px}
 .cta a:hover{color:var(--ink);text-decoration:underline}
 .chevron{display:none}
 
+/* Nombre porté par chaque puce de formule : il montre ce qui reste hors
+   classement plutôt que de l'escamoter. */
+.compte{opacity:.6;font-variant-numeric:tabular-nums;font-weight:600}
+.chip[aria-pressed="true"] .compte{opacity:.75}
+.chip:disabled{opacity:.4;cursor:default}
+.chip:disabled:hover{border-color:var(--line)}
+
 .vide{color:var(--muted);text-align:center;padding:40px 0}
 footer{border-top:1px solid var(--line);padding:22px 0 40px}
 footer p{color:var(--muted);font-size:13px;margin:6px 0}

@@ -15,7 +15,8 @@
   // enregistrement collecté par une version antérieure est une coupe de club.
   const ALL = (window.COMPETITIONS || [])
     .filter((c) => c.valide && c.date_debut >= PREMIER_JOUR)
-    .map((c) => ({ ...c, type: c.type || "club" }));
+    .map((c) => ({ ...c, type: c.type || "club",
+      formules: c.formules || ["autre"], moment: c.moment || "journee" }));
 
   const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   const MOIS_COURT = ["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
@@ -30,8 +31,23 @@
   const typesActifs = new Set();
   let equipesVisibles = false;
 
+  // Familles de formules. Contrairement aux golfs, on part de RIEN de coché :
+  // on cherche « les scrambles à 2 », pas « tout sauf cinq familles ».
+  const FORMULES = [
+    { id: "scramble-2", label: "Scramble à 2" },
+    { id: "individuel", label: "Individuel" },
+    { id: "double", label: "À deux" },
+    { id: "scramble", label: "Autre scramble" },
+    { id: "equipe", label: "Par équipe" },
+    { id: "autre", label: "Formule non précisée" },
+  ];
+  const formulesActives = new Set();
+  let soireeVisible = false;
+
   const elPeriodes = document.getElementById("periodes");
   const elTypes = document.getElementById("types");
+  const elFormules = document.getElementById("formules");
+  const elSoiree = document.getElementById("soiree");
   const elEquipes = document.getElementById("equipes");
   const elFiltres = document.getElementById("filtres");
   const elPlier = document.getElementById("plier-golfs");
@@ -74,6 +90,41 @@
     elPeriodes.appendChild(b);
   });
 
+  // ---------------------------------------------------------------- formules
+  const boutonsFormule = new Map();
+  FORMULES.forEach((f) => {
+    if (!ALL.some((c) => (c.formules || []).includes(f.id))) return;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.setAttribute("aria-pressed", "false");
+    b.innerHTML = `${f.label}<span class="compte"></span>`;
+    b.onclick = () => {
+      if (formulesActives.has(f.id)) formulesActives.delete(f.id);
+      else formulesActives.add(f.id);
+      b.setAttribute("aria-pressed", formulesActives.has(f.id) ? "true" : "false");
+      render();
+    };
+    boutonsFormule.set(f.id, b);
+    elFormules.appendChild(b);
+  });
+
+  elSoiree.onchange = () => {
+    soireeVisible = elSoiree.checked;
+    render();
+  };
+
+  // Le nombre affiché sur chaque puce rend visible ce qu'on ne sait pas :
+  // un tiers des compétitions n'annoncent aucune formule, et filtrer sur
+  // « Scramble à 2 » les écarte toutes en silence sans ce repère.
+  function majComptesFormule(base) {
+    boutonsFormule.forEach((b, id) => {
+      const n = base.filter((c) => (c.formules || []).includes(id)).length;
+      b.querySelector(".compte").textContent = n ? ` ${n}` : "";
+      b.disabled = n === 0 && !formulesActives.has(id);
+    });
+  }
+
   // ------------------------------------------------------- épreuves fédérales
   TYPES.forEach((t) => {
     const dispo = ALL.some((c) => c.type === t.id);
@@ -86,6 +137,7 @@
     b.onclick = () => {
       if (typesActifs.has(t.id)) typesActifs.delete(t.id); else typesActifs.add(t.id);
       b.setAttribute("aria-pressed", typesActifs.has(t.id) ? "true" : "false");
+      majPlierLigue();
       render();
     };
     elTypes.appendChild(b);
@@ -93,8 +145,28 @@
 
   elEquipes.onchange = () => {
     equipesVisibles = elEquipes.checked;
+    majPlierLigue();
     render();
   };
+
+  // Bloc secondaire, éteint par défaut : on le replie pour que la page s'ouvre
+  // sur des compétitions et non sur quatre rangées de réglages.
+  const elPlierLigue = document.getElementById("plier-ligue");
+  const elBlocLigue = document.getElementById("bloc-ligue");
+
+  elPlierLigue.onclick = () => {
+    const ouvert = elBlocLigue.hidden;
+    elBlocLigue.hidden = !ouvert;
+    elPlierLigue.setAttribute("aria-expanded", String(ouvert));
+    majPlierLigue();
+  };
+
+  function majPlierLigue() {
+    const n = typesActifs.size + (equipesVisibles ? 1 : 0);
+    elPlierLigue.textContent = elBlocLigue.hidden
+      ? (n ? `épreuves de la ligue AURA — ${n} activée${n > 1 ? "s" : ""}` : "épreuves de la ligue AURA")
+      : "replier";
+  }
 
   // ------------------------------------------------------------------ golfs
   // Seuls les clubs suivis alimentent le filtre « Où » : le lieu d'un grand prix
@@ -188,9 +260,27 @@
     return typesActifs.has(c.type);
   }
 
+  // Les épreuves fédérales sont déjà catégorisées par leur nature : le filtre
+  // de formule ne s'applique qu'aux compétitions de club.
+  function formuleRetenue(c) {
+    if (c.type !== "club" || !formulesActives.size) return true;
+    return (c.formules || []).some((f) => formulesActives.has(f));
+  }
+
+  function momentRetenu(c) {
+    return soireeVisible || c.moment !== "soiree";
+  }
+
   function render() {
+    // Base servant à compter les formules : tout sauf le filtre de formule
+    // lui-même, pour que les nombres reflètent la sélection en cours.
+    const base = ALL.filter((c) =>
+      visible(c) && momentRetenu(c) && c.date_debut <= periode.jusqua && c.type === "club");
+    majComptesFormule(base);
+
     const list = ALL
-      .filter((c) => visible(c) && c.date_debut <= periode.jusqua)
+      .filter((c) => visible(c) && formuleRetenue(c) && momentRetenu(c)
+        && c.date_debut <= periode.jusqua)
       .sort((a, b) => (a.date_debut < b.date_debut ? -1 : 1));
 
     elListe.innerHTML = "";
@@ -308,5 +398,6 @@
   }
 
   majBascule();
+  majPlierLigue();
   render();
 })();

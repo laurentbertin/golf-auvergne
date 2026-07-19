@@ -115,6 +115,40 @@ export function detectSponsor(nom = "") {
   return null;
 }
 
+// --------------------------------------------------------------- formules
+// Les clubs décrivent leur formule de jeu comme ils veulent, et un tiers des
+// compétitions n'en indiquent aucune. On classe donc sur le nom ET la formule :
+// « Seniors scramble » chez l'un vaut « Scramble à 2 » chez l'autre.
+//
+// Une compétition peut relever de plusieurs familles : « Individuel ou
+// Scramble à 2 » se joue dans les deux, et doit ressortir des deux filtres.
+const FAMILLES = [
+  { id: "scramble-2", motif: /s[ck]ramble\s*(?:à|a)?\s*2|scramble\s*à\s*deux/i },
+  { id: "scramble", motif: /s[ck]ramble(?!\s*(?:à|a)?\s*2)|am[ée]ricaine/i },
+  { id: "double", motif: /green\s?some|greensome|chapman|shamble|4\s*balles|quatre\s*balles|am\s*[-\/]\s*am|pro\s*[-–]?\s*am|foursome|doublettes?/i },
+  { id: "individuel", motif: /stableford|stroke\s?play|strokeford|individuel|classement|medal|simple/i },
+  { id: "equipe", motif: /[ée]quipes?\b|interclub|inter\s+club|promotion|division|tour auvergne|coupe de france/i },
+];
+
+// Épreuves qui se jouent le soir : elles n'intéressent pas qui cherche une
+// compétition de journée, et noyaient la liste (after work, nocturnes…).
+const EN_SOIREE = /after\s*work|nocturne|soir[ée]e|tomb[ée]e de la nuit|18\s*h\s*30|19\s*h|20\s*h(?!\d)/i;
+
+export function classerFormules(nom = "", format = "") {
+  const texteComplet = `${nom} ${format || ""}`;
+  const familles = FAMILLES.filter((f) => f.motif.test(texteComplet)).map((f) => f.id);
+  // « Scramble à 2 » satisfait aussi bien « scramble » : on évite le doublon.
+  if (familles.includes("scramble-2")) {
+    const i = familles.indexOf("scramble");
+    if (i >= 0) familles.splice(i, 1);
+  }
+  return familles.length ? familles : ["autre"];
+}
+
+export function detectMoment(nom = "", format = "") {
+  return EN_SOIREE.test(`${nom} ${format || ""}`) ? "soiree" : "journee";
+}
+
 // Construit un enregistrement complet et normalisé à partir d'un "raw" produit par un connecteur.
 export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
   const dateDebut = toISO(raw.date_debut);
@@ -130,6 +164,8 @@ export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
     type: raw.type ?? "club",
     zone: raw.zone ?? golf.zone ?? null,
     ville: raw.ville ?? null,
+    formules: classerFormules(raw.nom, raw.format),
+    moment: detectMoment(raw.nom, raw.format),
     nom: (raw.nom || "").trim(),
     date_debut: dateDebut,
     date_fin: dateFin,

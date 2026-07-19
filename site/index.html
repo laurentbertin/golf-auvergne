@@ -32,13 +32,29 @@
     <div id="filtres" class="zones" hidden></div>
   </section>
 
-  <section class="filtres" aria-labelledby="titre-ligue">
-    <h2 class="filtres-titre" id="titre-ligue">Aussi afficher <span class="filtres-note">épreuves de la ligue AURA</span></h2>
-    <div id="types" class="rangee"></div>
-    <label class="case" for="equipes">
-      <input type="checkbox" id="equipes">
-      <span>Compétitions par équipe <em>— obligatoires si tu joues en équipe</em></span>
+  <section class="filtres" aria-labelledby="titre-formule">
+    <h2 class="filtres-titre" id="titre-formule">Formule
+      <span class="filtres-note">rien de coché = toutes</span>
+    </h2>
+    <div id="formules" class="rangee"></div>
+    <label class="case" for="soiree">
+      <input type="checkbox" id="soiree">
+      <span>Compétitions en soirée <em>— after work, nocturnes</em></span>
     </label>
+  </section>
+
+  <section class="filtres" aria-labelledby="titre-ligue">
+    <h2 class="filtres-titre" id="titre-ligue">Aussi afficher
+      <button type="button" id="plier-ligue" class="lien-bascule" aria-expanded="false"
+              aria-controls="bloc-ligue">épreuves de la ligue AURA</button>
+    </h2>
+    <div id="bloc-ligue" hidden>
+      <div id="types" class="rangee"></div>
+      <label class="case" for="equipes">
+        <input type="checkbox" id="equipes">
+        <span>Compétitions par équipe <em>— obligatoires si tu joues en équipe</em></span>
+      </label>
+    </div>
   </section>
 
   <div id="compteur" class="compteur"></div>
