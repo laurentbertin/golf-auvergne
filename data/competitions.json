@@ -1,155 +1,5 @@
 [
   {
-    "id": "ligue-golf-de-la-bresse__2026-07-17__grand-prix-la-bresse",
-    "golf_id": "ligue-golf-de-la-bresse",
-    "golf_nom": "Golf de la Bresse",
-    "type": "grand-prix",
-    "zone": null,
-    "ville": "CONDEISSIAT",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Grand Prix - La Bresse",
-    "date_debut": "2026-07-17",
-    "date_fin": "2026-07-19",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/24:grand-prix-de-la-bresse",
-    "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-19",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-club-de-lyon__2026-07-18__classic-mid-amateur-gcl",
-    "golf_id": "ligue-golf-club-de-lyon",
-    "golf_nom": "Golf Club de Lyon",
-    "type": "mid-amateurs",
-    "zone": null,
-    "ville": "VILETTE D'ANTHON",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Classic Mid Amateur - GCL",
-    "date_debut": "2026-07-18",
-    "date_fin": "2026-07-19",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/38:classic-mid-amateur-du-gcl",
-    "source_url": "https://www.liguegolfaura.com/competitions/mid-amateurs",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-19",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "vichy-sc__2026-07-19__coupe-du-restaurateur",
-    "golf_id": "vichy-sc",
-    "golf_nom": "Sporting Club de Vichy",
-    "type": "club",
-    "zone": "Allier",
-    "ville": null,
-    "formules": [
-      "scramble-2"
-    ],
-    "moment": "journee",
-    "nom": "Coupe du restaurateur",
-    "date_debut": "2026-07-19",
-    "date_fin": "2026-07-19",
-    "format": "Scramble à 2",
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://golf-vichy.fr/competition/gold-cup/",
-    "source_url": "https://www.golf-vichy.fr/wp-json/tribe/events/v1/events?per_page=50&start_date=2026-07-19",
-    "source_type": "events-calendar",
-    "derniere_maj": "2026-07-19",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "volcans__2026-07-19__sunshine-swing-19-07",
-    "golf_id": "volcans",
-    "golf_nom": "Golf des Volcans",
-    "type": "club",
-    "zone": "Puy-de-Dôme",
-    "ville": null,
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "SUNSHINE SWING 19.07",
-    "date_debut": "2026-07-19",
-    "date_fin": "2026-07-19",
-    "format": "Mixte",
-    "depart": "En ligne",
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.golfdesvolcans.fr/competition/sunshine-swing-19-07/",
-    "source_url": "https://www.golfdesvolcans.fr/les-competitions-au-golf-des-volcans/",
-    "source_type": "volcans",
-    "derniere_maj": "2026-07-19",
-    "valide": true,
-    "recurrent": true
-  },
-  {
-    "id": "royat__2026-07-19__pitch-putt",
-    "golf_id": "royat",
-    "golf_nom": "Golf de Royat-Charade",
-    "type": "club",
-    "zone": "Puy-de-Dôme",
-    "ville": null,
-    "formules": [
-      "individuel"
-    ],
-    "moment": "journee",
-    "nom": "Pitch & Putt",
-    "date_debut": "2026-07-19",
-    "date_fin": "2026-07-19",
-    "format": "Stableford en ShotGun",
-    "depart": "09h30",
-    "trous": 18,
-    "sponsor": null,
-    "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
-    "source_url": "https://www.golfderoyatcharade.fr/competitions1",
-    "source_type": "royat",
-    "derniere_maj": "2026-07-19",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "mont-dore__2026-07-19__give-and-take",
-    "golf_id": "mont-dore",
-    "golf_nom": "Golf du Mont-Dore",
-    "type": "club",
-    "zone": "Puy-de-Dôme",
-    "ville": null,
-    "formules": [
-      "individuel"
-    ],
-    "moment": "journee",
-    "nom": "Give and Take",
-    "date_debut": "2026-07-19",
-    "date_fin": "2026-07-19",
-    "format": "Simple Stableford",
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.golfdumontdore.org/competitions-2018",
-    "source_url": "https://le-cdn.website-editor.net/s/c2b01b9bd5c74c959292e70fa719ebf4/dms3rep/multi/opt/35D876E8-6BAC-436B-8FEF-D6948F5AFF00-1920w.PNG",
-    "source_type": "calendrier-image",
-    "derniere_maj": "2026-07-19",
-    "valide": true,
-    "recurrent": false
-  },
-  {
     "id": "volcans__2026-07-21__putt-putt-championship-21-07",
     "golf_id": "volcans",
     "golf_nom": "Golf des Volcans",
@@ -160,11 +10,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "PUTT PUTT CHAMPIONSHIP 21.07",
     "date_debut": "2026-07-21",
     "date_fin": "2026-07-21",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/putt-putt-championship-21-07/",
@@ -172,7 +24,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-07-21__seniors-scramble",
@@ -185,6 +38,8 @@
       "scramble"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Seniors scramble",
     "date_debut": "2026-07-21",
     "date_fin": "2026-07-21",
@@ -197,7 +52,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": true
   },
   {
     "id": "montpensier__2026-07-22__trophee-du-galop",
@@ -210,6 +66,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "TROPHEE DU GALOP",
     "date_debut": "2026-07-22",
     "date_fin": "2026-07-22",
@@ -222,7 +80,8 @@
     "source_type": "montpensier",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "champlong__2026-07-22__after-work",
@@ -235,6 +94,8 @@
       "autre"
     ],
     "moment": "soiree",
+    "equipe": false,
+    "ouverte": true,
     "nom": "After Work",
     "date_debut": "2026-07-22",
     "date_fin": "2026-07-24",
@@ -247,7 +108,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-07-23__les-jeudis-d-etienne",
@@ -260,6 +122,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-07-23",
     "date_fin": "2026-07-23",
@@ -272,7 +136,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "champlong__2026-07-24__jeudi-de-champlong",
@@ -285,6 +150,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Jeudi de Champlong",
     "date_debut": "2026-07-24",
     "date_fin": "2026-07-24",
@@ -298,7 +165,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-d-albon__2026-07-25__trophee-seniors-albon",
@@ -311,6 +179,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Albon",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-26",
@@ -323,7 +193,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-d-albon__2026-07-25__classic-mid-amateur-albon",
@@ -336,6 +207,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Albon",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-26",
@@ -348,7 +221,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-maison-blanche__2026-07-25__classic-mid-amateur-maison-blanche",
@@ -361,6 +235,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Maison Blanche",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-26",
@@ -373,7 +249,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-07-25__atol-allianz",
@@ -386,6 +263,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Atol & Allianz",
     "date_debut": "2026-07-25",
     "date_fin": "2026-07-25",
@@ -398,7 +277,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-07-26__coupe-j-e-de-boissy",
@@ -411,6 +291,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "COUPE J-E DE BOISSY",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -423,7 +305,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-07-26__coupe-du-jambon-26-07",
@@ -436,11 +319,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du Jambon 26.07",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
     "format": "Individuel",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/coupe-du-jambon-26-07/",
@@ -448,7 +333,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-07-26__9e-trophee-laurent-perrier",
@@ -461,6 +347,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "9e Trophée Laurent Perrier",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -473,7 +361,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-07-26__gha-n-9",
@@ -486,6 +375,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°9",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -498,7 +389,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-07-26__competition-srixon",
@@ -511,6 +403,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Srixon",
     "date_debut": "2026-07-26",
     "date_fin": "2026-07-26",
@@ -524,7 +418,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-07-30__a-s-g-r-a-4-balles",
@@ -537,6 +432,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "A S G R A 4 balles",
     "date_debut": "2026-07-30",
     "date_fin": "2026-07-30",
@@ -549,7 +446,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-08-01__soiree-golf",
@@ -562,6 +460,8 @@
       "autre"
     ],
     "moment": "soiree",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Soirée Golf",
     "date_debut": "2026-08-01",
     "date_fin": "2026-08-02",
@@ -574,7 +474,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-02__sunshine-swing-02-08",
@@ -587,11 +488,13 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "SUNSHINE SWING 02.08",
     "date_debut": "2026-08-02",
     "date_fin": "2026-08-02",
     "format": "Mixte",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/sunshine-swing-02-08/",
@@ -599,7 +502,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-08-02__coupe-lacoste",
@@ -612,6 +516,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe Lacoste",
     "date_debut": "2026-08-02",
     "date_fin": "2026-08-02",
@@ -624,7 +530,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-03__ynov-it",
@@ -637,6 +544,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Ynov’IT",
     "date_debut": "2026-08-03",
     "date_fin": "2026-08-03",
@@ -649,7 +558,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-08-03__competition-de-classement",
@@ -662,6 +572,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition de classement",
     "date_debut": "2026-08-03",
     "date_fin": "2026-08-03",
@@ -674,7 +586,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-04__la-montagne",
@@ -687,6 +600,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "La Montagne",
     "date_debut": "2026-08-04",
     "date_fin": "2026-08-04",
@@ -699,7 +614,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-04__putt-putt-championship-04-08",
@@ -712,11 +628,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "PUTT PUTT CHAMPIONSHIP 04.08",
     "date_debut": "2026-08-04",
     "date_fin": "2026-08-04",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/putt-putt-championship-04-08/",
@@ -724,7 +642,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-08-04__seniors-stableford",
@@ -737,6 +656,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Seniors stableford",
     "date_debut": "2026-08-04",
     "date_fin": "2026-08-04",
@@ -749,7 +670,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": true
   },
   {
     "id": "vichy-sc__2026-08-05__partouche",
@@ -762,6 +684,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Partouche",
     "date_debut": "2026-08-05",
     "date_fin": "2026-08-05",
@@ -774,7 +698,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-07__home-box",
@@ -787,6 +712,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Home Box",
     "date_debut": "2026-08-07",
     "date_fin": "2026-08-07",
@@ -799,7 +726,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-08__thevenet-lagarde",
@@ -812,6 +740,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Thevenet/Lagarde",
     "date_debut": "2026-08-08",
     "date_fin": "2026-08-09",
@@ -824,7 +754,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-la-commanderie__2026-08-08__classic-mid-amateur-la-commanderie",
@@ -837,6 +768,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - La Commanderie",
     "date_debut": "2026-08-08",
     "date_fin": "2026-08-09",
@@ -849,7 +782,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-08__gha-n-10",
@@ -862,6 +796,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°10",
     "date_debut": "2026-08-08",
     "date_fin": "2026-08-08",
@@ -874,7 +810,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-09__sunshine-swing-09-08",
@@ -887,11 +824,13 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "SUNSHINE SWING 09.08",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
     "format": "Mixte",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/sunshine-swing-09-08/",
@@ -899,7 +838,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-08-09__coupe-de-classement",
@@ -912,6 +852,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de classement",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -924,7 +866,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "champlong__2026-08-09__coupe-de-classement",
@@ -937,6 +880,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de classement",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -949,7 +894,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-09__win-in-cup",
@@ -962,6 +908,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Win'In Cup",
     "date_debut": "2026-08-09",
     "date_fin": "2026-08-09",
@@ -974,7 +922,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-10__ville-de-bellerive",
@@ -987,6 +936,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Ville de Bellerive",
     "date_debut": "2026-08-10",
     "date_fin": "2026-08-10",
@@ -999,7 +950,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-08-10__competition-9-trous",
@@ -1012,6 +964,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition 9 trous",
     "date_debut": "2026-08-10",
     "date_fin": "2026-08-10",
@@ -1025,7 +979,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-12__seguin",
@@ -1038,6 +993,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Seguin",
     "date_debut": "2026-08-12",
     "date_fin": "2026-08-12",
@@ -1050,7 +1007,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-13__thelem-assurance",
@@ -1063,6 +1021,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Thelem Assurance",
     "date_debut": "2026-08-13",
     "date_fin": "2026-08-13",
@@ -1075,7 +1035,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-08-13__rendez-vous-du-jeudi",
@@ -1088,6 +1049,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-08-13",
     "date_fin": "2026-08-13",
@@ -1100,7 +1063,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-14__ville-de-vichy",
@@ -1113,6 +1077,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Ville de Vichy",
     "date_debut": "2026-08-14",
     "date_fin": "2026-08-14",
@@ -1125,7 +1091,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-15__auvergne-maree",
@@ -1138,6 +1105,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Auvergne Marée",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -1150,7 +1119,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-08-15__coupe-de-la-ville-du-mont-dore",
@@ -1163,6 +1133,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de la Ville du Mont-Dore",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -1175,7 +1147,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-15__beachcomber",
@@ -1188,6 +1161,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Beachcomber",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -1200,7 +1175,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-08-15__competition-srixon",
@@ -1213,6 +1189,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Srixon",
     "date_debut": "2026-08-15",
     "date_fin": "2026-08-15",
@@ -1226,7 +1204,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-16__sunshine-swing-16-08",
@@ -1239,11 +1218,13 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "SUNSHINE SWING 16.08",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
     "format": "Mixte",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/sunshine-swing-16-08/",
@@ -1251,7 +1232,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-08-16__coupe-monsieur-golf-tour-2026",
@@ -1264,6 +1246,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe Monsieur Golf Tour 2026",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1276,7 +1260,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "champlong__2026-08-16__coupe-de-classement",
@@ -1289,6 +1274,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de classement",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1301,7 +1288,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-16__gha-n-11",
@@ -1314,6 +1302,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°11",
     "date_debut": "2026-08-16",
     "date_fin": "2026-08-16",
@@ -1326,7 +1316,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-18__putt-putt-championship-18-08",
@@ -1339,11 +1330,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "PUTT PUTT CHAMPIONSHIP 18.08",
     "date_debut": "2026-08-18",
     "date_fin": "2026-08-18",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/putt-putt-championship-18-08/",
@@ -1351,7 +1344,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-08-21__grand-prix-vichy-communaute-2026",
@@ -1364,6 +1358,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix Vichy Communauté 2026",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-23",
@@ -1376,7 +1372,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-vichy__2026-08-21__grand-prix-vichy",
@@ -1389,6 +1386,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix - Vichy",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-23",
@@ -1401,7 +1400,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-valence-saint-didier__2026-08-21__trophee-seniors-valence-st-didier",
@@ -1414,6 +1414,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Valence St Didier",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-23",
@@ -1426,7 +1428,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "champlong__2026-08-21__jeudi-de-champlong",
@@ -1439,6 +1442,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Jeudi de Champlong",
     "date_debut": "2026-08-21",
     "date_fin": "2026-08-21",
@@ -1452,7 +1457,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-des-arcs__2026-08-22__trophee-seniors-les-arcs",
@@ -1465,6 +1471,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Les Arcs",
     "date_debut": "2026-08-22",
     "date_fin": "2026-08-23",
@@ -1477,7 +1485,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-des-arcs__2026-08-22__classic-mid-amateur-les-arcs",
@@ -1490,6 +1499,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Les Arcs",
     "date_debut": "2026-08-22",
     "date_fin": "2026-08-23",
@@ -1502,7 +1513,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-08-23__competition-conviviale-repas",
@@ -1515,6 +1527,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition conviviale & repas",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1527,7 +1541,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-23__sunshine-swing-23-08",
@@ -1540,11 +1555,13 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "SUNSHINE SWING 23.08",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
     "format": "Mixte",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/sunshine-swing-23-08/",
@@ -1552,7 +1569,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "royat__2026-08-23__ringer-score-by-allianz",
@@ -1565,6 +1583,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Ringer Score By Allianz",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1577,7 +1597,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "champlong__2026-08-23__coupe-de-classement",
@@ -1590,6 +1611,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de classement",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1602,7 +1625,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-23__gha-n-12",
@@ -1615,6 +1639,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°12",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1627,7 +1653,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-08-23__competition-le-michelet",
@@ -1641,6 +1668,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition le Michelet",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1653,7 +1682,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-08-23__competition-srixon",
@@ -1666,6 +1696,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Srixon",
     "date_debut": "2026-08-23",
     "date_fin": "2026-08-23",
@@ -1679,7 +1711,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-08-24__competition-9-trous",
@@ -1692,6 +1725,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition 9 trous",
     "date_debut": "2026-08-24",
     "date_fin": "2026-08-24",
@@ -1705,7 +1740,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-25__putt-putt-championship-25-08",
@@ -1718,11 +1754,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "PUTT PUTT CHAMPIONSHIP 25.08",
     "date_debut": "2026-08-25",
     "date_fin": "2026-08-25",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/putt-putt-championship-25-08/",
@@ -1730,7 +1768,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-27__interclub-contre-le-beaujolais-27-08",
@@ -1740,15 +1779,16 @@
     "zone": "Puy-de-Dôme",
     "ville": null,
     "formules": [
-      "scramble-2",
-      "equipe"
+      "scramble-2"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "INTERCLUB CONTRE LE BEAUJOLAIS 27.08",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-27",
     "format": "Scramble à 2",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/interclub-contre-le-beaujolais-27-08/",
@@ -1756,7 +1796,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-08-27__chara-days-jour-1-coupe-decathlon",
@@ -1769,6 +1810,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "CHARA'DAYS Jour 1 - Coupe Decathlon",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-27",
@@ -1781,7 +1824,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-chambon__2026-08-27__trophee-seniors-chambon",
@@ -1794,6 +1838,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Chambon",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-28",
@@ -1806,7 +1852,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-08-27__am-am",
@@ -1819,6 +1866,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Am-Am",
     "date_debut": "2026-08-27",
     "date_fin": "2026-08-27",
@@ -1831,7 +1880,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "royat__2026-08-28__chara-days-jour-2-coupe-du-credit-mutuel",
@@ -1844,6 +1894,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "CHARA'DAYS Jour 2 - Coupe du Crédit Mutuel",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-28",
@@ -1856,7 +1908,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-forez__2026-08-28__grand-prix-de-la-loire",
@@ -1869,6 +1922,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix de la Loire",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-30",
@@ -1881,7 +1936,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "champlong__2026-08-28__pitch-putt-competition-sur-le-parcours-compact",
@@ -1894,6 +1950,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Pitch & Putt compétition sur le parcours Compact",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-28",
@@ -1906,7 +1964,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-08-28__grand-prix-de-la-loire",
@@ -1919,6 +1978,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix de la Loire",
     "date_debut": "2026-08-28",
     "date_fin": "2026-08-30",
@@ -1931,7 +1992,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "riom__2026-08-29__fete-du-club",
@@ -1944,6 +2006,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Fête du Club",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-30",
@@ -1956,7 +2020,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-08-29__chara-days-jour-3-journee-pitch-putt",
@@ -1969,6 +2034,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "CHARA'DAYS Jour 3 - journée Pitch & Putt",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-29",
@@ -1981,7 +2048,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-mont-d-arbois__2026-08-29__classic-mid-amateur-mont-d-arbois",
@@ -1994,6 +2062,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Mont d'Arbois",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-30",
@@ -2006,32 +2076,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-de-la-commanderie__2026-08-29__qualif-promotion-seniors-messieurs",
-    "golf_id": "ligue-golf-de-la-commanderie",
-    "golf_nom": "Golf de la Commanderie",
-    "type": "equipes",
-    "zone": null,
-    "ville": "CROTTET",
-    "formules": [
-      "equipe"
-    ],
-    "moment": "journee",
-    "nom": "Qualif. Promotion Seniors Messieurs",
-    "date_debut": "2026-08-29",
-    "date_fin": "2026-08-30",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/114:qualif-promotion-seniors-messieurs",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-29__golfy-day-s",
@@ -2044,6 +2090,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Golfy Day's",
     "date_debut": "2026-08-29",
     "date_fin": "2026-08-29",
@@ -2056,7 +2104,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-08-30__cote-particuliers-30-08",
@@ -2069,11 +2118,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "COTÉ PARTICULIERS 30.08",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
     "format": "Individuel",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/cote-particuliers-30-08/",
@@ -2081,7 +2132,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-08-30__chara-days-jour-4-coupe-du-casino-de-royat",
@@ -2094,6 +2146,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "CHARA'DAYS Jour 4 - Coupe du casino de Royat",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -2106,7 +2160,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "champlong__2026-08-30__coupe-de-classement",
@@ -2119,6 +2174,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de classement",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -2131,7 +2188,8 @@
     "source_type": "champlong",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-30__finale-tour-auvergne-jeunes",
@@ -2141,10 +2199,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "individuel",
-      "equipe"
+      "individuel"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Finale Tour Auvergne Jeunes",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -2157,7 +2216,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-08-30__gha-n-13",
@@ -2170,6 +2230,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°13",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -2182,7 +2244,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-08-30__profession-medicale",
@@ -2196,6 +2259,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Profession Médicale",
     "date_debut": "2026-08-30",
     "date_fin": "2026-08-30",
@@ -2208,7 +2273,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-01__tgv-bords-de-loire",
@@ -2221,6 +2287,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "TGV Bords de Loire",
     "date_debut": "2026-09-01",
     "date_fin": "2026-09-01",
@@ -2233,7 +2301,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-club-de-lyon__2026-09-02__trophee-seniors-gcl",
@@ -2246,6 +2315,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - GCL",
     "date_debut": "2026-09-02",
     "date_fin": "2026-09-03",
@@ -2258,7 +2329,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-09-03__inter-club-senior-auvergne-pitch-putt",
@@ -2268,9 +2340,11 @@
     "zone": "Puy-de-Dôme",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Inter club Sénior Auvergne Pitch&Putt",
     "date_debut": "2026-09-03",
     "date_fin": "2026-09-03",
@@ -2283,7 +2357,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-03__les-jeudis-pitch-putt",
@@ -2296,6 +2371,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-09-03",
     "date_fin": "2026-09-03",
@@ -2308,7 +2385,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "sainte-agathe__2026-09-03__championnat-seniors-3",
@@ -2321,6 +2399,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Championnat Seniors 3",
     "date_debut": "2026-09-03",
     "date_fin": "2026-09-03",
@@ -2333,7 +2413,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-04__cpme",
@@ -2346,6 +2427,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": false,
     "nom": "CPME",
     "date_debut": "2026-09-04",
     "date_fin": "2026-09-04",
@@ -2358,7 +2441,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-09-05__competition-fontanon",
@@ -2371,6 +2455,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "COMPETITION FONTANON",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -2383,7 +2469,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-09-05__chpt-du-club-05-06-09",
@@ -2396,11 +2483,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "CHPT DU CLUB 05 & 06.09",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
     "format": "Strokeplay",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/chpt-du-club-05-06-09/",
@@ -2408,7 +2497,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-05__mes-premiers-parcours",
@@ -2421,6 +2511,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Mes premiers parcours",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -2433,7 +2525,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-clou__2026-09-05__grand-prix-le-clou",
@@ -2446,6 +2539,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix - Le Clou",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-06",
@@ -2458,7 +2553,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-d-aix-les-bains__2026-09-05__trophee-seniors-aix-les-bains",
@@ -2471,6 +2567,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Aix les Bains",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-06",
@@ -2483,7 +2581,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-d-aix-les-bains__2026-09-05__classic-mid-amateur-aix-les-bains",
@@ -2496,6 +2595,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Aix les Bains",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-06",
@@ -2508,7 +2609,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-05__dgm-menuiseries",
@@ -2521,6 +2623,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "DGM Menuiseries",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -2533,7 +2637,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-05__competition-du-restaurant-au-fil-du-green",
@@ -2546,6 +2651,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition du Restaurant Au Fil du Green",
     "date_debut": "2026-09-05",
     "date_fin": "2026-09-05",
@@ -2558,7 +2665,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-06__coupe-de-la-ville-de-royat-et-des-commercants",
@@ -2571,6 +2679,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de la ville de Royat et des commerçants",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2583,7 +2693,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-09-06__coupe-du-borsalino",
@@ -2596,6 +2707,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du Borsalino",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2608,7 +2721,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-06__gha-n-14",
@@ -2621,6 +2735,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°14",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2633,7 +2749,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-06__competition-de-rentree",
@@ -2646,6 +2763,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition de rentrée",
     "date_debut": "2026-09-06",
     "date_fin": "2026-09-06",
@@ -2658,7 +2777,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-07__competition-9-trous",
@@ -2671,6 +2791,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition 9 trous",
     "date_debut": "2026-09-07",
     "date_fin": "2026-09-07",
@@ -2684,7 +2806,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-maison-blanche__2026-09-08__trophee-seniors-maison-blanche",
@@ -2697,6 +2820,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Maison Blanche",
     "date_debut": "2026-09-08",
     "date_fin": "2026-09-09",
@@ -2709,7 +2834,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-08__gnts",
@@ -2722,6 +2848,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": false,
     "nom": "GNTS",
     "date_debut": "2026-09-08",
     "date_fin": "2026-09-08",
@@ -2734,7 +2862,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-10__les-jeudis-d-etienne",
@@ -2747,6 +2876,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-10",
@@ -2759,7 +2890,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-10__tour-auvergne-senior-d2",
@@ -2769,9 +2901,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Tour Auvergne Sénior D2",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-10",
@@ -2784,7 +2918,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-09-10__5e-pro-am-du-puy-en-velay",
@@ -2797,6 +2932,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "5e Pro-Am du Puy-en-Velay",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-11",
@@ -2809,7 +2946,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-10__journee-de-l-amitie",
@@ -2822,6 +2960,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Journée de l'amitié",
     "date_debut": "2026-09-10",
     "date_fin": "2026-09-10",
@@ -2835,7 +2975,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-09-11__grand-prix-11-12-13-09",
@@ -2848,11 +2989,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GRAND PRIX 11, 12 & 13.09",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-11",
     "format": "Strokeplay",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/grand-prix-11-12-13-09/",
@@ -2860,7 +3003,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-des-volcans__2026-09-11__grand-prix-les-volcans",
@@ -2873,6 +3017,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix - Les Volcans",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-13",
@@ -2885,7 +3031,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "sainte-agathe__2026-09-11__ge-ecm",
@@ -2898,6 +3045,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GE ECM",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-11",
@@ -2910,7 +3059,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-11__vert-for-ever",
@@ -2923,6 +3073,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Vert for ever",
     "date_debut": "2026-09-11",
     "date_fin": "2026-09-13",
@@ -2935,7 +3087,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-09-12__championnat-du-club",
@@ -2948,6 +3101,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Championnat du club",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-13",
@@ -2960,7 +3115,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-09-12__la-compet-miss-tee-2026",
@@ -2973,6 +3129,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "La compet Miss Tee 2026",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-12",
@@ -2985,32 +3143,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-de-la-drome-provencale__2026-09-12__champ-golfs-9-trous",
-    "golf_id": "ligue-golf-de-la-drome-provencale",
-    "golf_nom": "Golf de la Drome Provencale",
-    "type": "equipes",
-    "zone": null,
-    "ville": "CLANSAYES",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Golfs 9 trous",
-    "date_debut": "2026-09-12",
-    "date_fin": "2026-09-13",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/124:champ-golfs-9-trous",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-12__arvern-trophy",
@@ -3020,9 +3154,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Arvern Trophy",
     "date_debut": "2026-09-12",
     "date_fin": "2026-09-12",
@@ -3035,7 +3171,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-13__ringer-score-by-allianz",
@@ -3048,6 +3185,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Ringer Score By Allianz",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -3060,7 +3199,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-13__leclerc",
@@ -3073,6 +3213,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Leclerc",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -3085,7 +3227,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-09-13__axa-brindel-montel-intersport",
@@ -3098,6 +3241,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "AXA Brindel/Montel - Intersport",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -3110,7 +3255,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "sainte-agathe__2026-09-13__iguane",
@@ -3123,6 +3269,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Iguane",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -3135,7 +3283,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-13__sponsor-asgs",
@@ -3148,6 +3297,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Sponsor ASGS",
     "date_debut": "2026-09-13",
     "date_fin": "2026-09-13",
@@ -3160,7 +3311,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-09-15__putt-putt-championship-15-09",
@@ -3173,11 +3325,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "PUTT PUTT CHAMPIONSHIP 15.09",
     "date_debut": "2026-09-15",
     "date_fin": "2026-09-15",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/putt-putt-championship-15-09/",
@@ -3185,7 +3339,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-15__seniors-scramble",
@@ -3198,6 +3353,8 @@
       "scramble"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Seniors Scramble",
     "date_debut": "2026-09-15",
     "date_fin": "2026-09-15",
@@ -3210,7 +3367,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": true
   },
   {
     "id": "ligue-golf-du-mont-d-arbois__2026-09-16__trophee-seniors-mont-d-arbois",
@@ -3223,6 +3381,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Mont d'Arbois",
     "date_debut": "2026-09-16",
     "date_fin": "2026-09-17",
@@ -3235,7 +3395,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-17__tgv",
@@ -3248,6 +3409,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": false,
     "nom": "TGV",
     "date_debut": "2026-09-17",
     "date_fin": "2026-09-17",
@@ -3260,7 +3423,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-17__interclub-st-clair-au-forez",
@@ -3270,9 +3434,11 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Interclub St Clair ​ au Forez",
     "date_debut": "2026-09-17",
     "date_fin": "2026-09-17",
@@ -3285,32 +3451,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-du-chateau-d-arc__2026-09-18__promotion-seniors-messieurs",
-    "golf_id": "ligue-golf-du-chateau-d-arc",
-    "golf_nom": "Golf du Chateau d'Arc",
-    "type": "equipes",
-    "zone": null,
-    "ville": "FUVEAU",
-    "formules": [
-      "equipe"
-    ],
-    "moment": "journee",
-    "nom": "Promotion Seniors Messieurs",
-    "date_debut": "2026-09-18",
-    "date_fin": "2026-09-20",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/125:promotion-seniors-messieurs",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-09-19__ds-automobiles",
@@ -3323,6 +3465,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "DS automobiles",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -3335,7 +3479,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-09-19__finale-lipp-de-france-pitch-putt",
@@ -3348,6 +3493,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "FINALE LIPP DE FRANCE Pitch&Putt",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -3360,7 +3507,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": true
   },
   {
     "id": "volcans__2026-09-19__handigolf-19-09",
@@ -3373,6 +3521,8 @@
       "scramble"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "HANDIGOLF 19.09",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -3385,7 +3535,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-d-albon__2026-09-19__grand-prix-albon",
@@ -3398,6 +3549,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix - Albon",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -3410,7 +3563,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-haute-auvergne__2026-09-19__trophee-seniors-haute-auvergne",
@@ -3423,6 +3577,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Haute Auvergne",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -3435,7 +3591,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-lac-d-annecy__2026-09-19__trophee-seniors-lac-d-annecy",
@@ -3448,6 +3605,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Lac d'Annecy",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -3460,7 +3619,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-haute-auvergne__2026-09-19__classic-mid-amateur-haute-auvergne",
@@ -3473,6 +3633,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Haute Auvergne",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -3485,7 +3647,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-lac-d-annecy__2026-09-19__classic-mid-amateur-lac-d-annecy",
@@ -3498,6 +3661,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Lac d'Annecy",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-20",
@@ -3510,7 +3675,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-09-19__les-greens-de-l-espoir",
@@ -3523,6 +3689,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Greens de l'Espoir",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -3535,7 +3703,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-19__trophee-reves",
@@ -3548,6 +3717,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée REVES",
     "date_debut": "2026-09-19",
     "date_fin": "2026-09-19",
@@ -3560,7 +3731,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-09-20__rotary-club-chamalieres-20-09",
@@ -3573,11 +3745,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "ROTARY CLUB CHAMALIERES 20.09",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/rotary-club-chamalieres-20-09/",
@@ -3585,7 +3759,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-20__coupe-au-profit-de-la-ligue-contre-le-cancer",
@@ -3598,6 +3773,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe au profit de la ligue contre le cancer",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -3610,7 +3787,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "mont-dore__2026-09-20__coupe-de-l-association-sportive",
@@ -3623,6 +3801,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de l'Association Sportive",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -3635,7 +3815,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "sainte-agathe__2026-09-20__orpi-reciprocite-nassigny",
@@ -3648,6 +3829,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "ORPI — réciprocité Nassigny",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -3660,7 +3843,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-20__guy-hoquet",
@@ -3673,6 +3857,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Guy Hoquet",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -3685,7 +3871,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-09-20__competition-srixon",
@@ -3698,6 +3885,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Srixon",
     "date_debut": "2026-09-20",
     "date_fin": "2026-09-20",
@@ -3711,7 +3900,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-24__les-jeudis-d-etienne",
@@ -3724,6 +3914,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-09-24",
     "date_fin": "2026-09-24",
@@ -3736,7 +3928,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-09-24__rendez-vous-du-jeudi",
@@ -3749,6 +3942,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-09-24",
     "date_fin": "2026-09-24",
@@ -3761,7 +3956,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-24__asgra",
@@ -3774,6 +3970,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "ASGRA",
     "date_debut": "2026-09-24",
     "date_fin": "2026-09-24",
@@ -3786,7 +3984,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-du-gouverneur__2026-09-25__grand-prix-gouverneur",
@@ -3799,6 +3998,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix - Gouverneur",
     "date_debut": "2026-09-25",
     "date_fin": "2026-09-27",
@@ -3811,7 +4012,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-sainte-agathe__2026-09-26__trophee-seniors-sainte-agathe",
@@ -3824,6 +4026,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Sainte Agathe",
     "date_debut": "2026-09-26",
     "date_fin": "2026-09-27",
@@ -3836,7 +4040,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-sainte-agathe__2026-09-26__classic-mid-amateur-sainte-agathe",
@@ -3849,6 +4054,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Sainte Agathe",
     "date_debut": "2026-09-26",
     "date_fin": "2026-09-27",
@@ -3861,7 +4068,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-26__bibou-cup",
@@ -3874,6 +4082,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Bibou Cup",
     "date_debut": "2026-09-26",
     "date_fin": "2026-09-26",
@@ -3886,7 +4096,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-09-27__ringer-score-by-allianz",
@@ -3899,6 +4110,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Ringer Score By Allianz",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3911,7 +4124,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-09-27__gha-n-15",
@@ -3924,6 +4138,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GHA n°15",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3936,7 +4152,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-09-27__cabinet-michel-gimbert-sol-bonnet-assure-finance",
@@ -3950,6 +4167,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Cabinet Michel - Gimbert sol - Bonnet Assure finance",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3962,7 +4181,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-09-27__am-am",
@@ -3975,6 +4195,8 @@
       "double"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Am-Am",
     "date_debut": "2026-09-27",
     "date_fin": "2026-09-27",
@@ -3987,7 +4209,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "volcans__2026-09-29__putt-putt-championship-29-09",
@@ -4000,11 +4223,13 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "PUTT PUTT CHAMPIONSHIP 29.09",
     "date_debut": "2026-09-29",
     "date_fin": "2026-09-29",
     "format": "Stableford",
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/putt-putt-championship-29-09/",
@@ -4012,7 +4237,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-01__les-jeudis-pitch-putt",
@@ -4025,6 +4251,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-10-01",
     "date_fin": "2026-10-01",
@@ -4037,32 +4265,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
-  },
-  {
-    "id": "ligue-golf-de-la-bresse__2026-10-01__champ-golfs-de-montagne",
-    "golf_id": "ligue-golf-de-la-bresse",
-    "golf_nom": "Golf de la Bresse",
-    "type": "equipes",
-    "zone": null,
-    "ville": "CONDEISSIAT",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Golfs de Montagne",
-    "date_debut": "2026-10-01",
-    "date_fin": "2026-10-02",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/116:champ-golfs-de-montagne",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-01__interclub-seniors-montpensier-au-forez",
@@ -4072,9 +4276,11 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Interclub seniors Montpensier au Forez",
     "date_debut": "2026-10-01",
     "date_fin": "2026-10-01",
@@ -4087,7 +4293,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-chamonix__2026-10-02__grand-prix-messieurs-chamonix",
@@ -4100,6 +4307,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Grand Prix Messieurs - Chamonix",
     "date_debut": "2026-10-02",
     "date_fin": "2026-10-04",
@@ -4112,7 +4321,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-02__trophee-police",
@@ -4125,6 +4335,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Police",
     "date_debut": "2026-10-02",
     "date_fin": "2026-10-02",
@@ -4137,7 +4349,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-10-03__competition-cruzilles",
@@ -4150,6 +4363,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition CRUZILLES",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -4162,7 +4377,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-03__mes-premiers-parcours",
@@ -4175,6 +4391,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Mes premiers parcours",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -4187,7 +4405,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-des-chanalets__2026-10-03__trophee-seniors-les-chanalets",
@@ -4200,6 +4419,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Les Chanalets",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-04",
@@ -4212,7 +4433,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-des-chanalets__2026-10-03__classic-mid-amateur-les-chanalets",
@@ -4225,6 +4447,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Les Chanalets",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-04",
@@ -4237,57 +4461,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-de-charmeil__2026-10-03__champ-dames-div-1",
-    "golf_id": "ligue-golf-de-charmeil",
-    "golf_nom": "Golf de Charmeil",
-    "type": "equipes",
-    "zone": null,
-    "ville": "SAINT QUENTIN SUR ISERE",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Dames - Div. 1",
-    "date_debut": "2026-10-03",
-    "date_fin": "2026-10-04",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/120:champ-dames-division-1",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-d-albon__2026-10-03__champ-dames-div-2",
-    "golf_id": "ligue-golf-d-albon",
-    "golf_nom": "Golf d'Albon",
-    "type": "equipes",
-    "zone": null,
-    "ville": "ALBON",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Dames - Div. 2",
-    "date_debut": "2026-10-03",
-    "date_fin": "2026-10-04",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/121:champ-dames-division-2",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-03__groupama",
@@ -4300,6 +4475,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Groupama",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -4312,7 +4489,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-10-03__asptt-coupe-de-la-loire",
@@ -4325,6 +4503,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": false,
     "nom": "ASPTT Coupe de la Loire",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -4337,7 +4517,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-03__competition-srixon",
@@ -4350,6 +4531,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Srixon",
     "date_debut": "2026-10-03",
     "date_fin": "2026-10-03",
@@ -4363,7 +4546,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-10-04__elsan-pergola",
@@ -4376,6 +4560,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Elsan/Pergola",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -4388,7 +4574,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-10-04__soroptimist-4-10",
@@ -4401,11 +4588,13 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "SOROPTIMIST 4.10",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
     "format": null,
-    "depart": "En ligne",
+    "depart": "départs échelonnés",
     "trous": null,
     "sponsor": null,
     "url_inscription": "https://www.golfdesvolcans.fr/competition/soroptimist-4-10/",
@@ -4413,7 +4602,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-04__coupe-du-pro",
@@ -4426,6 +4616,8 @@
       "scramble"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du PRO",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -4438,7 +4630,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-04__championnat-du-club",
@@ -4451,6 +4644,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Championnat du club",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -4463,7 +4658,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-10-04__as-de-trefle-paysage-patrice-thivat-conseille",
@@ -4477,6 +4673,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "AS de trèfle paysage - Patrice Thivat conseille",
     "date_debut": "2026-10-04",
     "date_fin": "2026-10-04",
@@ -4489,7 +4687,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-06__tour-auvergne-senior-65",
@@ -4499,9 +4698,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Tour Auvergne Sénior +65",
     "date_debut": "2026-10-06",
     "date_fin": "2026-10-07",
@@ -4514,7 +4715,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-06__seniors-stableford",
@@ -4527,6 +4729,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Seniors Stableford",
     "date_debut": "2026-10-06",
     "date_fin": "2026-10-06",
@@ -4539,7 +4743,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": true
   },
   {
     "id": "ligue-golf-du-gouverneur__2026-10-07__trophee-seniors-gouverneur",
@@ -4552,6 +4757,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Gouverneur",
     "date_debut": "2026-10-07",
     "date_fin": "2026-10-08",
@@ -4564,7 +4771,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-10-08__interclub-au-forez-8-10",
@@ -4574,10 +4782,11 @@
     "zone": "Puy-de-Dôme",
     "ville": null,
     "formules": [
-      "scramble-2",
-      "equipe"
+      "scramble-2"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "INTERCLUB AU FOREZ 8.10",
     "date_debut": "2026-10-08",
     "date_fin": "2026-10-08",
@@ -4590,7 +4799,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-08__les-jeudis-d-etienne",
@@ -4603,6 +4813,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-10-08",
     "date_fin": "2026-10-08",
@@ -4615,7 +4827,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-08__interclub-seniors-volcans-au-forez",
@@ -4625,9 +4838,11 @@
     "zone": "Loire",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Interclub seniors Volcans au Forez",
     "date_debut": "2026-10-08",
     "date_fin": "2026-10-08",
@@ -4640,7 +4855,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-saint-clair__2026-10-10__trophee-seniors-saint-clair",
@@ -4653,6 +4869,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - Saint Clair",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -4665,7 +4883,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-saint-clair__2026-10-10__classic-mid-amateur-saint-clair",
@@ -4678,6 +4897,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - Saint Clair",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-11",
@@ -4690,82 +4911,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-de-la-commanderie__2026-10-10__champ-messieurs-div-1",
-    "golf_id": "ligue-golf-de-la-commanderie",
-    "golf_nom": "Golf de la Commanderie",
-    "type": "equipes",
-    "zone": null,
-    "ville": "CROTTET",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Messieurs - Div. 1",
-    "date_debut": "2026-10-10",
-    "date_fin": "2026-10-11",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/122:champ-messieurs-division-1",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-du-beaujolais__2026-10-10__champ-messieurs-div-2",
-    "golf_id": "ligue-golf-du-beaujolais",
-    "golf_nom": "Golf du Beaujolais",
-    "type": "equipes",
-    "zone": null,
-    "ville": "LUCENAY",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Messieurs - Div. 2",
-    "date_debut": "2026-10-10",
-    "date_fin": "2026-10-11",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/144:champ-messieurs-division-2",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
-  },
-  {
-    "id": "ligue-golf-de-lyon-verger__2026-10-10__champ-messieurs-div-3",
-    "golf_id": "ligue-golf-de-lyon-verger",
-    "golf_nom": "Golf de Lyon Verger",
-    "type": "equipes",
-    "zone": null,
-    "ville": "SAINT SYMPHORIEN D'OZON",
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "nom": "Champ. Messieurs - Div. 3",
-    "date_debut": "2026-10-10",
-    "date_fin": "2026-10-11",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "url_inscription": "https://www.liguegolfaura.com/component/jem/event/145:champ-messieurs-division-3",
-    "source_url": "https://www.liguegolfaura.com/competitions/equipes",
-    "source_type": "ligue-aura",
-    "derniere_maj": "2026-07-20",
-    "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-10__tour-auvergne-dames",
@@ -4775,9 +4922,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Tour Auvergne Dames",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-10",
@@ -4790,7 +4939,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-10__finale-tour-auvergne-mid-am",
@@ -4800,9 +4950,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Finale Tour Auvergne Mid-Am",
     "date_debut": "2026-10-10",
     "date_fin": "2026-10-10",
@@ -4815,7 +4967,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "volcans__2026-10-11__coupe-du-president-11-10",
@@ -4828,6 +4981,8 @@
       "scramble"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "COUPE DU PRÉSIDENT 11.10",
     "date_debut": "2026-10-11",
     "date_fin": "2026-10-11",
@@ -4840,7 +4995,8 @@
     "source_type": "volcans",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-11__coupe-du-personnel",
@@ -4853,6 +5009,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du personnel",
     "date_debut": "2026-10-11",
     "date_fin": "2026-10-11",
@@ -4865,7 +5023,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-10-11__asptt-x-ligue",
@@ -4878,6 +5037,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "ASPTT x Ligue",
     "date_debut": "2026-10-11",
     "date_fin": "2026-10-11",
@@ -4890,7 +5051,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-10-12__finale-dames-du-puy-de-dome",
@@ -4903,6 +5065,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "FINALE DAMES DU PUY DE DÔME",
     "date_debut": "2026-10-12",
     "date_fin": "2026-10-12",
@@ -4915,7 +5079,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": true
   },
   {
     "id": "forez__2026-10-12__competition-9-trous",
@@ -4928,6 +5093,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition 9 trous",
     "date_debut": "2026-10-12",
     "date_fin": "2026-10-12",
@@ -4941,7 +5108,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-la-bresse__2026-10-13__trophee-seniors-2-la-bresse",
@@ -4954,6 +5122,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors 2 - La Bresse",
     "date_debut": "2026-10-13",
     "date_fin": "2026-10-14",
@@ -4966,7 +5136,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-10-13__journee-de-l-amitie",
@@ -4979,6 +5150,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Journée de l'amitié",
     "date_debut": "2026-10-13",
     "date_fin": "2026-10-13",
@@ -4992,7 +5165,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-10-15__territorial-d1",
@@ -5005,6 +5179,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Territorial D1",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -5017,7 +5193,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-10-15__rendez-vous-du-jeudi",
@@ -5030,6 +5207,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -5042,7 +5221,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "etangs__2026-10-15__gla",
@@ -5055,6 +5235,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": false,
     "nom": "GLA",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -5067,7 +5249,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-15__finale-tgv",
@@ -5080,6 +5263,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Finale TGV",
     "date_debut": "2026-10-15",
     "date_fin": "2026-10-15",
@@ -5092,7 +5277,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-10-17__championnat-du-club-et-si-c-etait-vous",
@@ -5105,6 +5291,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Championnat Du Club. Et si c’était vous!",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-17",
@@ -5117,7 +5305,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-saint-etienne__2026-10-17__trophee-seniors-st-etienne",
@@ -5130,6 +5319,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors - St Etienne",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-18",
@@ -5142,7 +5333,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-saint-etienne__2026-10-17__classic-mid-amateur-st-etienne",
@@ -5155,6 +5347,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Classic Mid Amateur - St Etienne",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-18",
@@ -5167,7 +5361,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-17__finale-srixon",
@@ -5180,6 +5375,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Finale Srixon",
     "date_debut": "2026-10-17",
     "date_fin": "2026-10-17",
@@ -5192,7 +5389,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "vichy-sc__2026-10-18__pour-le-sourire-d-un-enfant",
@@ -5205,6 +5403,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Pour le sourire d’un enfant",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -5217,7 +5417,8 @@
     "source_type": "events-calendar",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-18__finale-du-ringer-score-by-allianz-coupe-de-la-commission-spo",
@@ -5230,6 +5431,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Finale du Ringer Score By Allianz Coupe de la commission sportive",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -5242,7 +5445,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-18__championnat-du-cantal-par-equipes",
@@ -5252,9 +5456,11 @@
     "zone": "Cantal",
     "ville": null,
     "formules": [
-      "equipe"
+      "autre"
     ],
     "moment": "journee",
+    "equipe": true,
+    "ouverte": true,
     "nom": "Championnat du Cantal par équipes",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -5267,7 +5473,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-10-18__coupe-des-jardiniers",
@@ -5281,6 +5488,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe des Jardiniers",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -5293,7 +5502,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-18__octobre-rose",
@@ -5306,6 +5516,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Octobre rose",
     "date_debut": "2026-10-18",
     "date_fin": "2026-10-18",
@@ -5318,7 +5530,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-20__seniors-scramble",
@@ -5331,6 +5544,8 @@
       "scramble"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Seniors Scramble",
     "date_debut": "2026-10-20",
     "date_fin": "2026-10-20",
@@ -5343,7 +5558,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": true
   },
   {
     "id": "ligue-golf-des-chanalets__2026-10-21__trophee-seniors-2-les-chanalets",
@@ -5356,6 +5572,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Trophée Seniors 2 - Les Chanalets",
     "date_debut": "2026-10-21",
     "date_fin": "2026-10-22",
@@ -5368,7 +5586,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-10-22__les-jeudis-d-etienne",
@@ -5381,6 +5600,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-10-22",
     "date_fin": "2026-10-22",
@@ -5393,7 +5614,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "ligue-golf-de-chassieu-grand-lyon__2026-10-23__gp-international-paragolf-chassieu",
@@ -5406,6 +5628,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "GP International Paragolf - Chassieu",
     "date_debut": "2026-10-23",
     "date_fin": "2026-10-25",
@@ -5418,7 +5642,8 @@
     "source_type": "ligue-aura",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "val-dauzon__2026-10-24__competition-babut-literie-aquatech-spa",
@@ -5431,6 +5656,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Babut Literie & Aquatech SPA",
     "date_debut": "2026-10-24",
     "date_fin": "2026-10-24",
@@ -5443,7 +5670,8 @@
     "source_type": "valdauzon",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "haute-auvergne__2026-10-24__coupe-du-personnel",
@@ -5456,6 +5684,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du personnel",
     "date_debut": "2026-10-24",
     "date_fin": "2026-10-24",
@@ -5468,7 +5698,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "sainte-agathe__2026-10-24__golf-entreprise-d2",
@@ -5481,6 +5712,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Golf Entreprise D2",
     "date_debut": "2026-10-24",
     "date_fin": "2026-10-24",
@@ -5493,7 +5726,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-10-25__coupe-du-president",
@@ -5506,6 +5740,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du Président",
     "date_debut": "2026-10-25",
     "date_fin": "2026-10-25",
@@ -5518,7 +5754,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-10-26__competition-9-trous",
@@ -5531,6 +5768,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition 9 trous",
     "date_debut": "2026-10-26",
     "date_fin": "2026-10-26",
@@ -5544,7 +5783,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-01__oranges-pour-tous-give-take",
@@ -5557,6 +5797,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Oranges pour tous : Give & Take",
     "date_debut": "2026-11-01",
     "date_fin": "2026-11-01",
@@ -5569,7 +5811,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-05__les-jeudis-pitch-putt",
@@ -5582,6 +5825,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-11-05",
     "date_fin": "2026-11-05",
@@ -5594,7 +5839,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-11-05__rendez-vous-du-jeudi",
@@ -5607,6 +5853,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Rendez-vous du Jeudi",
     "date_debut": "2026-11-05",
     "date_fin": "2026-11-05",
@@ -5619,7 +5867,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "etangs__2026-11-06__journee-de-l-amitie",
@@ -5632,6 +5881,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Journée de l'amitié",
     "date_debut": "2026-11-06",
     "date_fin": "2026-11-06",
@@ -5645,7 +5896,8 @@
     "derniere_maj": "2026-07-20",
     "valide": true,
     "recurrent": true,
-    "formule_deduite": true
+    "formule_deduite": true,
+    "exclu": false
   },
   {
     "id": "etangs__2026-11-07__green-cup",
@@ -5658,6 +5910,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": false,
     "nom": "Green Cup",
     "date_debut": "2026-11-07",
     "date_fin": "2026-11-07",
@@ -5670,7 +5924,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-08__course-au-drapeau-matin-seulement",
@@ -5683,6 +5938,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Course au drapeau - matin seulement",
     "date_debut": "2026-11-08",
     "date_fin": "2026-11-08",
@@ -5695,7 +5952,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "puy-en-velay__2026-11-08__competition-de-cloture",
@@ -5708,6 +5966,8 @@
       "scramble-2"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition de Clôture",
     "date_debut": "2026-11-08",
     "date_fin": "2026-11-08",
@@ -5720,7 +5980,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-12__les-jeudis-d-etienne",
@@ -5733,6 +5994,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne",
     "date_debut": "2026-11-12",
     "date_fin": "2026-11-12",
@@ -5745,7 +6008,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-15__course-a-la-ficelle-matin-seulement",
@@ -5758,6 +6022,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Course à la ficelle - matin seulement",
     "date_debut": "2026-11-15",
     "date_fin": "2026-11-15",
@@ -5770,7 +6036,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-19__les-jeudis-d-etienne-la-derniere-coupe-de-l-amitie-et-remise",
@@ -5783,6 +6050,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis d'Etienne - la dernière : Coupe de l'amitié et remise des prix",
     "date_debut": "2026-11-19",
     "date_fin": "2026-11-19",
@@ -5795,7 +6064,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "forez__2026-11-21__competition-beaujolais",
@@ -5808,6 +6078,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Compétition Beaujolais",
     "date_debut": "2026-11-21",
     "date_fin": "2026-11-21",
@@ -5820,7 +6092,8 @@
     "source_type": "forez",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-11-22__coupe-du-beaujolais",
@@ -5833,6 +6106,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe du Beaujolais",
     "date_debut": "2026-11-22",
     "date_fin": "2026-11-22",
@@ -5845,7 +6120,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-11-22__coupe-beaujolais",
@@ -5858,6 +6134,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe Beaujolais",
     "date_debut": "2026-11-22",
     "date_fin": "2026-11-22",
@@ -5870,7 +6148,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-11-28__soiree-asgs",
@@ -5883,6 +6162,8 @@
       "autre"
     ],
     "moment": "soiree",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Soirée ASGS",
     "date_debut": "2026-11-28",
     "date_fin": "2026-11-28",
@@ -5895,7 +6176,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "royat__2026-12-03__les-jeudis-pitch-putt",
@@ -5908,6 +6190,8 @@
       "individuel"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Les Jeudis Pitch & Putt",
     "date_debut": "2026-12-03",
     "date_fin": "2026-12-03",
@@ -5920,7 +6204,8 @@
     "source_type": "royat",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": true
+    "recurrent": true,
+    "exclu": false
   },
   {
     "id": "etangs__2026-12-05__marche-de-noel",
@@ -5933,6 +6218,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Marché de Noël",
     "date_debut": "2026-12-05",
     "date_fin": "2026-12-05",
@@ -5945,7 +6232,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-12-06__noel",
@@ -5958,6 +6246,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Noël",
     "date_debut": "2026-12-06",
     "date_fin": "2026-12-06",
@@ -5970,7 +6260,8 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   },
   {
     "id": "etangs__2026-12-13__coupe-de-noel",
@@ -5983,6 +6274,8 @@
       "autre"
     ],
     "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
     "nom": "Coupe de Noël",
     "date_debut": "2026-12-13",
     "date_fin": "2026-12-13",
@@ -5995,6 +6288,7 @@
     "source_type": "calendrier-image",
     "derniere_maj": "2026-07-20",
     "valide": true,
-    "recurrent": false
+    "recurrent": false,
+    "exclu": false
   }
 ]

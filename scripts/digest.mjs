@@ -68,13 +68,14 @@ async function selection(jours, avecLigue) {
 
   return toutes
     .filter((c) => c.valide)
-    // Comme sur le site, les épreuves fédérales sont hors périmètre par défaut :
-    // elles se tiennent dans toute la région, souvent à plus de deux heures,
-    // et relèvent d'une démarche volontaire plutôt que d'un agenda de semaine.
+    // Mêmes exclusions que le site : ni équipe, ni fermée, ni écartée à la main.
+    .filter((c) => !c.equipe && c.ouverte !== false && !c.exclu)
+    // Les épreuves fédérales sont hors périmètre par défaut : elles se tiennent
+    // dans toute la région, souvent à plus de deux heures, et relèvent d'une
+    // démarche volontaire plutôt que d'un agenda de semaine.
     .filter((c) => avecLigue || c.type === "club")
     .filter((c) => c.date_debut >= debut && c.date_debut <= fin)
-    // Même politique que le site : les épreuves du soir ne sont pas ce qu'on
-    // cherche quand on planifie sa semaine.
+    // Les épreuves du soir ne sont pas ce qu'on cherche pour planifier sa semaine.
     .filter((c) => c.moment !== "soiree")
     .sort((a, b) => (a.date_debut === b.date_debut
       ? a.golf_nom.localeCompare(b.golf_nom)

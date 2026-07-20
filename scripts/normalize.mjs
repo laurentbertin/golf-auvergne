@@ -127,12 +127,22 @@ const FAMILLES = [
   { id: "scramble", motif: /s[ck]ramble(?!\s*(?:à|a)?\s*2)|am[ée]ricaine/i },
   { id: "double", motif: /green\s?some|greensome|chapman|shamble|4\s*balles|quatre\s*balles|am\s*[-\/]\s*am|pro\s*[-–]?\s*am|foursome|doublettes?/i },
   { id: "individuel", motif: /stableford|stroke\s?play|strokeford|individuel|classement|medal|simple/i },
-  { id: "equipe", motif: /[ée]quipes?\b|interclub|inter\s+club|promotion|division|tour auvergne|coupe de france/i },
 ];
 
 // Épreuves qui se jouent le soir : elles n'intéressent pas qui cherche une
 // compétition de journée, et noyaient la liste (after work, nocturnes…).
 const EN_SOIREE = /after\s*work|nocturne|soir[ée]e|tomb[ée]e de la nuit|18\s*h\s*30|19\s*h|20\s*h(?!\d)/i;
+
+// Compétitions par équipe : interclubs, Tour Auvergne, championnats par équipe.
+// Le site vise les compétitions ludiques qu'un golfeur choisit seul ; les
+// épreuves d'équipe ne concernent qu'une poignée de licenciés sélectionnés, et
+// « par équipe » se confondait avec « scramble » (qui se joue aussi à plusieurs).
+// On les repère pour les écarter, on ne les propose plus comme filtre.
+const PAR_EQUIPE = /^[ée]quipe|par [ée]quipes?|interclub|inter[-\s]club|tour auvergne|coupe de france|promotion (?:s[ée]niors|mid|dames|messieurs)|arverne? trophy/i;
+
+// Compétitions fermées : réservées, sans inscription possible. Inutile de les
+// montrer sur un site dont le seul intérêt est de pouvoir s'inscrire.
+const FERMEE = /ferm[ée]e?\b/i;
 
 export function classerFormules(nom = "", format = "") {
   const texteComplet = `${nom} ${format || ""}`;
@@ -147,6 +157,22 @@ export function classerFormules(nom = "", format = "") {
 
 export function detectMoment(nom = "", format = "") {
   return EN_SOIREE.test(`${nom} ${format || ""}`) ? "soiree" : "journee";
+}
+
+export function estParEquipe(nom = "", format = "") {
+  return PAR_EQUIPE.test(nom) || PAR_EQUIPE.test(format || "");
+}
+
+export function estOuverte(format = "") {
+  return !FERMEE.test(format || "");
+}
+
+// « En ligne » comme mode de départ prête à confusion (on lit « inscription en
+// ligne »). Le terme désigne des départs échelonnés au trou 1, par opposition
+// au shotgun. On le réécrit une fois pour toutes.
+export function lisibiliserDepart(depart) {
+  if (!depart) return null;
+  return /^en ligne$/i.test(depart.trim()) ? "départs échelonnés" : depart;
 }
 
 // Construit un enregistrement complet et normalisé à partir d'un "raw" produit par un connecteur.
@@ -166,11 +192,13 @@ export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
     ville: raw.ville ?? null,
     formules: classerFormules(raw.nom, raw.format),
     moment: detectMoment(raw.nom, raw.format),
+    equipe: estParEquipe(raw.nom, raw.format),
+    ouverte: estOuverte(raw.format),
     nom: (raw.nom || "").trim(),
     date_debut: dateDebut,
     date_fin: dateFin,
     format: raw.format ?? null,
-    depart: raw.depart ?? null,
+    depart: lisibiliserDepart(raw.depart),
     trous: raw.trous ?? null,
     sponsor: raw.sponsor ?? detectSponsor(raw.nom),
     url_inscription: raw.url_inscription ?? null,
@@ -243,6 +271,22 @@ export function marquerRecurrences(liste = []) {
         c.formule_deduite = true;
       }
     }
+  }
+  return liste;
+}
+
+// --------------------------------------------------------------- exclusions
+// Applique la liste d'exclusions manuelle (data/exclusions.json) : marque en
+// place `exclu: true` les compétitions dont le nom correspond à un motif.
+function sansAccent(s = "") {
+  return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
+export function marquerExclusions(liste = [], motifs = []) {
+  for (const c of liste) {
+    const nom = sansAccent(c.nom);
+    c.exclu = motifs.some((m) =>
+      (!m.golf || m.golf === c.golf_id) && nom.includes(sansAccent(m.contient)));
   }
   return liste;
 }

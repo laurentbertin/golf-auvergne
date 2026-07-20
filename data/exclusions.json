@@ -1,0 +1,23 @@
+{
+  "_lisezmoi": [
+    "Compétitions à ne jamais afficher, décidées à la main.",
+    "",
+    "Sert aux cas qu'aucune règle automatique ne couvre proprement : une série",
+    "réservée à un club, une finale de sélection qui n'est pas ludique, etc.",
+    "",
+    "Chaque motif : { golf, contient, raison }.",
+    "  golf     : id du club (omis = tous les clubs)",
+    "  contient : fragment de nom, sans accent ni casse (comparaison souple)",
+    "  raison   : pour mémoire, non affichée",
+    "",
+    "Une compétition est masquée si son nom contient le fragment (et, si golf",
+    "est précisé, si elle vient de ce club). Vaut aussi pour les occurrences",
+    "futures d'une série."
+  ],
+  "motifs": [
+    { "golf": "forez", "contient": "seniors scramble", "raison": "série réservée au club, récurrente, non ludique" },
+    { "golf": "forez", "contient": "seniors stableford", "raison": "série réservée au club, récurrente, non ludique" },
+    { "golf": "val-dauzon", "contient": "finale lipp de france", "raison": "finale de sélection, pas une compétition ouverte" },
+    { "golf": "val-dauzon", "contient": "finale dames du puy", "raison": "finale départementale de sélection" }
+  ]
+}

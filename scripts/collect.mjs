@@ -18,7 +18,7 @@ import { fetchCalendrierImage } from "./connectors/calendrierImage.mjs";
 import { fetchChamplong } from "./connectors/champlong.mjs";
 import { fetchForez } from "./connectors/forez.mjs";
 import { fetchLigueAura } from "./connectors/ligueAura.mjs";
-import { toRecord, merge, isoToday, marquerRecurrences } from "./normalize.mjs";
+import { toRecord, merge, isoToday, marquerRecurrences, marquerExclusions } from "./normalize.mjs";
 
 // Chaque club a son propre outil de publication : un connecteur par site.
 // Tous lisent du balisage régulier — aucun ne dépend d'un LLM.
@@ -35,6 +35,7 @@ const CONNECTEURS = {
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const F_GOLFS = join(ROOT, "data", "golfs.json");
 const F_LIGUE = join(ROOT, "data", "ligue.json");
+const F_EXCLUS = join(ROOT, "data", "exclusions.json");
 const F_COMPS = join(ROOT, "data", "competitions.json");
 const F_SITEDATA = join(ROOT, "site", "data.js");
 
@@ -100,16 +101,35 @@ async function main() {
     }
   }
 
-  // La récurrence se juge sur l'ensemble du calendrier, pas source par source :
-  // on la calcule après fusion.
-  const fusion = marquerRecurrences(merge(existants, nouveaux));
+  // On élague avant de marquer : les compétitions passées ne servent plus (site
+  // et digest ne montrent que l'à-venir) et faisaient enfler le fichier au fil
+  // des collectes ; le type « equipes », abandonné, laissait des résidus que la
+  // fusion perpétuait faute d'être recollectés.
+  //
+  // Sur une collecte COMPLÈTE, on retire aussi les clubs disparus de golfs.json :
+  // sans cela, un club retiré laisserait ses compétitions futures indéfiniment,
+  // la fusion ne les recollectant plus mais les conservant par id.
+  const clubsConnus = new Set(
+    (await readJson(F_GOLFS, [])).map((g) => g.id),
+  );
+  const collecteComplete = filtre.length === 0;
+  const vivantes = merge(existants, nouveaux)
+    .filter((c) => c.date_fin >= since && c.type !== "equipes")
+    .filter((c) => !collecteComplete || c.type !== "club" || clubsConnus.has(c.golf_id));
+
+  // La récurrence se juge sur l'ensemble du calendrier, pas source par source.
+  // Les exclusions manuelles s'appliquent ensuite.
+  const exclusions = (await readJson(F_EXCLUS, {})).motifs || [];
+  const fusion = marquerExclusions(marquerRecurrences(vivantes), exclusions);
   await writeFile(F_COMPS, JSON.stringify(fusion, null, 2) + "\n");
   await writeFile(F_SITEDATA, `window.COMPETITIONS = ${JSON.stringify(fusion, null, 2)};\n`);
 
-  const valides = fusion.filter((c) => c.valide).length;
+  // Ce que la page finit par montrer : ni équipe, ni fermée, ni exclue, ni soir.
+  const masquees = fusion.filter((c) =>
+    c.equipe || c.ouverte === false || c.exclu || c.moment === "soiree").length;
   const recurrentes = fusion.filter((c) => c.recurrent).length;
-  console.log(`\n✔ ${fusion.length} compétitions au total — ${valides} validées (affichées), ${fusion.length - valides} à relire.`);
-  console.log(`  dont ${recurrentes} rendez-vous réguliers (séries repérées par répétition).`);
+  console.log(`\n✔ ${fusion.length} compétitions collectées — ${fusion.length - masquees} affichables.`);
+  console.log(`  écartées : ${masquees} (équipe, fermée, exclue ou soirée) · dont ${recurrentes} rendez-vous réguliers repérés.`);
   console.log(`  data/competitions.json et site/data.js mis à jour.`);
 }
 

@@ -13,8 +13,11 @@
 
   // `type` n'existait pas avant l'ajout des épreuves fédérales : un
   // enregistrement collecté par une version antérieure est une coupe de club.
+  // Sont écartées d'emblée, sans réglage : les compétitions par équipe, fermées
+  // (inscription impossible) ou exclues à la main — aucune n'a sa place ici.
   const ALL = (window.COMPETITIONS || [])
     .filter((c) => c.valide && c.date_debut >= PREMIER_JOUR)
+    .filter((c) => !c.equipe && c.ouverte !== false && !c.exclu)
     .map((c) => ({ ...c, type: c.type || "club",
       formules: c.formules || ["autre"], moment: c.moment || "journee",
       recurrent: c.recurrent === true, formule_deduite: c.formule_deduite === true }));
@@ -30,16 +33,16 @@
     { id: "mid-amateurs", label: "Classic Mid-Am" },
   ];
   const typesActifs = new Set();
-  let equipesVisibles = false;
 
   // Familles de formules. Contrairement aux golfs, on part de RIEN de coché :
-  // on cherche « les scrambles à 2 », pas « tout sauf cinq familles ».
+  // on cherche « les scrambles à 2 », pas « tout sauf quatre familles ». Plus de
+  // « par équipe » : un scramble se joue aussi à plusieurs, la distinction
+  // brouillait tout, et ces compétitions ne sont plus affichées.
   const FORMULES = [
     { id: "scramble-2", label: "Scramble à 2" },
     { id: "individuel", label: "Individuel" },
     { id: "double", label: "À deux" },
     { id: "scramble", label: "Autre scramble" },
-    { id: "equipe", label: "Par équipe" },
     { id: "autre", label: "Formule non précisée" },
   ];
   const formulesActives = new Set();
@@ -49,7 +52,6 @@
   const elTypes = document.getElementById("types");
   const elFormules = document.getElementById("formules");
   const elSoiree = document.getElementById("soiree");
-  const elEquipes = document.getElementById("equipes");
   const elFiltres = document.getElementById("filtres");
   const elPlier = document.getElementById("plier-golfs");
   const elBascule = document.getElementById("bascule-golfs");
@@ -144,14 +146,8 @@
     elTypes.appendChild(b);
   });
 
-  elEquipes.onchange = () => {
-    equipesVisibles = elEquipes.checked;
-    majPlierLigue();
-    render();
-  };
-
   // Bloc secondaire, éteint par défaut : on le replie pour que la page s'ouvre
-  // sur des compétitions et non sur quatre rangées de réglages.
+  // sur des compétitions et non sur des rangées de réglages.
   const elPlierLigue = document.getElementById("plier-ligue");
   const elBlocLigue = document.getElementById("bloc-ligue");
 
@@ -163,7 +159,7 @@
   };
 
   function majPlierLigue() {
-    const n = typesActifs.size + (equipesVisibles ? 1 : 0);
+    const n = typesActifs.size;
     elPlierLigue.textContent = elBlocLigue.hidden
       ? (n ? `épreuves de la ligue AURA — ${n} activée${n > 1 ? "s" : ""}` : "épreuves de la ligue AURA")
       : "replier";
@@ -252,12 +248,10 @@
   };
 
   // ------------------------------------------------------------------ rendu
-  // Trois régimes distincts : les coupes de club se filtrent par golf, les
-  // épreuves facultatives par catégorie, les compétitions d'équipe par leur
-  // seule case à cocher.
+  // Deux régimes : les coupes de club se filtrent par golf, les épreuves
+  // fédérales (grand prix, seniors, mid-am) par catégorie.
   function visible(c) {
     if (c.type === "club") return actifs.has(c.golf_id);
-    if (c.type === "equipes") return equipesVisibles;
     return typesActifs.has(c.type);
   }
 
@@ -365,7 +359,7 @@
       ? `<span class="type type-${c.type}">${esc(LIBELLE_TYPE[c.type] || c.type)}</span>` : "";
     // Le lien mène à la page du club, qui n'est pas toujours un formulaire
     // d'inscription : le libeller « S'inscrire » promettrait plus qu'il ne tient.
-    const libelleLien = c.type === "club" ? "Voir le site" : "Fiche ligue";
+    const libelleLien = c.type === "club" ? "Voir" : "Fiche ligue";
     // Sur téléphone, le libellé cède la place à un chevron et c'est toute la
     // carte qui devient cliquable (voir .cta a::after) : sur près de 200 lignes,
     // une ligne de lien par carte coûtait un écran et demi de défilement.
