@@ -291,26 +291,18 @@ export function marquerExclusions(liste = [], motifs = []) {
   return liste;
 }
 
-// Fusionne les nouvelles compétitions avec l'existant.
-// - dédup par id
-// - PRÉSERVE une validation humaine (valide:true) et les corrections manuelles déjà faites
+// Fusionne les nouvelles compétitions avec l'existant : dédoublonnage par id,
+// la version fraîchement collectée l'emportant toujours.
+//
+// On ne préserve plus aucun champ de l'ancien enregistrement. Cette préservation
+// datait de l'époque où le JSON était relu et corrigé à la main : elle gardait
+// l'ancien `format` même quand le club l'avait changé à la source, si bien que
+// l'étiquette affichée (« Scramble à 2 ») pouvait contredire le classement
+// recalculé sur le nouveau format (« à deux »). Tout étant désormais recollecté,
+// la donnée fraîche fait foi. Les enregistrements qui ne sont plus collectés
+// (absents de `nouveaux`) restent tels quels, jusqu'à leur élagage par date.
 export function merge(existants = [], nouveaux = []) {
   const parId = new Map(existants.map((c) => [c.id, c]));
-  for (const n of nouveaux) {
-    const ancien = parId.get(n.id);
-    if (ancien) {
-      // On garde le flag de validation et les champs édités à la main ;
-      // on rafraîchit seulement la date de maj et les champs encore vides.
-      parId.set(n.id, {
-        ...n,
-        valide: ancien.valide,
-        sponsor: ancien.sponsor ?? n.sponsor,
-        url_inscription: ancien.url_inscription ?? n.url_inscription,
-        format: ancien.format ?? n.format,
-      });
-    } else {
-      parId.set(n.id, n);
-    }
-  }
+  for (const n of nouveaux) parId.set(n.id, n);
   return [...parId.values()].sort((a, b) => (a.date_debut < b.date_debut ? -1 : 1));
 }
