@@ -684,7 +684,7 @@ window.COMPETITIONS = [
     "zone": "Allier",
     "ville": null,
     "formules": [
-      "scramble-2"
+      "double"
     ],
     "moment": "journee",
     "nom": "La Montagne",
