@@ -34,16 +34,18 @@
   ];
   const typesActifs = new Set();
 
-  // Familles de formules. Contrairement aux golfs, on part de RIEN de coché :
-  // on cherche « les scrambles à 2 », pas « tout sauf quatre familles ». Plus de
-  // « par équipe » : un scramble se joue aussi à plusieurs, la distinction
-  // brouillait tout, et ces compétitions ne sont plus affichées.
+  // Filtres de formule. Contrairement aux golfs, on part de RIEN de coché : on
+  // cherche « les scrambles », pas « tout sauf quatre familles ».
+  //
+  // Chaque filtre regroupe une ou plusieurs familles issues du classement :
+  //   - « Scramble » = scramble à 2 (l'immense majorité ; les rares scrambles
+  //     à 3 ou 4 tombent dans « À deux », c'est assumé) ;
+  //   - « À deux » réunit greensome, chapman, 4 balles… et ces scrambles à 3/4.
   const FORMULES = [
-    { id: "scramble-2", label: "Scramble à 2" },
-    { id: "individuel", label: "Individuel" },
-    { id: "double", label: "À deux" },
-    { id: "scramble", label: "Autre scramble" },
-    { id: "autre", label: "Formule non précisée" },
+    { id: "scramble", label: "Scramble", familles: ["scramble-2"] },
+    { id: "individuel", label: "Individuel", familles: ["individuel"] },
+    { id: "adeux", label: "À deux", familles: ["double", "scramble"] },
+    { id: "autre", label: "Non précisé", familles: ["autre"] },
   ];
   const formulesActives = new Set();
   let masquerSoiree = true;  // after work et nocturnes : rarement ce qu'on cherche
@@ -94,9 +96,13 @@
   });
 
   // ---------------------------------------------------------------- formules
+  // Une compétition relève d'un filtre si l'une de ses familles y est regroupée.
+  const releveDe = (c, filtre) =>
+    (c.formules || []).some((fam) => filtre.familles.includes(fam));
+
   const boutonsFormule = new Map();
   FORMULES.forEach((f) => {
-    if (!ALL.some((c) => (c.formules || []).includes(f.id))) return;
+    if (!ALL.some((c) => releveDe(c, f))) return;
     const b = document.createElement("button");
     b.type = "button";
     b.className = "chip";
@@ -119,12 +125,14 @@
 
   // Le nombre affiché sur chaque puce rend visible ce qu'on ne sait pas :
   // un tiers des compétitions n'annoncent aucune formule, et filtrer sur
-  // « Scramble à 2 » les écarte toutes en silence sans ce repère.
+  // « Scramble » les écarte toutes en silence sans ce repère.
   function majComptesFormule(base) {
-    boutonsFormule.forEach((b, id) => {
-      const n = base.filter((c) => (c.formules || []).includes(id)).length;
+    FORMULES.forEach((f) => {
+      const b = boutonsFormule.get(f.id);
+      if (!b) return;
+      const n = base.filter((c) => releveDe(c, f)).length;
       b.querySelector(".compte").textContent = n ? ` ${n}` : "";
-      b.disabled = n === 0 && !formulesActives.has(id);
+      b.disabled = n === 0 && !formulesActives.has(f.id);
     });
   }
 
@@ -259,7 +267,7 @@
   // de formule ne s'applique qu'aux compétitions de club.
   function formuleRetenue(c) {
     if (c.type !== "club" || !formulesActives.size) return true;
-    return (c.formules || []).some((f) => formulesActives.has(f));
+    return FORMULES.some((f) => formulesActives.has(f.id) && releveDe(c, f));
   }
 
   function momentRetenu(c) {
