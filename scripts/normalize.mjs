@@ -187,8 +187,13 @@ export function isoToday() {
 
 // ------------------------------------------------------------ récurrences
 // Beaucoup de clubs tiennent un rendez-vous hebdomadaire ou mensuel : « Les
-// Jeudis d'Etienne », « Compétition 9 trous », « GHA n°12 »… Ils forment près
-// d'un tiers du calendrier et noient les épreuves ponctuelles qu'on cherche.
+// Jeudis d'Etienne », « Compétition 9 trous », « GHA n°12 »…
+//
+// La récurrence n'est PAS un filtre proposé au visiteur : le découpage était
+// discutable — deux dates espacées de deux mois font-elles une série ? — et
+// la question « qu'est-ce que je peux jouer » se pose en termes de formule,
+// pas de fréquence. Elle ne sert plus qu'à une chose, ci-dessous : déduire
+// qu'un rendez-vous qui revient sans formule annoncée est une individuelle.
 //
 // On les repère par répétition plutôt que par une liste de noms tenue à la
 // main : un même intitulé, dans un même club, revenant au moins deux fois.
