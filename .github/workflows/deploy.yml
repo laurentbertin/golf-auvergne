@@ -27,10 +27,8 @@ jobs:
         with:
           node-version: "24"
 
-      - run: npm install
-
-      # Les six golfs sont lus dans le balisage de leur site : aucune clé d'API
-      # n'est nécessaire.
+      # Aucune dépendance ni clé d'API : la collecte ne s'appuie que sur Node et
+      # ses modules natifs. Pas d'étape d'installation.
       - name: Collecte des compétitions
         run: node scripts/collect.mjs
 

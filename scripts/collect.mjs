@@ -32,14 +32,6 @@ const CONNECTEURS = {
   "calendrier-image": fetchCalendrierImage,
 };
 
-// Import paresseux : le connecteur LLM (et sa dépendance @anthropic-ai/sdk) n'est
-// chargé que si un golf en a besoin. Ainsi la collecte des golfs structurés
-// (Vichy…) tourne sans aucune installation.
-async function loadHtmlLlm() {
-  const m = await import("./connectors/htmlLlm.mjs");
-  return m.fetchHtmlLlm;
-}
-
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const F_GOLFS = join(ROOT, "data", "golfs.json");
 const F_LIGUE = join(ROOT, "data", "ligue.json");
@@ -52,7 +44,7 @@ async function readJson(path, fallback) {
 }
 
 async function collectGolf(golf, since) {
-  const mode = golf.connecteur || "auto";
+  const mode = golf.connecteur;
 
   const dedie = CONNECTEURS[mode];
   if (dedie) return { raws: await dedie(golf), type: mode };
@@ -60,18 +52,7 @@ async function collectGolf(golf, since) {
   if (mode === "events-calendar") {
     return { raws: await fetchEventsCalendar(golf, since), type: "events-calendar" };
   }
-  if (mode === "html-llm") {
-    const fetchHtmlLlm = await loadHtmlLlm();
-    return { raws: await fetchHtmlLlm(golf), type: "html-llm" };
-  }
-  // auto : structuré d'abord, LLM en secours
-  try {
-    return { raws: await fetchEventsCalendar(golf, since), type: "events-calendar" };
-  } catch (e) {
-    console.log(`   ↳ Events Calendar KO (${e.message}) → bascule LLM`);
-    const fetchHtmlLlm = await loadHtmlLlm();
-    return { raws: await fetchHtmlLlm(golf), type: "html-llm" };
-  }
+  throw new Error(`connecteur inconnu « ${mode} »`);
 }
 
 async function main() {
@@ -89,10 +70,10 @@ async function main() {
       const recs = raws
         .map((r) => toRecord(r, golf, type, since))
         .filter((r) => r.date_debut && r.date_fin >= since)
-        // Tout ce qui est lu dans du balisage régulier (flux structuré ou
-        // connecteur dédié) est fiable -> publié automatiquement.
-        // Seule une extraction par IA resterait en attente de relecture humaine.
-        .map((r) => (r.source_type === "html-llm" ? r : { ...r, valide: true }));
+        // Tout est lu dans du balisage régulier : rien n'est deviné, donc tout
+        // est publié directement (le champ valide, hérité du premier jet à
+        // relecture humaine, reste true partout).
+        .map((r) => ({ ...r, valide: true }));
       nouveaux.push(...recs);
       console.log(`${recs.length} compétition(s) [${type}]`);
     } catch (e) {
