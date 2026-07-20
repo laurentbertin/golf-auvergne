@@ -1,0 +1,33 @@
+{
+  "_lisezmoi": [
+    "Le Golf Club de Vézac (Aurillac) publie son calendrier en PDF texte,",
+    "lié depuis https://golfvezac.com/competitions/calendrier (« CALENDRIER 2026 »).",
+    "Transcription de la saison à venir. Les épreuves par équipe (Tour Auvergne,",
+    "Championnat du Cantal par équipe, Arverne Trophy) sont incluses mais écartées",
+    "automatiquement à l'affichage, comme partout ailleurs.",
+    "Le robot surveille le lien PDF et signale un changement."
+  ],
+  "image_source": "https://www.golfvezac.com/wp-content/uploads/2026/05/CALENDRIER-2026-38.pdf",
+  "releve_le": "2026-07-20",
+  "annee": 2026,
+  "competitions": [
+    { "date": "26/07", "nom": "Utile / Nulle Part Ailleurs", "format": "Stableford" },
+    { "date": "02/08", "nom": "Unikalo / ADMH", "format": "Scramble à 2" },
+    { "date": "09/08", "nom": "Tryba", "format": "Stableford" },
+    { "date": "16/08", "nom": "Osmose Communication", "format": "Stableford & Scramble" },
+    { "date": "23/08", "nom": "SPX Consulting / Charcuterie Benech", "format": "Shamble" },
+    { "date": "30/08", "nom": "MAÏF", "format": "Stableford" },
+    { "date": "06/09", "nom": "Group Grim", "format": "Stableford & Scramble" },
+    { "date": "13/09", "nom": "3C Energie 15 / Na&line Coiffure", "format": "Stableford" },
+    { "date": "20/09", "nom": "Leclerc", "format": "Scramble à 2" },
+    { "date": "26/09", "nom": "Tour Auvergne Dames", "format": "Équipe" },
+    { "date": "27/09", "nom": "Allianz (Finale Ringer Score)", "format": "Stableford" },
+    { "date": "29/09", "nom": "Aumili (fin de saison)", "format": "Scramble à 2" },
+    { "date": "04/10", "nom": "Desprat St Verny / La Bergerie", "format": "9 trous Scramble / 9 trous Greensome" },
+    { "date": "11/10", "nom": "Les Jardiniers / Le Green / École de Golf", "format": "Stableford" },
+    { "date": "17/10", "nom": "Arverne Trophy", "format": "Équipe" },
+    { "date": "17/10", "nom": "Octobre Rose (caritatif)", "format": "9 trous Scramble", "depart": "Shotgun 14h" },
+    { "date": "18/10", "nom": "Championnat du Cantal par équipe", "format": "Équipe" },
+    { "date": "25/10", "nom": "Commission Sportive", "format": "Stableford" }
+  ]
+}
