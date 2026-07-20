@@ -14,10 +14,11 @@
   // `type` n'existait pas avant l'ajout des épreuves fédérales : un
   // enregistrement collecté par une version antérieure est une coupe de club.
   // Sont écartées d'emblée, sans réglage : les compétitions par équipe, fermées
-  // (inscription impossible) ou exclues à la main — aucune n'a sa place ici.
+  // (inscription impossible), du soir (réservées aux membres, on ne s'y déplace
+  // pas) ou exclues à la main — aucune n'a sa place ici.
   const ALL = (window.COMPETITIONS || [])
     .filter((c) => c.valide && c.date_debut >= PREMIER_JOUR)
-    .filter((c) => !c.equipe && c.ouverte !== false && !c.exclu)
+    .filter((c) => !c.equipe && c.ouverte !== false && c.moment !== "soiree" && !c.exclu)
     .map((c) => ({ ...c, type: c.type || "club",
       formules: c.formules || ["autre"], moment: c.moment || "journee",
       recurrent: c.recurrent === true, formule_deduite: c.formule_deduite === true }));
@@ -48,12 +49,10 @@
     { id: "autre", label: "Non précisé", familles: ["autre"] },
   ];
   const formulesActives = new Set();
-  let masquerSoiree = true;  // after work et nocturnes : rarement ce qu'on cherche
 
   const elPeriodes = document.getElementById("periodes");
   const elTypes = document.getElementById("types");
   const elFormules = document.getElementById("formules");
-  const elSoiree = document.getElementById("soiree");
   const elFiltres = document.getElementById("filtres");
   const elPlier = document.getElementById("plier-golfs");
   const elBascule = document.getElementById("bascule-golfs");
@@ -117,11 +116,6 @@
     boutonsFormule.set(f.id, b);
     elFormules.appendChild(b);
   });
-
-  elSoiree.onchange = () => {
-    masquerSoiree = elSoiree.checked;
-    render();
-  };
 
   // Le nombre affiché sur chaque puce rend visible ce qu'on ne sait pas :
   // un tiers des compétitions n'annoncent aucune formule, et filtrer sur
@@ -270,20 +264,15 @@
     return FORMULES.some((f) => formulesActives.has(f.id) && releveDe(c, f));
   }
 
-  function momentRetenu(c) {
-    return !(masquerSoiree && c.moment === "soiree");
-  }
-
   function render() {
     // Base servant à compter les formules : tout sauf le filtre de formule
     // lui-même, pour que les nombres reflètent la sélection en cours.
     const base = ALL.filter((c) =>
-      visible(c) && momentRetenu(c) && c.date_debut <= periode.jusqua && c.type === "club");
+      visible(c) && c.date_debut <= periode.jusqua && c.type === "club");
     majComptesFormule(base);
 
     const list = ALL
-      .filter((c) => visible(c) && formuleRetenue(c) && momentRetenu(c)
-        && c.date_debut <= periode.jusqua)
+      .filter((c) => visible(c) && formuleRetenue(c) && c.date_debut <= periode.jusqua)
       .sort((a, b) => (a.date_debut < b.date_debut ? -1 : 1));
 
     elListe.innerHTML = "";
