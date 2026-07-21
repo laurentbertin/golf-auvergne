@@ -7,6 +7,7 @@
 //   node scripts/digest.mjs            -> dist/digest.html + dist/digest.txt
 //   node scripts/digest.mjs --jours 7  -> fenêtre de 7 jours au lieu de 14
 //   node scripts/digest.mjs --ligue    -> ajoute les épreuves fédérales
+//   node scripts/digest.mjs --depuis 3 -> fenêtre décalée (relecture avant envoi)
 //
 // Le mail est écrit en HTML de messagerie, pas en HTML de site : styles en
 // ligne, tableaux, largeur fixe. Les clients de messagerie ignorent les
@@ -44,6 +45,15 @@ function argJours() {
   return Number.isFinite(v) && v > 0 ? v : JOURS_PAR_DEFAUT;
 }
 
+// Premier jour annoncé. Vaut 1 (demain) pour une lecture immédiate, davantage
+// quand le numéro est préparé plusieurs jours avant d'être envoyé : sans ce
+// décalage, il listerait des compétitions déjà jouées à la lecture.
+function argDepuis() {
+  const i = process.argv.indexOf("--depuis");
+  const v = i >= 0 ? Number(process.argv[i + 1]) : NaN;
+  return Number.isFinite(v) && v >= 1 ? v : 1;
+}
+
 function dateDans(n) {
   const d = new Date();
   d.setDate(d.getDate() + n);
@@ -61,9 +71,9 @@ function enLettres(iso) {
 }
 
 // ------------------------------------------------------------------ données
-async function selection(jours, avecLigue) {
+async function selection(jours, avecLigue, depuis = 1) {
   const toutes = JSON.parse(await readFile(F_COMPS, "utf8"));
-  const debut = dateDans(1);          // pas le jour même : inscriptions closes
+  const debut = dateDans(depuis);     // pas le jour même : inscriptions closes
   const fin = dateDans(jours);
 
   return toutes
@@ -128,8 +138,8 @@ function blocJour(iso, comps) {
       </td></tr>${comps.map(ligneCompetition).join("")}`;
 }
 
-function construireHtml(groupes, total, jours) {
-  const periode = `du ${enLettres(dateDans(1))} au ${enLettres(dateDans(jours))}`;
+function construireHtml(groupes, total, jours, depuis) {
+  const periode = `du ${enLettres(dateDans(depuis))} au ${enLettres(dateDans(jours))}`;
   const corps = groupes.map(([iso, comps]) => blocJour(iso, comps)).join("");
 
   return `<!DOCTYPE html>
@@ -180,10 +190,10 @@ function construireHtml(groupes, total, jours) {
 // -------------------------------------------------------------- texte brut
 // Toujours fournir une version texte : certains clients l'affichent, et son
 // absence pénalise la délivrabilité.
-function construireTexte(groupes, total, jours) {
+function construireTexte(groupes, total, jours, depuis) {
   const lignes = [
     "LES COMPÉTITIONS DE LA SEMAINE",
-    `${`du ${enLettres(dateDans(1))} au ${enLettres(dateDans(jours))}`} — ${total} compétition${total > 1 ? "s" : ""}`,
+    `${`du ${enLettres(dateDans(depuis))} au ${enLettres(dateDans(jours))}`} — ${total} compétition${total > 1 ? "s" : ""}`,
     "",
   ];
   for (const [iso, comps] of groupes) {
@@ -204,12 +214,13 @@ function construireTexte(groupes, total, jours) {
 async function main() {
   const jours = argJours();
   const avecLigue = process.argv.includes("--ligue");
-  const liste = await selection(jours, avecLigue);
+  const depuis = argDepuis();
+  const liste = await selection(jours, avecLigue, depuis);
   const groupes = grouperParJour(liste);
 
   await mkdir(D_SORTIE, { recursive: true });
-  await writeFile(join(D_SORTIE, "digest.html"), construireHtml(groupes, liste.length, jours));
-  await writeFile(join(D_SORTIE, "digest.txt"), construireTexte(groupes, liste.length, jours));
+  await writeFile(join(D_SORTIE, "digest.html"), construireHtml(groupes, liste.length, jours, depuis));
+  await writeFile(join(D_SORTIE, "digest.txt"), construireTexte(groupes, liste.length, jours, depuis));
 
   const clubs = new Set(liste.map((c) => c.golf_nom));
   console.log(`Digest sur ${jours} jours : ${liste.length} compétition(s), ` +

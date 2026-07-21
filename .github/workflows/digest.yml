@@ -1,12 +1,13 @@
-name: Digest bimensuel (envoi)
+name: Digest bimensuel (brouillon + rappel)
 
-# Compose et envoie le digest aux abonnés, sans relecture.
+# Prépare le digest en brouillon le mardi et envoie un rappel à Laurent,
+# pour qu'il le relise et l'expédie lui-même le jeudi.
 # Programmé tous les jeudis, mais le script ne produit un numéro qu'une semaine
 # sur deux : cron ne sait pas exprimer « tous les 15 jours » sans dériver dans
 # le mois. Un déclenchement manuel produit toujours un brouillon.
 on:
   schedule:
-    - cron: "0 6 * * 4"   # jeudi ~8h heure de Paris
+    - cron: "0 6 * * 2"   # mardi ~8h heure de Paris (envoi visé : jeudi)
   workflow_dispatch: {}   # bouton « Run workflow » pour le déclencher à la demande
 
 permissions:
@@ -27,7 +28,7 @@ jobs:
       - name: Rafraîchir les compétitions
         run: node scripts/collect.mjs
 
-      - name: Composer et envoyer le digest
+      - name: Préparer le brouillon et prévenir
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           DECLENCHEMENT: ${{ github.event_name }}

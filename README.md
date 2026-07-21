@@ -60,11 +60,17 @@ déposer la transcription dans `data/manuel/<id>.json`.
 
 ## L'e-mail aux abonnés
 
-Un digest part **une quinzaine sur deux**, le jeudi matin, **automatiquement**.
-Personne ne le relit avant : une erreur de collecte arriverait donc telle quelle
-chez les abonnés. Deux refus limitent la casse — aucune compétition sur la
-période, ou aucun abonné confirmé — et `node scripts/campagne.mjs --brouillon`
-repasse en relecture manuelle sans toucher au code.
+Un digest paraît **une quinzaine sur deux**. Le **mardi**, l'Action prépare la
+campagne en **brouillon** et envoie un rappel par mail ; on la relit et on
+l'expédie soi-même, en visant le **jeudi**. Rien ne part sans un clic humain.
+
+Le brouillon étant préparé deux jours avant l'envoi, la fenêtre annoncée démarre
+d'autant plus tard (`decalage_envoi`) : sans cela le numéro listerait des
+compétitions déjà jouées au moment de la lecture.
+
+Deux refus évitent les envois absurdes : aucune compétition sur la période, ou
+aucun abonné confirmé. `--envoyer` expédie sans relecture, si un jour la
+confiance est acquise.
 
 - **`data/newsletter.json`** — liste, expéditeur, objet, fenêtre en jours.
   La liste est désignée par son nom, résolu à l'exécution.
