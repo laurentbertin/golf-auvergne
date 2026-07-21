@@ -10,7 +10,7 @@
     "L'expéditeur doit être une adresse du domaine authentifié (agendagolf.fr),",
     "sans quoi l'e-mail part d'un sous-domaine partagé de Brevo et Gmail l'écarte."
   ],
-  "liste": "Golfeurs",
+  "liste": "Contacts Golfeurs",
   "expediteur": { "nom": "Agenda golf", "email": "contact@agendagolf.fr" },
   "repondre_a": "lbertin78@gmail.com",
   "objet": "Les compétitions de la semaine",
