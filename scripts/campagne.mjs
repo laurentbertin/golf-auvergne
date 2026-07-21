@@ -1,12 +1,13 @@
-// Dépose le digest hebdomadaire comme campagne EN BROUILLON dans Brevo.
-//
-// Ce script n'envoie JAMAIS d'e-mail. Il crée une campagne que Laurent relit
-// puis expédie lui-même depuis Brevo. L'envoi automatique viendra plus tard, une
-// fois la confiance établie — et ce sera un changement explicite, pas un effet
-// de bord de ce script.
+// Compose le digest et l'ENVOIE aux abonnés via Brevo.
 //
 //   BREVO_API_KEY=… node scripts/campagne.mjs
-//   BREVO_API_KEY=… node scripts/campagne.mjs --apercu   (n'appelle pas Brevo)
+//   BREVO_API_KEY=… node scripts/campagne.mjs --brouillon  (prépare sans envoyer)
+//   node scripts/campagne.mjs --apercu                     (n'appelle pas Brevo)
+//
+// L'envoi part sans relecture humaine : c'est un choix assumé, mais il veut dire
+// qu'une erreur de collecte arrive telle quelle chez les abonnés. Deux refus
+// protègent du pire — pas de compétition, ou pas d'abonné — et `--brouillon`
+// permet de repasser en relecture sans toucher au code.
 //
 // La clé ne vit que dans les secrets GitHub : elle n'apparaît ni dans le dépôt,
 // ni dans les journaux d'exécution.
@@ -22,6 +23,7 @@ const F_REGLAGES = join(ROOT, "data", "newsletter.json");
 const API = "https://api.brevo.com/v3";
 
 const apercu = process.argv.includes("--apercu");
+const brouillonSeul = process.argv.includes("--brouillon");
 
 // Une quinzaine, pas une semaine : on s'inscrit à une compétition plusieurs
 // jours à l'avance, et un e-mail hebdomadaire finirait par lasser pour un
@@ -114,7 +116,7 @@ async function main() {
   // Une semaine sans compétition arrive (creux de saison) : on ne crée pas une
   // campagne vide, qui ne servirait qu'à user la patience des abonnés.
   if (nbCompetitions === 0) {
-    console.log("\n⏹ Aucune compétition sur la période : pas de brouillon créé.");
+    console.log("\n⏹ Aucune compétition sur la période : rien n'est créé ni envoyé.");
     return;
   }
 
@@ -126,6 +128,13 @@ async function main() {
   const { id: listId, abonnes } = await idDeLaListe(reglages.liste);
   console.log(`\n• Liste « ${reglages.liste} » : ${abonnes} abonné(s) confirmé(s)`);
 
+  // Sans destinataire, une campagne n'a pas lieu d'être : on évite d'encombrer
+  // le compte d'envois vides au fil des quinzaines.
+  if (abonnes === 0) {
+    console.log("⏹ Aucun abonné confirmé : rien n'est créé ni envoyé.");
+    return;
+  }
+
   const campagne = await brevo("/emailCampaigns", {
     method: "POST",
     body: JSON.stringify({
@@ -135,14 +144,21 @@ async function main() {
       replyTo: reglages.repondre_a,
       htmlContent: html,
       recipients: { listIds: [listId] },
-      // Ni scheduledAt ni sendNow : la campagne reste en brouillon.
+      // Créée sans scheduledAt : elle naît en brouillon, l'envoi est déclenché
+      // juste après (ou pas du tout, avec --brouillon).
       inlineImageActivation: false,
     }),
   });
 
-  console.log(`✔ Brouillon créé (campagne ${campagne.id}) — ${nbCompetitions} compétitions.`);
-  console.log("  Rien n'a été envoyé. Relis-la dans Brevo puis expédie-la toi-même :");
-  console.log(`  https://app.brevo.com/camp/message/${campagne.id}`);
+  if (brouillonSeul) {
+    console.log(`✔ Brouillon créé (campagne ${campagne.id}) — ${nbCompetitions} compétitions.`);
+    console.log(`  Rien n'a été envoyé : https://app.brevo.com/camp/message/${campagne.id}`);
+    return;
+  }
+
+  await brevo(`/emailCampaigns/${campagne.id}/sendNow`, { method: "POST" });
+  console.log(`✔ Envoyé à ${abonnes} abonné(s) — ${nbCompetitions} compétitions.`);
+  console.log(`  Campagne ${campagne.id} : https://app.brevo.com/camp/message/${campagne.id}`);
 }
 
 main().catch((e) => { console.error(`✖ ${e.message}`); process.exit(1); });

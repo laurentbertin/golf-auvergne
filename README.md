@@ -60,15 +60,17 @@ déposer la transcription dans `data/manuel/<id>.json`.
 
 ## L'e-mail aux abonnés
 
-Un digest paraît **une quinzaine sur deux**, le jeudi. Il n'est jamais envoyé
-automatiquement : l'Action dépose une campagne **en brouillon** dans Brevo, que
-l'on relit et expédie soi-même.
+Un digest part **une quinzaine sur deux**, le jeudi matin, **automatiquement**.
+Personne ne le relit avant : une erreur de collecte arriverait donc telle quelle
+chez les abonnés. Deux refus limitent la casse — aucune compétition sur la
+période, ou aucun abonné confirmé — et `node scripts/campagne.mjs --brouillon`
+repasse en relecture manuelle sans toucher au code.
 
 - **`data/newsletter.json`** — liste, expéditeur, objet, fenêtre en jours.
   La liste est désignée par son nom, résolu à l'exécution.
 - **`scripts/digest.mjs`** — construit l'e-mail (HTML de messagerie : styles en
   ligne, tableaux ; les clients ignorent CSS externe, flex et grid).
-- **`scripts/campagne.mjs`** — dépose le brouillon via l'API Brevo.
+- **`scripts/campagne.mjs`** — compose la campagne et l'envoie via l'API Brevo.
   La clé vit dans le secret GitHub `BREVO_API_KEY`, jamais dans le dépôt.
 
 Deux pièges déjà rencontrés, à ne pas refaire :

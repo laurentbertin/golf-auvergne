@@ -1,6 +1,6 @@
-name: Digest bimensuel (brouillon)
+name: Digest bimensuel (envoi)
 
-# Prépare la campagne, pour un envoi relu et déclenché à la main.
+# Compose et envoie le digest aux abonnés, sans relecture.
 # Programmé tous les jeudis, mais le script ne produit un numéro qu'une semaine
 # sur deux : cron ne sait pas exprimer « tous les 15 jours » sans dériver dans
 # le mois. Un déclenchement manuel produit toujours un brouillon.
@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  brouillon:
+  digest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +27,7 @@ jobs:
       - name: Rafraîchir les compétitions
         run: node scripts/collect.mjs
 
-      - name: Déposer le brouillon dans Brevo
+      - name: Composer et envoyer le digest
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           DECLENCHEMENT: ${{ github.event_name }}
