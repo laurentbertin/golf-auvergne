@@ -28,9 +28,11 @@
   <p class="chapo">Vous êtes un golf, une entreprise, ou simplement un golfeur avec une idée ?
     Dites-moi qui vous êtes et ce que vous avez en tête — je réponds à tout le monde.</p>
 
-  <!-- Formulaire → e-mail. L'action pointera vers Formspree : voir ACTION_FORMSPREE. -->
   <form class="form" data-envoi="formspree" action="https://formspree.io/f/xzdnvbyr" method="POST">
     <input type="hidden" name="_subject" value="agendagolf.fr — nouveau message">
+    <!-- Utilisé seulement si JavaScript est absent : sinon l'envoi se fait en
+         arrière-plan et la réponse s'affiche sur place. -->
+    <input type="hidden" name="_next" value="https://agendagolf.fr/merci.html">
 
     <div class="champ">
       <label for="c-qui">Vous êtes…</label>
