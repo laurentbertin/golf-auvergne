@@ -21,10 +21,11 @@ La page lit `site/data.js`, régénéré par la collecte. Rien à installer.
 Aucune dépendance : tout tourne avec Node ≥ 20 et ses modules natifs.
 
 ```bash
-node scripts/collect.mjs            # collecte les 13 golfs + la ligue
+node scripts/collect.mjs            # collecte les 14 golfs + la ligue
 node scripts/collect.mjs royat      # un seul golf (par son id)
 node scripts/collect.mjs ligue      # seulement les épreuves fédérales
-node scripts/digest.mjs             # génère l'email hebdo dans dist/ (n'envoie rien)
+node scripts/digest.mjs             # génère l'e-mail dans dist/ (n'envoie rien)
+node scripts/campagne.mjs --apercu  # idem, sans appeler Brevo
 ```
 
 La collecte écrit `data/competitions.json` et `site/data.js`. Chaque source
@@ -56,6 +57,33 @@ directement, sans étape de validation.
 
 Pour un club qui ne publie qu'une affiche, réutiliser `calendrier-image` et
 déposer la transcription dans `data/manuel/<id>.json`.
+
+## L'e-mail aux abonnés
+
+Un digest paraît **une quinzaine sur deux**, le jeudi. Il n'est jamais envoyé
+automatiquement : l'Action dépose une campagne **en brouillon** dans Brevo, que
+l'on relit et expédie soi-même.
+
+- **`data/newsletter.json`** — liste, expéditeur, objet, fenêtre en jours.
+  La liste est désignée par son nom, résolu à l'exécution.
+- **`scripts/digest.mjs`** — construit l'e-mail (HTML de messagerie : styles en
+  ligne, tableaux ; les clients ignorent CSS externe, flex et grid).
+- **`scripts/campagne.mjs`** — dépose le brouillon via l'API Brevo.
+  La clé vit dans le secret GitHub `BREVO_API_KEY`, jamais dans le dépôt.
+
+Deux pièges déjà rencontrés, à ne pas refaire :
+
+- **L'expéditeur doit être sur `agendagolf.fr`** (domaine authentifié par DKIM).
+  Parti d'un sous-domaine partagé de Brevo, l'e-mail est écarté sans bruit par
+  Gmail — le journal Brevo affiche « Envoyé », jamais « Délivré ».
+- **Les golfs favoris ne sont pas collectés.** Personnaliser le contenu par
+  abonné imposerait un envoi par personne ou des dizaines de segments : hors de
+  proportion tant que le digest tient en une trentaine de lignes.
+
+Le site collecte aussi deux formulaires, sans back-end : l'inscription poste
+directement chez Brevo, le contact chez Formspree. `site/formulaires.js` envoie
+en arrière-plan et affiche la réponse sur place, ce qui évite la redirection
+payante de Brevo.
 
 ## Publication
 

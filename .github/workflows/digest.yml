@@ -1,7 +1,9 @@
-name: Digest hebdomadaire (brouillon)
+name: Digest bimensuel (brouillon)
 
-# Prépare la campagne du jeudi matin, pour un envoi relu et déclenché à la main.
-# Jeudi : les compétitions du week-end sont encore ouvertes aux inscriptions.
+# Prépare la campagne, pour un envoi relu et déclenché à la main.
+# Programmé tous les jeudis, mais le script ne produit un numéro qu'une semaine
+# sur deux : cron ne sait pas exprimer « tous les 15 jours » sans dériver dans
+# le mois. Un déclenchement manuel produit toujours un brouillon.
 on:
   schedule:
     - cron: "0 6 * * 4"   # jeudi ~8h heure de Paris
@@ -28,4 +30,5 @@ jobs:
       - name: Déposer le brouillon dans Brevo
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          DECLENCHEMENT: ${{ github.event_name }}
         run: node scripts/campagne.mjs

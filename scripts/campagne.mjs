@@ -23,6 +23,25 @@ const API = "https://api.brevo.com/v3";
 
 const apercu = process.argv.includes("--apercu");
 
+// Une quinzaine, pas une semaine : on s'inscrit à une compétition plusieurs
+// jours à l'avance, et un e-mail hebdomadaire finirait par lasser pour un
+// calendrier qui bouge peu.
+//
+// cron ne sait pas dire « une semaine sur deux » : on programme donc tous les
+// jeudis et on saute les semaines impaires. L'envoi tombe ainsi toujours un
+// jeudi, au lieu de dériver dans le mois. Un déclenchement manuel passe outre.
+function semaineISO(d = new Date()) {
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  t.setUTCDate(t.getUTCDate() + 4 - (t.getUTCDay() || 7));   // jeudi de la semaine
+  const jourAn = new Date(Date.UTC(t.getUTCFullYear(), 0, 1));
+  return Math.ceil(((t - jourAn) / 86400000 + 1) / 7);
+}
+
+function semaineDEnvoi() {
+  if (process.env.DECLENCHEMENT === "workflow_dispatch") return true;  // à la demande
+  return semaineISO() % 2 === 0;
+}
+
 async function brevo(chemin, options = {}) {
   const cle = process.env.BREVO_API_KEY;
   if (!cle) throw new Error("BREVO_API_KEY absente de l'environnement");
@@ -75,6 +94,12 @@ function nomDeCampagne(reglages) {
 
 async function main() {
   const reglages = JSON.parse(await readFile(F_REGLAGES, "utf8"));
+
+  if (!semaineDEnvoi()) {
+    console.log(`⏭ Semaine ${semaineISO()} (impaire) : pas de numéro cette semaine, ` +
+      `le digest paraît une quinzaine sur deux.`);
+    return;
+  }
 
   // On régénère le digest à l'instant : la campagne doit refléter les données
   // du jour, pas un fichier oublié dans dist/.
