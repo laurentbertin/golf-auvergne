@@ -393,30 +393,6 @@
       golfs.map((g) => g.nom.replace(/^Golf (Club )?(du |de la |de |des |d')?/i, "")).join(" · ");
   }
 
-  // ------------------------------------------- golfs favoris de l'inscription
-  // Construits depuis les mêmes données que l'agenda : la liste ne peut pas se
-  // désynchroniser quand un club est ajouté ou retiré. Les clubs cochés sont
-  // recopiés dans un champ caché, pour n'envoyer qu'une seule valeur au service
-  // d'e-mailing plutôt qu'une case par golf.
-  const elOptinGolfs = document.getElementById("optin-golfs");
-  const elOptinValeur = document.getElementById("optin-golfs-valeur");
-  if (elOptinGolfs && elOptinValeur) {
-    const choisis = new Set();
-    golfs.forEach((g) => {
-      const b = document.createElement("button");
-      b.type = "button";
-      b.className = "chip";
-      b.textContent = g.nom;
-      b.setAttribute("aria-pressed", "false");
-      b.onclick = () => {
-        if (choisis.has(g.nom)) choisis.delete(g.nom); else choisis.add(g.nom);
-        b.setAttribute("aria-pressed", choisis.has(g.nom) ? "true" : "false");
-        elOptinValeur.value = [...choisis].join(", ");
-      };
-      elOptinGolfs.appendChild(b);
-    });
-  }
-
   majBascule();
   majPlierLigue();
   render();

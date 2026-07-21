@@ -242,9 +242,3 @@ footer a:hover{text-decoration:underline}
   .optin{padding:16px 15px 18px}
 }
 
-/* Formulaire en attente de branchement : on le dit plutôt que de laisser
-   un bouton qui ne fait rien. À retirer une fois les services raccordés. */
-.attente{font-size:12.5px;color:var(--gold);background:var(--panel2);
-  border:1px solid var(--line);border-radius:9px;padding:9px 11px;margin:0 0 12px;max-width:56ch}
-.bouton:disabled{opacity:.45;cursor:not-allowed}
-.bouton:disabled:hover{background:var(--green)}

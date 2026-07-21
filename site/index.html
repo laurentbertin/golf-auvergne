@@ -61,41 +61,34 @@
   <p id="vide" class="vide" hidden>Aucune compétition à venir pour cette sélection.</p>
 
   <!-- Inscription e-mail. Posée SOUS l'agenda : on rend service d'abord.
-       L'action du formulaire pointera vers Brevo (aucune clé exposée) — voir
-       le commentaire ACTION_BREVO ci-dessous. -->
+       Le formulaire poste directement chez Brevo : aucune clé n'est exposée,
+       et c'est Brevo qui gère la confirmation (double opt-in). -->
   <section class="optin" id="recevoir" aria-labelledby="titre-recevoir">
     <h2 id="titre-recevoir">Recevoir les compétitions par mail</h2>
     <p>Chaque semaine, les compétitions à venir dans les clubs de la région,
        directement dans ta boîte. Rien d'autre, et tu te désinscris en un clic.</p>
 
-    <form class="form" id="form-optin"
-          action="ACTION_BREVO_A_RENSEIGNER" method="POST" novalidate>
+    <form class="form" id="form-optin" action="https://2b5438bc.sibforms.com/serve/MUIFAMVslC1fZ4hUSEpfmMFUvvUI4uKM8mZm1TXIngSHoS-DCHkE8vXhkZma8bkk-QiJFt7vBD3iutAIqiwUKjLjIHyE7aGSuzpITejUlWrKBYAFVAOAOYSzHHkiPVx4muZbEM_atj51p9LHXsRiMQhFx4hmMz_FjqClTSqb-iFgEJZ6KUaaoaHzqMiZvz2P7sa1N14jPdF2bFiC2Q==" method="POST">
       <div class="champ">
-        <label for="email-optin">Ton adresse e-mail</label>
-        <input type="email" id="email-optin" name="EMAIL" required
+        <label for="EMAIL">Ton adresse e-mail</label>
+        <input type="email" id="EMAIL" name="EMAIL" required
                autocomplete="email" placeholder="prenom@exemple.fr">
       </div>
 
-      <details class="optin-golfs">
-        <summary>Tes golfs préférés (facultatif)</summary>
-        <p style="margin:8px 0 0;font-size:12.5px">
-          Pour te proposer plus tard des alertes ciblées quand ces clubs
-          publient une nouvelle compétition. Cette fonction n'existe pas encore.
-        </p>
-        <div id="optin-golfs" class="rangee"></div>
-        <input type="hidden" name="GOLFS" id="optin-golfs-valeur">
-      </details>
-
       <label class="consentement">
-        <input type="checkbox" name="OPT_IN" value="1" required>
+        <input type="checkbox" required>
         <span>J'accepte de recevoir cet e-mail. Mon adresse sert uniquement à ça,
           n'est transmise à personne, et je peux me désinscrire à tout moment
           (<a href="confidentialite.html">confidentialité</a>).</span>
       </label>
 
-      <p class="attente">Ce formulaire n'est pas encore branché : le service d'envoi
-        reste à raccorder. Il sera actif très bientôt.</p>
-      <button type="submit" class="bouton" disabled>Je m'inscris</button>
+      <!-- Piège à robots attendu par Brevo : doit rester vide et invisible. -->
+      <input type="text" name="email_address_check" value="" tabindex="-1"
+             autocomplete="off" aria-hidden="true"
+             style="position:absolute;left:-9999px;width:1px;height:1px">
+      <input type="hidden" name="locale" value="fr">
+
+      <button type="submit" class="bouton">Je m'inscris</button>
       <p style="font-size:12px;color:var(--muted);margin:10px 0 0">
         Tu recevras un mail de confirmation : l'inscription n'est active
         qu'une fois le lien cliqué.
