@@ -242,3 +242,7 @@ footer a:hover{text-decoration:underline}
   .optin{padding:16px 15px 18px}
 }
 
+
+/* Réponse affichée après envoi d'un formulaire, à la place de celui-ci. */
+.erreur-form{color:#b8471f;background:var(--panel2);border:1px solid #b8471f;
+  border-radius:9px;padding:10px 12px;font-size:13.5px;max-width:560px;margin:0 0 12px}

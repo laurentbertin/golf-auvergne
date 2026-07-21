@@ -29,10 +29,8 @@
     Dites-moi qui vous êtes et ce que vous avez en tête — je réponds à tout le monde.</p>
 
   <!-- Formulaire → e-mail. L'action pointera vers Formspree : voir ACTION_FORMSPREE. -->
-  <form class="form" action="https://formspree.io/f/xzdnvbyr" method="POST">
+  <form class="form" data-envoi="formspree" action="https://formspree.io/f/xzdnvbyr" method="POST">
     <input type="hidden" name="_subject" value="agendagolf.fr — nouveau message">
-    <!-- Renvoie sur notre page de remerciement plutôt que celle de Formspree. -->
-    <input type="hidden" name="_next" value="https://agendagolf.fr/merci.html">
 
     <div class="champ">
       <label for="c-qui">Vous êtes…</label>
@@ -75,6 +73,8 @@
     <button type="submit" class="bouton">Envoyer</button>
   </form>
 </main>
+
+<script src="formulaires.js"></script>
 
 <footer>
   <div class="wrap">
