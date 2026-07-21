@@ -1,0 +1,18 @@
+{
+  "_lisezmoi": [
+    "Réglages de l'e-mail hebdomadaire.",
+    "",
+    "La liste est désignée par son NOM, pas par un identifiant : le nom est",
+    "lisible et se retrouve dans l'interface Brevo. Le script résout l'identifiant",
+    "au moment de l'exécution et s'arrête clairement si le nom ne correspond à",
+    "aucune liste.",
+    "",
+    "L'expéditeur doit être une adresse du domaine authentifié (agendagolf.fr),",
+    "sans quoi l'e-mail part d'un sous-domaine partagé de Brevo et Gmail l'écarte."
+  ],
+  "liste": "Golfeurs",
+  "expediteur": { "nom": "Agenda golf", "email": "contact@agendagolf.fr" },
+  "repondre_a": "lbertin78@gmail.com",
+  "objet": "Les compétitions de la semaine",
+  "jours": 14
+}

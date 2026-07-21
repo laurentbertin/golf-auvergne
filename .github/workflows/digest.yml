@@ -1,0 +1,31 @@
+name: Digest hebdomadaire (brouillon)
+
+# Prépare la campagne du jeudi matin, pour un envoi relu et déclenché à la main.
+# Jeudi : les compétitions du week-end sont encore ouvertes aux inscriptions.
+on:
+  schedule:
+    - cron: "0 6 * * 4"   # jeudi ~8h heure de Paris
+  workflow_dispatch: {}   # bouton « Run workflow » pour le déclencher à la demande
+
+permissions:
+  contents: read
+
+jobs:
+  brouillon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      # Les données du dépôt datent de la collecte du matin ; on les rafraîchit
+      # pour que le digest reflète l'état du jour, sans rien committer.
+      - name: Rafraîchir les compétitions
+        run: node scripts/collect.mjs
+
+      - name: Déposer le brouillon dans Brevo
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: node scripts/campagne.mjs
