@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Écrivez-moi — Agenda golf Auvergne &amp; Loire</title>
+<meta name="description" content="Un golf, une entreprise, un golfeur : écrivez-moi et on en discute.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#12211a">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>⛳ Compétitions de golf<span>· Auvergne &amp; Loire</span></h1>
+    <nav class="nav-site" aria-label="Sections du site">
+      <a href="index.html">L'agenda</a>
+      <a href="index.html#recevoir">Recevoir les compètes</a>
+      <a href="le-projet.html">Le projet</a>
+      <a href="contact.html" aria-current="page">Écrivez-moi</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap page">
+  <h2 style="margin-top:6px">Écrivez-moi</h2>
+  <p class="chapo">Vous êtes un golf, une entreprise, ou simplement un golfeur avec une idée ?
+    Dites-moi qui vous êtes et ce que vous avez en tête — je réponds à tout le monde.</p>
+
+  <!-- Formulaire → e-mail. L'action pointera vers Formspree : voir ACTION_FORMSPREE. -->
+  <form class="form" action="ACTION_FORMSPREE_A_RENSEIGNER" method="POST">
+    <input type="hidden" name="_subject" value="agendagolf.fr — nouveau message">
+
+    <div class="champ">
+      <label for="c-qui">Vous êtes…</label>
+      <select id="c-qui" name="vous_etes" required>
+        <option value="">— choisissez —</option>
+        <option value="golf">Un golf (club, AS, secrétariat)</option>
+        <option value="sponsor">Une entreprise, un sponsor potentiel</option>
+        <option value="golfeur">Un golfeur ou une golfeuse</option>
+        <option value="autre">Autre chose</option>
+      </select>
+    </div>
+
+    <div class="champ">
+      <label for="c-nom">Votre nom</label>
+      <input type="text" id="c-nom" name="nom" required autocomplete="name">
+    </div>
+
+    <div class="champ">
+      <label for="c-email">Votre e-mail</label>
+      <input type="email" id="c-email" name="email" required autocomplete="email">
+    </div>
+
+    <div class="champ">
+      <label for="c-structure">Votre golf ou votre entreprise
+        <span class="aide">(si ça s'applique)</span></label>
+      <input type="text" id="c-structure" name="structure" autocomplete="organization">
+    </div>
+
+    <div class="champ">
+      <label for="c-message">Votre message</label>
+      <textarea id="c-message" name="message" required></textarea>
+    </div>
+
+    <label class="consentement">
+      <input type="checkbox" required>
+      <span>J'accepte que ces informations soient utilisées pour me recontacter au sujet
+        de mon message (<a href="confidentialite.html">confidentialité</a>).</span>
+    </label>
+
+    <p class="attente">Ce formulaire n'est pas encore branché : le service d'envoi
+      reste à raccorder. Il sera actif très bientôt.</p>
+    <button type="submit" class="bouton" disabled>Envoyer</button>
+  </form>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="mini"><a href="index.html">L'agenda des compétitions</a> ·
+      <a href="le-projet.html">Le projet</a> ·
+      <a href="confidentialite.html">Confidentialité</a></p>
+  </div>
+</footer>
+</body>
+</html>

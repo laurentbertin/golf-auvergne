@@ -14,6 +14,12 @@
   <div class="wrap">
     <h1>⛳ Compétitions de golf<span>· Auvergne &amp; Loire</span></h1>
     <p class="tagline">Envie de jouer une compétition sympa ailleurs que sur ton parcours habituel ? Elles sont toutes là, dans les clubs de la région.</p>
+    <nav class="nav-site" aria-label="Sections du site">
+      <a href="index.html" aria-current="page">L'agenda</a>
+      <a href="#recevoir">Recevoir les compètes</a>
+      <a href="le-projet.html">Le projet</a>
+      <a href="contact.html">Écrivez-moi</a>
+    </nav>
   </div>
 </header>
 
@@ -53,12 +59,58 @@
   <nav id="mois-index" class="mois-index" aria-label="Aller à un mois" hidden></nav>
   <section id="liste"></section>
   <p id="vide" class="vide" hidden>Aucune compétition à venir pour cette sélection.</p>
+
+  <!-- Inscription e-mail. Posée SOUS l'agenda : on rend service d'abord.
+       L'action du formulaire pointera vers Brevo (aucune clé exposée) — voir
+       le commentaire ACTION_BREVO ci-dessous. -->
+  <section class="optin" id="recevoir" aria-labelledby="titre-recevoir">
+    <h2 id="titre-recevoir">Recevoir les compétitions par mail</h2>
+    <p>Chaque semaine, les compétitions à venir dans les clubs de la région,
+       directement dans ta boîte. Rien d'autre, et tu te désinscris en un clic.</p>
+
+    <form class="form" id="form-optin"
+          action="ACTION_BREVO_A_RENSEIGNER" method="POST" novalidate>
+      <div class="champ">
+        <label for="email-optin">Ton adresse e-mail</label>
+        <input type="email" id="email-optin" name="EMAIL" required
+               autocomplete="email" placeholder="prenom@exemple.fr">
+      </div>
+
+      <details class="optin-golfs">
+        <summary>Tes golfs préférés (facultatif)</summary>
+        <p style="margin:8px 0 0;font-size:12.5px">
+          Pour te proposer plus tard des alertes ciblées quand ces clubs
+          publient une nouvelle compétition. Cette fonction n'existe pas encore.
+        </p>
+        <div id="optin-golfs" class="rangee"></div>
+        <input type="hidden" name="GOLFS" id="optin-golfs-valeur">
+      </details>
+
+      <label class="consentement">
+        <input type="checkbox" name="OPT_IN" value="1" required>
+        <span>J'accepte de recevoir cet e-mail. Mon adresse sert uniquement à ça,
+          n'est transmise à personne, et je peux me désinscrire à tout moment
+          (<a href="confidentialite.html">confidentialité</a>).</span>
+      </label>
+
+      <p class="attente">Ce formulaire n'est pas encore branché : le service d'envoi
+        reste à raccorder. Il sera actif très bientôt.</p>
+      <button type="submit" class="bouton" disabled>Je m'inscris</button>
+      <p style="font-size:12px;color:var(--muted);margin:10px 0 0">
+        Tu recevras un mail de confirmation : l'inscription n'est active
+        qu'une fois le lien cliqué.
+      </p>
+    </form>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
     <p>Données mises à jour chaque matin depuis les sites des clubs. Vérifiez toujours l'horaire exact auprès du golf avant de vous déplacer.</p>
     <p class="mini" id="pied-golfs"></p>
+    <p class="mini"><a href="le-projet.html">Le projet</a> ·
+      <a href="contact.html">Écrivez-moi</a> ·
+      <a href="confidentialite.html">Confidentialité</a></p>
   </div>
 </footer>
 

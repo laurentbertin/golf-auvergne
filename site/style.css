@@ -135,6 +135,8 @@ main{padding:22px 0 60px}
 footer{border-top:1px solid var(--line);padding:22px 0 40px}
 footer p{color:var(--muted);font-size:13px;margin:6px 0}
 footer .mini{font-size:12px;opacity:.7}
+footer a{color:var(--green2);text-decoration:none}
+footer a:hover{text-decoration:underline}
 
 @media(max-width:560px){
   /* Sur téléphone, le premier écran doit montrer des compétitions, pas un
@@ -176,3 +178,73 @@ footer .mini{font-size:12px;opacity:.7}
   .cta a:hover{text-decoration:none}
   .comp:has(.cta a:active){background:var(--panel2)}
 }
+
+/* ------------------------------------------------------- navigation du site */
+/* Trois liens discrets : l'agenda reste le sujet, les pages « pro » sont là
+   sans prendre le pas dessus. */
+.nav-site{display:flex;gap:16px;margin:14px 0 0;flex-wrap:wrap}
+.nav-site a{color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:600;
+  border-bottom:1px solid transparent;padding-bottom:1px}
+.nav-site a:hover{color:var(--ink);border-bottom-color:var(--green)}
+.nav-site a[aria-current="page"]{color:var(--green2);border-bottom-color:var(--green2)}
+
+/* ------------------------------------------------------------ pages de texte */
+.page{padding:26px 0 60px}
+.page h2{font-size:20px;margin:30px 0 8px;letter-spacing:-.2px}
+.page h2:first-of-type{margin-top:22px}
+.page p{color:var(--ink);opacity:.9;margin:0 0 12px;max-width:62ch;line-height:1.65}
+.page ul{color:var(--ink);opacity:.9;max-width:62ch;line-height:1.65;padding-left:20px}
+.page li{margin:0 0 6px}
+.page .chapo{font-size:16px;opacity:1}
+
+/* ------------------------------------------------------------- formulaires */
+.form{margin:22px 0 0;max-width:560px}
+.champ{margin:0 0 14px}
+.champ label{display:block;font-size:13px;font-weight:600;margin:0 0 5px;color:var(--ink)}
+.champ .aide{font-weight:400;color:var(--muted)}
+.champ input[type=text],.champ input[type=email],.champ select,.champ textarea{
+  width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:9px;
+  background:var(--panel);color:var(--ink);font:inherit;font-size:15px}
+.champ textarea{min-height:110px;resize:vertical}
+.champ input:focus,.champ select:focus,.champ textarea:focus{
+  outline:2px solid var(--green2);outline-offset:1px;border-color:var(--green2)}
+
+.bouton{background:var(--green);color:#fff;border:0;border-radius:10px;
+  padding:11px 20px;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.bouton:hover{background:var(--green2)}
+
+.consentement{display:flex;gap:9px;align-items:flex-start;margin:4px 0 16px;
+  font-size:12.5px;color:var(--muted);line-height:1.5;max-width:62ch}
+.consentement input{margin-top:2px;accent-color:var(--green2);flex:none;
+  width:15px;height:15px;cursor:pointer}
+.consentement a{color:var(--green2)}
+
+/* ------------------------------------------------- bloc d'inscription e-mail */
+/* Posé sous l'agenda : on rend service d'abord, on propose ensuite. */
+.optin{margin:34px 0 0;padding:20px 20px 22px;border:1px solid var(--line);
+  border-radius:14px;background:var(--panel2)}
+.optin h2{margin:0 0 6px;font-size:17px}
+.optin p{margin:0 0 14px;color:var(--muted);font-size:14px;max-width:56ch;line-height:1.55}
+.optin .form{margin:0}
+.optin-golfs{margin:0 0 12px}
+.optin-golfs summary{cursor:pointer;font-size:13px;color:var(--green2);font-weight:600}
+.optin-golfs .rangee{margin-top:10px}
+.optin .chip{font-size:12.5px}
+
+.merci{background:var(--panel2);border:1px solid var(--green2);border-radius:12px;
+  padding:16px 18px;color:var(--ink);max-width:560px}
+
+@media(max-width:560px){
+  .nav-site{gap:14px;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;
+    margin:12px -18px 0;padding:0 18px 2px;scrollbar-width:none}
+  .nav-site::-webkit-scrollbar{display:none}
+  .page{padding:18px 0 40px}
+  .optin{padding:16px 15px 18px}
+}
+
+/* Formulaire en attente de branchement : on le dit plutôt que de laisser
+   un bouton qui ne fait rien. À retirer une fois les services raccordés. */
+.attente{font-size:12.5px;color:var(--gold);background:var(--panel2);
+  border:1px solid var(--line);border-radius:9px;padding:9px 11px;margin:0 0 12px;max-width:56ch}
+.bouton:disabled{opacity:.45;cursor:not-allowed}
+.bouton:disabled:hover{background:var(--green)}
