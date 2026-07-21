@@ -46,13 +46,24 @@ async function brevo(chemin, options = {}) {
 // Retrouve l'identifiant de la liste à partir de son nom, en parcourant les
 // pages si le compte en contient beaucoup.
 async function idDeLaListe(nom) {
+  const toutes = [];
   for (let offset = 0; offset < 500; offset += 50) {
     const { lists = [] } = await brevo(`/contacts/lists?limit=50&offset=${offset}`);
-    const trouvee = lists.find((l) => l.name.trim().toLowerCase() === nom.trim().toLowerCase());
-    if (trouvee) return { id: trouvee.id, abonnes: trouvee.totalSubscribers };
+    toutes.push(...lists);
     if (lists.length < 50) break;
   }
-  throw new Error(`aucune liste nommée « ${nom} » dans ce compte Brevo`);
+  const trouvee = toutes.find(
+    (l) => l.name.trim().toLowerCase() === nom.trim().toLowerCase());
+  if (trouvee) return { id: trouvee.id, abonnes: trouvee.totalSubscribers };
+
+  // Se tromper de nom est l'erreur la plus probable : autant afficher ce qui
+  // existe plutôt que de laisser chercher dans l'interface.
+  const dispo = toutes.length
+    ? toutes.map((l) => `      « ${l.name} » (${l.totalSubscribers} abonné(s))`).join("\n")
+    : "      (ce compte ne contient aucune liste)";
+  throw new Error(
+    `aucune liste nommée « ${nom} ».\n    Listes disponibles :\n${dispo}\n` +
+    `    Corrige le champ « liste » dans data/newsletter.json.`);
 }
 
 function nomDeCampagne(reglages) {
