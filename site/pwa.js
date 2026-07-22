@@ -1,11 +1,14 @@
 // Installation sur l'écran d'accueil — enregistrement du service worker, et
 // l'invitation qui va avec.
 //
-// Pourquoi une invitation maison plutôt que celle du navigateur : iOS n'a
-// jamais proposé de bouton d'installation (Apple réserve le geste au menu
-// Partager), et sur Android la bannière de Chrome n'apparaît qu'après plusieurs
-// visites, quand elle apparaît. Sans un mot dans la page, personne ne devine
-// que le site s'installe.
+// L'invitation ne dépend PAS de l'événement `beforeinstallprompt`. C'était la
+// première version, et elle n'affichait presque jamais rien : Safari ne l'émet
+// pas du tout, Firefox non plus, et Chrome le retient tant qu'il juge la visite
+// trop récente — ou définitivement, une fois le site installé.
+//
+// On affiche donc toujours quelque chose, et on se sert de l'événement
+// seulement s'il arrive : il transforme le mode d'emploi en un bouton qui
+// installe d'un clic.
 //
 // Chargé par les cinq pages : on ne sait pas par laquelle un visiteur arrive.
 
@@ -25,62 +28,97 @@ if ("serviceWorker" in navigator) {
   // Déjà installé : la page tourne alors sans barre d'adresse. Proposer
   // l'installation à quelqu'un qui l'a faite serait absurde.
   const dejaInstalle = matchMedia("(display-mode: standalone)").matches
+    || matchMedia("(display-mode: window-controls-overlay)").matches
     || navigator.standalone === true;
-  if (dejaInstalle || localStorage.getItem(MEMOIRE)) return;
+  if (dejaInstalle) return;
 
+  const ua = navigator.userAgent;
   // iPadOS 13+ se déclare « Macintosh » : l'écran tactile est le seul indice
   // fiable qui reste.
-  const iOS = /iPhone|iPad|iPod/.test(navigator.userAgent)
-    || (/Macintosh/.test(navigator.userAgent) && navigator.maxTouchPoints > 1);
+  const iOS = /iPhone|iPad|iPod/.test(ua)
+    || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  // Safari de bureau se reconnaît en creux : les autres navigateurs de Mac
+  // gardent « Safari » dans leur signature mais y ajoutent la leur.
+  const safariMac = /Macintosh/.test(ua) && /Safari/.test(ua)
+    && !/Chrome|Chromium|Edg|OPR|Firefox/.test(ua);
 
-  function afficher(contenu) {
+  let invite = null;   // l'événement de Chrome, s'il se manifeste
+  let bloc = null;
+
+  // Le mode d'emploi, faute de bouton. Court : c'est un repère, pas un manuel.
+  function modeDEmploi() {
+    if (iOS) {
+      return `<strong>Partager</strong> <span aria-hidden="true">▸</span>
+              <strong>Sur l'écran d'accueil</strong>`;
+    }
+    if (safariMac) {
+      return `<strong>Fichier</strong> <span aria-hidden="true">▸</span>
+              <strong>Ajouter au Dock</strong>`;
+    }
+    return `menu du navigateur <span aria-hidden="true">▸</span>
+            <strong>Installer</strong>`;
+  }
+
+  function contenu() {
+    if (invite) {
+      return `<span class="installer-texte">Installe l'agenda comme une application.</span>
+              <button type="button" class="installer-go">Installer</button>`;
+    }
+    return `<span class="installer-texte">Garde l'agenda à portée de main :
+            ${modeDEmploi()}.</span>`;
+  }
+
+  function poser() {
+    // Le refus est relu à chaque passage, pas seulement au chargement : la
+    // bannière est reconstruite quand l'événement arrive en retard, et une
+    // bannière refermée ne doit pas resurgir.
+    if (localStorage.getItem(MEMOIRE)) return;
     const hote = document.querySelector("header .wrap");
-    if (!hote || document.querySelector(".installer")) return null;
-    // Le refus est relu ici, pas seulement au chargement : le navigateur peut
-    // réémettre l'événement dans la même page, et la bannière refermée
-    // resurgirait.
-    if (localStorage.getItem(MEMOIRE)) return null;
-    const bloc = document.createElement("div");
-    bloc.className = "installer";
-    bloc.innerHTML = contenu +
+    if (!hote) return;
+
+    const neuf = document.createElement("div");
+    neuf.className = "installer";
+    neuf.innerHTML = contenu() +
       `<button type="button" class="installer-fermer" aria-label="Ne plus proposer">×</button>`;
-    hote.appendChild(bloc);
+    bloc ? bloc.replaceWith(neuf) : hote.appendChild(neuf);
+    bloc = neuf;
+
     bloc.querySelector(".installer-fermer").addEventListener("click", () => {
       // Un refus vaut pour de bon : réafficher à chaque visite se retournerait
       // contre le site.
       localStorage.setItem(MEMOIRE, "1");
       bloc.remove();
+      bloc = null;
     });
-    return bloc;
+
+    bloc.querySelector(".installer-go")?.addEventListener("click", async () => {
+      bloc.remove();
+      bloc = null;
+      invite.prompt();
+      // Un refus ici n'est pas définitif : le navigateur reproposera
+      // l'événement à la visite suivante, on ne mémorise donc rien.
+      await invite.userChoice;
+      invite = null;
+    });
   }
 
-  if (iOS) {
-    afficher(
-      `<span class="installer-texte">Ajoute l'agenda à ton écran d'accueil :
-       <strong>Partager</strong> <span aria-hidden="true">▸</span>
-       <strong>Sur l'écran d'accueil</strong>.</span>`);
-    return;
-  }
-
-  // Android et ordinateurs : le navigateur signale lui-même qu'il sait
-  // installer. On confisque sa bannière pour la rejouer au moment choisi.
+  // Chrome peut émettre l'événement avant comme après le chargement. S'il
+  // arrive après que le mode d'emploi est posé, on remplace celui-ci par le
+  // bouton : un clic vaut mieux qu'une consigne.
   addEventListener("beforeinstallprompt", (e) => {
     e.preventDefault();
-    const bloc = afficher(
-      `<span class="installer-texte">Installe l'agenda comme une application.</span>
-       <button type="button" class="installer-go">Installer</button>`);
-    if (!bloc) return;
-    bloc.querySelector(".installer-go").addEventListener("click", async () => {
-      bloc.remove();
-      e.prompt();
-      // Un refus ici n'est pas un refus définitif : le navigateur reproposera
-      // l'événement à la visite suivante, on ne mémorise donc rien.
-      await e.userChoice;
-    });
+    invite = e;
+    poser();
   });
 
   addEventListener("appinstalled", () => {
     localStorage.setItem(MEMOIRE, "1");
-    document.querySelector(".installer")?.remove();
+    bloc?.remove();
+    bloc = null;
   });
+
+  // Court délai : laisser à Chrome l'occasion de proposer son bouton avant
+  // d'afficher un mode d'emploi qu'il rendrait inutile.
+  if (document.readyState === "complete") setTimeout(poser, 900);
+  else addEventListener("load", () => setTimeout(poser, 900));
 })();
