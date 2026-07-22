@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Drapeau de golf">
+  <!-- Variante « masquable » : Android applique sa propre découpe (cercle,
+       goutte, carré arrondi selon le constructeur). Le fond est donc à fond
+       perdu, sans coins arrondis, et le drapeau reste dans les 80 % centraux
+       pour survivre au recadrage le plus agressif. -->
+  <rect width="64" height="64" fill="#12211a"/>
+  <g transform="translate(32 32) scale(0.62) translate(-32 -32)">
+    <rect x="18" y="8" width="6" height="48" rx="3" fill="#e8efe9"/>
+    <path d="M24 10h30l-9 11 9 11H24z" fill="#d8b35a"/>
+    <rect x="10" y="50" width="44" height="6" rx="3" fill="#3fa877"/>
+  </g>
+</svg>

@@ -93,6 +93,26 @@ directement chez Brevo, le contact chez Formspree. `site/formulaires.js` envoie
 en arrière-plan et affiche la réponse sur place, ce qui évite la redirection
 payante de Brevo.
 
+## S'installer comme une application
+
+Le site est une PWA : depuis le navigateur, « Ajouter à l'écran d'accueil »
+pose une icône, et la page s'ouvre ensuite en plein écran, sans barre d'adresse.
+Aucun store, aucun compte développeur, aucune mise à jour à publier.
+
+- **`site/manifest.webmanifest`** — nom, icônes, couleurs, mode `standalone`.
+- **`site/sw.js`** — service worker en **réseau d'abord**, cache en secours.
+  L'ordre inverse est l'usage courant mais serait faux ici : tout l'intérêt du
+  site tient à la fraîcheur de `data.js`, réécrit chaque matin. Le cache ne sert
+  qu'au hors-ligne (le réseau manque souvent sur un parcours) et au premier
+  écran quand la connexion traîne.
+- **`site/pwa.js`** — l'enregistrement, chargé par les cinq pages.
+
+Les PNG sont rendus depuis les deux SVG (`favicon.svg`, et `icone-masquable.svg`
+dont le contenu tient dans la zone sûre d'Android). La machine n'a aucun
+convertisseur SVG→PNG installé ; `qlmanage -t -s 512 -o <dossier> <fichier.svg>`
+fait l'affaire sur macOS. Après modification d'un SVG, régénérer les trois PNG
+**et** incrémenter `CACHE` dans `sw.js`, sinon les anciens fichiers resservent.
+
 ## Publication
 
 Une GitHub Action (`.github/workflows/deploy.yml`) relance la collecte chaque

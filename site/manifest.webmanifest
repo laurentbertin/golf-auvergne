@@ -1,0 +1,23 @@
+{
+  "name": "Agenda golf — Auvergne & Loire",
+  "short_name": "Agenda golf",
+  "description": "Les compétitions des golfs d'Auvergne et de la Loire, sur une seule page.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#12211a",
+  "theme_color": "#12211a",
+  "categories": ["sports", "lifestyle"],
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Le projet", "url": "/le-projet.html" },
+    { "name": "Écrire", "url": "/contact.html" }
+  ]
+}
