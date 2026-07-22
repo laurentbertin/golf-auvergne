@@ -246,3 +246,21 @@ footer a:hover{text-decoration:underline}
 /* Réponse affichée après envoi d'un formulaire, à la place de celui-ci. */
 .erreur-form{color:#b8471f;background:var(--panel2);border:1px solid #b8471f;
   border-radius:9px;padding:10px 12px;font-size:13.5px;max-width:560px;margin:0 0 12px}
+
+/* Invitation à installer le site sur l'écran d'accueil. Discrète et refermable :
+   c'est un service rendu, pas une réclame — insister ferait fuir. */
+/* Une seule rangée : sur téléphone, laisser le « × » passer à la ligne le
+   détacherait du texte qu'il referme. C'est le texte qui plie, pas la rangée. */
+.installer{display:flex;align-items:center;gap:10px;
+  margin:16px 0 0;padding:9px 11px;border:1px solid var(--line);border-radius:10px;
+  background:var(--panel2);font-size:13px;color:var(--muted)}
+.installer-texte{flex:1 1 auto;min-width:0}
+.installer button{flex:0 0 auto}
+.installer-texte strong{color:var(--ink);font-weight:700}
+.installer-go{cursor:pointer;border:0;border-radius:999px;padding:6px 14px;
+  background:var(--green2);color:var(--puce-ink);font:inherit;font-weight:700;
+  font-size:12.5px;white-space:nowrap}
+.installer-go:hover{background:var(--green)}
+.installer-fermer{cursor:pointer;background:none;border:0;padding:0 2px;
+  color:var(--muted);font-size:19px;line-height:1;font-family:inherit}
+.installer-fermer:hover{color:var(--ink)}

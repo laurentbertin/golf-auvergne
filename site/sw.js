@@ -9,7 +9,7 @@
 // parcours, le réseau est souvent absent) et le premier écran instantané quand
 // la connexion traîne.
 
-const CACHE = "agendagolf-v1";
+const CACHE = "agendagolf-v2";
 
 // Le strict nécessaire pour afficher quelque chose sans réseau dès la première
 // visite. Le reste entre dans le cache au fil de la navigation.
@@ -18,6 +18,7 @@ const SOCLE = [
   "/index.html",
   "/style.css",
   "/app.js",
+  "/pwa.js",
   "/data.js",
   "/favicon.svg",
   "/icon-192.png",
