@@ -74,7 +74,10 @@ async function idDeLaListe(nom) {
   }
   const trouvee = toutes.find(
     (l) => l.name.trim().toLowerCase() === nom.trim().toLowerCase());
-  if (trouvee) return { id: trouvee.id, abonnes: trouvee.totalSubscribers };
+  // Number() plutôt que la valeur brute : Brevo a déjà renvoyé un compteur qui
+  // s'affichait « 0 » sans être le nombre 0, et le garde plus bas laissait
+  // passer une campagne sans destinataire. Le compte manquant vaut zéro.
+  if (trouvee) return { id: trouvee.id, abonnes: Number(trouvee.totalSubscribers) || 0 };
 
   // Se tromper de nom est l'erreur la plus probable : autant afficher ce qui
   // existe plutôt que de laisser chercher dans l'interface.
@@ -134,7 +137,7 @@ async function main() {
 
   // Sans destinataire, une campagne n'a pas lieu d'être : on évite d'encombrer
   // le compte d'envois vides au fil des quinzaines.
-  if (abonnes === 0) {
+  if (!abonnes) {
     console.log("⏹ Aucun abonné confirmé : rien n'est créé ni envoyé.");
     return;
   }
