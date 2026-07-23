@@ -98,7 +98,10 @@ export function toPlageISO(input, anneeParDefaut = new Date().getFullYear()) {
 
 // Détection légère de sponsor à partir du titre. Liste extensible.
 const MARQUES = [
-  "BMW", "Porsche", "Mercedes", "Audi", "Renault", "Peugeot", "DS Automobiles", "DS",
+  // « DS » nu n'est pas gardé : à peine deux lettres, il désigne bien plus
+  // souvent des initiales (« Trophée DS ») que la marque, qui écrit de toute
+  // façon « DS Automobiles ». On ne conserve que la forme longue.
+  "BMW", "Porsche", "Mercedes", "Audi", "Renault", "Peugeot", "DS Automobiles",
   "Partouche", "Home Box", "Thelem", "Abeille", "Citya", "Philipponnat", "Mercedes-Benz",
   "Ynov", "Volkswagen", "Toyota", "Lexus", "Jaguar",
 ];
@@ -126,7 +129,7 @@ const FAMILLES = [
   { id: "scramble-2", motif: /s[ck]ramble\s*(?:à|a)?\s*2|scramble\s*à\s*deux/i },
   { id: "scramble", motif: /s[ck]ramble(?!\s*(?:à|a)?\s*2)|am[ée]ricaine/i },
   { id: "double", motif: /green\s?some|greensome|chapman|shamble|4\s*balles|quatre\s*balles|am\s*[-\/]\s*am|pro\s*[-–]?\s*am|foursome|doublettes?/i },
-  { id: "individuel", motif: /stableford|stroke\s?play|strokeford|individuel|classement|medal|simple/i },
+  { id: "individuel", motif: /stableford|stroke\s?play|strokeford|individuel|classement|medal|simple|score\s*maximum/i },
 ];
 
 // Épreuves qui se jouent le soir : elles n'intéressent pas qui cherche une

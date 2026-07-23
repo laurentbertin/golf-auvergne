@@ -16,6 +16,7 @@ import { fetchValdauzon } from "./connectors/valdauzon.mjs";
 import { fetchMontpensier } from "./connectors/montpensier.mjs";
 import { fetchCalendrierImage } from "./connectors/calendrierImage.mjs";
 import { fetchChamplong } from "./connectors/champlong.mjs";
+import { fetchAvenelles } from "./connectors/avenelles.mjs";
 import { fetchForez } from "./connectors/forez.mjs";
 import { fetchLigueAura } from "./connectors/ligueAura.mjs";
 import { toRecord, merge, isoToday, marquerRecurrences, marquerExclusions } from "./normalize.mjs";
@@ -28,6 +29,7 @@ const CONNECTEURS = {
   valdauzon: fetchValdauzon,
   montpensier: fetchMontpensier,
   champlong: fetchChamplong,
+  avenelles: fetchAvenelles,
   forez: fetchForez,
   "calendrier-image": fetchCalendrierImage,
 };

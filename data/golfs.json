@@ -114,5 +114,13 @@
     "connecteur": "calendrier-image",
     "page": "https://golfvezac.com/competitions/calendrier",
     "zone": "Cantal"
+  },
+  {
+    "id": "avenelles",
+    "nom": "Golf des Avenelles",
+    "base": "https://www.golfdesavenelles.com",
+    "connecteur": "avenelles",
+    "page": "https://www.golfdesavenelles.com/competitions",
+    "zone": "Allier"
   }
 ]

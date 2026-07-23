@@ -5,7 +5,7 @@ surtout la longue traîne (scrambles, coupes sponsorisées, compétitions intern
 que la FFG ne liste pas. Y sont ajoutées, en option, les épreuves de la ligue
 Auvergne-Rhône-Alpes (grands prix, trophées seniors, classic mid-am, équipes).
 
-En ligne : **https://agendagolf.fr** — 13 clubs suivis, mis à jour chaque matin.
+En ligne : **https://agendagolf.fr** — 15 clubs suivis, mis à jour chaque matin.
 
 ## Voir la page en local
 
@@ -21,7 +21,7 @@ La page lit `site/data.js`, régénéré par la collecte. Rien à installer.
 Aucune dépendance : tout tourne avec Node ≥ 20 et ses modules natifs.
 
 ```bash
-node scripts/collect.mjs            # collecte les 14 golfs + la ligue
+node scripts/collect.mjs            # collecte les 15 golfs + la ligue
 node scripts/collect.mjs royat      # un seul golf (par son id)
 node scripts/collect.mjs ligue      # seulement les épreuves fédérales
 node scripts/digest.mjs             # génère l'e-mail dans dist/ (n'envoie rien)
