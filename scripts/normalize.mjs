@@ -145,7 +145,9 @@ const PAR_EQUIPE = /^[ée]quipe|par [ée]quipes?|interclub|inter[-\s]club|tour a
 
 // Compétitions fermées : réservées, sans inscription possible. Inutile de les
 // montrer sur un site dont le seul intérêt est de pouvoir s'inscrire.
-const FERMEE = /ferm[ée]e?\b/i;
+// « compétition privée » et « réservé aux membres » relèvent du même cas : une
+// épreuve à laquelle un visiteur ne peut pas se joindre n'a rien à y faire.
+const FERMEE = /ferm[ée]e?\b|priv[ée]e?\b|r[ée]serv[ée]e?\s+aux\s+membres/i;
 
 export function classerFormules(nom = "", format = "") {
   const texteComplet = `${nom} ${format || ""}`;
@@ -166,8 +168,11 @@ export function estParEquipe(nom = "", format = "") {
   return PAR_EQUIPE.test(nom) || PAR_EQUIPE.test(format || "");
 }
 
-export function estOuverte(format = "") {
-  return !FERMEE.test(format || "");
+// Le motif « fermée / privée / réservé aux membres » se loge tantôt dans la
+// formule, tantôt dans l'intitulé (« Seniors des 4 Ligues (compétition
+// privée) ») : on regarde les deux.
+export function estOuverte(nom = "", format = "") {
+  return !FERMEE.test(`${nom} ${format || ""}`);
 }
 
 // « En ligne » comme mode de départ prête à confusion (on lit « inscription en
@@ -196,7 +201,7 @@ export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
     formules: classerFormules(raw.nom, raw.format),
     moment: detectMoment(raw.nom, raw.format),
     equipe: estParEquipe(raw.nom, raw.format),
-    ouverte: estOuverte(raw.format),
+    ouverte: estOuverte(raw.nom, raw.format),
     nom: (raw.nom || "").trim(),
     date_debut: dateDebut,
     date_fin: dateFin,

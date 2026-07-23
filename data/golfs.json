@@ -122,5 +122,13 @@
     "connecteur": "avenelles",
     "page": "https://www.golfdesavenelles.com/competitions",
     "zone": "Allier"
+  },
+  {
+    "id": "chambon-lignon",
+    "nom": "Golf du Chambon-sur-Lignon",
+    "base": "https://golf-chambon.com",
+    "connecteur": "chambon",
+    "page": "https://golf-chambon.com/competitions-2026/",
+    "zone": "Haute-Loire"
   }
 ]
