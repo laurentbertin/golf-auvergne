@@ -9,7 +9,7 @@
 // parcours, le réseau est souvent absent) et le premier écran instantané quand
 // la connexion traîne.
 
-const CACHE = "agendagolf-v3";
+const CACHE = "agendagolf-v4";
 
 // Le strict nécessaire pour afficher quelque chose sans réseau dès la première
 // visite. Le reste entre dans le cache au fil de la navigation.

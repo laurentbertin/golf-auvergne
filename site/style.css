@@ -199,6 +199,15 @@ footer a:hover{text-decoration:underline}
 .page li{margin:0 0 6px}
 .page .chapo{font-size:16px;opacity:1}
 
+/* Trois publics, trois adresses : chacun se reconnaît d'un coup d'œil sans
+   lire le bloc des autres. */
+.publics{list-style:none;padding:0;margin:0 0 26px;max-width:62ch;
+  display:flex;flex-direction:column;gap:10px}
+.publics li{border-left:3px solid var(--green2);background:var(--panel2);
+  border-radius:0 10px 10px 0;padding:11px 14px;font-size:14.5px;
+  line-height:1.55;color:var(--ink);opacity:.92}
+.publics strong{display:block;color:var(--green2);font-weight:700;margin-bottom:2px}
+
 /* ------------------------------------------------------------- formulaires */
 .form{margin:22px 0 0;max-width:560px}
 .champ{margin:0 0 14px}
