@@ -108,6 +108,8 @@ main{padding:22px 0 60px}
 .comp{position:relative;display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;
   background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:13px 15px;margin:9px 0}
 .date{text-align:center;line-height:1.1}
+.date .jsem{font-size:10.5px;text-transform:uppercase;color:var(--green2);
+  font-weight:700;letter-spacing:.05em;margin-bottom:1px}
 .date .j{font-size:22px;font-weight:800}
 .date .m{font-size:11px;text-transform:uppercase;color:var(--muted);letter-spacing:.05em}
 .date .plage{font-size:10px;color:var(--gold);margin-top:2px}

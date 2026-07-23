@@ -25,6 +25,12 @@
 
   const MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
   const MOIS_COURT = ["janv","févr","mars","avr","mai","juin","juil","août","sept","oct","nov","déc"];
+  // Date.getDay() : 0 = dimanche … 6 = samedi.
+  const JOURS_COURT = ["dim","lun","mar","mer","jeu","ven","sam"];
+
+  // Le jour de la semaine (0 = dimanche). Midi fixé pour ne pas basculer d'un
+  // jour selon le fuseau, comme partout ailleurs dans le fichier.
+  const jourDeLaSemaine = (iso) => new Date(iso + "T12:00:00").getDay();
 
   // Épreuves de la ligue : facultatives pour le joueur, donc masquées par défaut.
   // On ne les impose pas dans une page dont le sujet reste les coupes de club.
@@ -92,6 +98,36 @@
       render();
     };
     elPeriodes.appendChild(b);
+  });
+
+  // -------------------------------------------------------------------- jours
+  // Beaucoup de golfeurs ne sont libres que certains jours (le samedi, ou au
+  // contraire en semaine à la retraite). Comme les formules : rien de coché =
+  // tous les jours, on ajoute des jours plutôt qu'on n'en retranche.
+  //
+  // Ordre lundi→dimanche, à la française. On n'affiche que les jours qui portent
+  // au moins une compétition : un « lundi » vide ne rendrait service à personne.
+  const elJours = document.getElementById("jours");
+  const ORDRE_JOURS = [1, 2, 3, 4, 5, 6, 0];
+  const JOURS_LONG = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  const joursActifs = new Set();
+  const boutonsJour = new Map();
+
+  ORDRE_JOURS.forEach((n) => {
+    if (!ALL.some((c) => jourDeLaSemaine(c.date_debut) === n)) return;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "chip";
+    b.textContent = JOURS_COURT[n].charAt(0).toUpperCase() + JOURS_COURT[n].slice(1);
+    b.setAttribute("aria-label", JOURS_LONG[n]);
+    b.setAttribute("aria-pressed", "false");
+    b.onclick = () => {
+      if (joursActifs.has(n)) joursActifs.delete(n); else joursActifs.add(n);
+      b.setAttribute("aria-pressed", joursActifs.has(n) ? "true" : "false");
+      render();
+    };
+    boutonsJour.set(n, b);
+    elJours.appendChild(b);
   });
 
   // ---------------------------------------------------------------- formules
@@ -264,6 +300,13 @@
     return FORMULES.some((f) => formulesActives.has(f.id) && releveDe(c, f));
   }
 
+  // Filtre par jour de la semaine, appliqué au jour de DÉBUT — cohérent avec le
+  // reste de la page, qui date tout par le début.
+  function jourRetenu(c) {
+    if (!joursActifs.size) return true;
+    return joursActifs.has(jourDeLaSemaine(c.date_debut));
+  }
+
   function render() {
     // Base servant à compter les formules : tout sauf le filtre de formule
     // lui-même, pour que les nombres reflètent la sélection en cours.
@@ -272,7 +315,8 @@
     majComptesFormule(base);
 
     const list = ALL
-      .filter((c) => visible(c) && formuleRetenue(c) && c.date_debut <= periode.jusqua)
+      .filter((c) => visible(c) && formuleRetenue(c) && jourRetenu(c)
+        && c.date_debut <= periode.jusqua)
       .sort((a, b) => (a.date_debut < b.date_debut ? -1 : 1));
 
     elListe.innerHTML = "";
@@ -368,7 +412,8 @@
         `<span class="chevron" aria-hidden="true">›</span></a>`
       : "";
     el.innerHTML = `
-      <div class="date"><div class="j">${d.getDate()}</div>
+      <div class="date"><div class="jsem">${JOURS_COURT[d.getDay()]}</div>
+        <div class="j">${d.getDate()}</div>
         <div class="m">${MOIS_COURT[d.getMonth()]}</div>${plage}</div>
       <div class="infos">
         <div class="nom">${etiquette}${esc(c.nom)}${badge}</div>
