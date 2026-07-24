@@ -5,7 +5,7 @@ surtout la longue traîne (scrambles, coupes sponsorisées, compétitions intern
 que la FFG ne liste pas. Y sont ajoutées, en option, les épreuves de la ligue
 Auvergne-Rhône-Alpes (grands prix, trophées seniors, classic mid-am, équipes).
 
-En ligne : **https://agendagolf.fr** — 15 clubs suivis, mis à jour chaque matin.
+En ligne : **https://agendagolf.fr** — 16 clubs suivis, mis à jour chaque matin.
 
 ## Voir la page en local
 
@@ -21,7 +21,7 @@ La page lit `site/data.js`, régénéré par la collecte. Rien à installer.
 Aucune dépendance : tout tourne avec Node ≥ 20 et ses modules natifs.
 
 ```bash
-node scripts/collect.mjs            # collecte les 15 golfs + la ligue
+node scripts/collect.mjs            # collecte les 16 golfs + la ligue
 node scripts/collect.mjs royat      # un seul golf (par son id)
 node scripts/collect.mjs ligue      # seulement les épreuves fédérales
 node scripts/digest.mjs             # génère l'e-mail dans dist/ (n'envoie rien)
@@ -105,7 +105,7 @@ Aucun store, aucun compte développeur, aucune mise à jour à publier.
   site tient à la fraîcheur de `data.js`, réécrit chaque matin. Le cache ne sert
   qu'au hors-ligne (le réseau manque souvent sur un parcours) et au premier
   écran quand la connexion traîne.
-- **`site/pwa.js`** — l'enregistrement, chargé par les cinq pages.
+- **`site/installation.js`** — l'enregistrement, chargé par les cinq pages.
 
 Les PNG sont rendus depuis les deux SVG (`favicon.svg`, et `icone-masquable.svg`
 dont le contenu tient dans la zone sûre d'Android). La machine n'a aucun
