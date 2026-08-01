@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16241c"/>
+      <stop offset="1" stop-color="#0f1512"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- filet doré en tête, comme une ligne de départ -->
+  <rect x="0" y="0" width="1200" height="8" fill="#d8b35a"/>
+
+  <!-- Le drapeau du site, agrandi (repris du favicon). -->
+  <g transform="translate(792 150) scale(5.4)">
+    <rect x="18" y="8" width="6" height="48" rx="3" fill="#e8efe9"/>
+    <path d="M24 10h30l-9 11 9 11H24z" fill="#d8b35a"/>
+    <rect x="10" y="50" width="44" height="6" rx="3" fill="#3fa877"/>
+  </g>
+
+  <!-- Texte, aligné à gauche. -->
+  <g font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
+    <text x="90" y="212" fill="#5cc98f" font-size="30" font-weight="700" letter-spacing="4">AGENDAGOLF.FR</text>
+    <text x="88" y="304" fill="#ffffff" font-size="74" font-weight="800" letter-spacing="-1">Compétitions de golf</text>
+    <text x="90" y="368" fill="#d8b35a" font-size="46" font-weight="600">Auvergne &amp; Loire</text>
+    <text x="90" y="452" fill="#9db0a4" font-size="31" font-weight="400">Toutes les compétitions de la région,</text>
+    <text x="90" y="494" fill="#9db0a4" font-size="31" font-weight="400">sur une seule page. Mise à jour chaque matin.</text>
+  </g>
+</svg>

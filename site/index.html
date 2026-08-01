@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Golf Auvergne — Compétitions des clubs d'Auvergne et de la Loire</title>
+<title>Golf Auvergne â CompÃ©titions des clubs d'Auvergne et de la Loire</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="manifest.webmanifest">
@@ -11,27 +11,39 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Agenda golf">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Agenda golf">
+<meta property="og:title" content="Agenda golf — compétitions d’Auvergne & Loire">
+<meta property="og:description" content="Toutes les compétitions de golf de la région, sur une seule page. Mise à jour chaque matin.">
+<meta property="og:image" content="https://agendagolf.fr/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agenda golf — compétitions d’Auvergne & Loire">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agenda golf — compétitions d’Auvergne & Loire">
+<meta name="twitter:description" content="Toutes les compétitions de golf de la région, sur une seule page.">
+<meta name="twitter:image" content="https://agendagolf.fr/og.jpg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
   <div class="wrap">
     <div class="entete-haut">
-      <h1>⛳ Compétitions de golf<span>Auvergne &amp; Loire</span></h1>
+      <h1>â³ CompÃ©titions de golf<span>Auvergne &amp; Loire</span></h1>
       <nav class="nav-site" aria-label="Sections du site">
         <a href="index.html" aria-current="page">L'agenda</a>
-        <a href="#recevoir">Recevoir les compètes</a>
+        <a href="#recevoir">Recevoir les compÃ¨tes</a>
         <a href="le-projet.html">Le projet</a>
-        <a href="contact.html">Écrivez-moi</a>
+        <a href="contact.html">Ãcrivez-moi</a>
       </nav>
     </div>
-    <p class="tagline">Envie de jouer une compétition sympa ailleurs que sur ton parcours habituel ? Elles sont toutes là, dans les clubs de la région.</p>
+    <p class="tagline">Envie de jouer une compÃ©tition sympa ailleurs que sur ton parcours habituel ? Elles sont toutes lÃ , dans les clubs de la rÃ©gion.</p>
   </div>
 </header>
 
 <main class="wrap">
-  <!-- Partage, en haut pour être vu. X, Facebook et LinkedIn ont une URL de
-       partage web ; Instagram n'en a pas (le partage natif du téléphone le couvre). -->
+  <!-- Partage, en haut pour Ãªtre vu. X, Facebook et LinkedIn ont une URL de
+       partage web ; Instagram n'en a pas (le partage natif du tÃ©lÃ©phone le couvre). -->
   <div class="relais">
     <span class="relais-txt">Fais tourner&nbsp;:</span>
     <div class="relais-liste">
@@ -53,7 +65,7 @@
       <button type="button" class="rs rs-cp" data-c="copy" aria-label="Copier le lien">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 007.07 0l1.41-1.41a5 5 0 00-7.07-7.07L10 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 00-7.07 0L5.5 12.4a5 5 0 007.07 7.07L14 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
-      <span class="relais-echo" role="status" aria-live="polite">Lien copié&nbsp;✓</span>
+      <span class="relais-echo" role="status" aria-live="polite">Lien copiÃ©&nbsp;â</span>
     </div>
   </div>
 
@@ -64,13 +76,13 @@
 
   <section class="filtres" aria-labelledby="titre-jours">
     <h2 class="filtres-titre" id="titre-jours">Quel jour
-      <span class="filtres-note">rien de coché = tous</span>
+      <span class="filtres-note">rien de cochÃ© = tous</span>
     </h2>
     <div id="jours" class="rangee"></div>
   </section>
 
   <section class="filtres" aria-labelledby="titre-golfs">
-    <h2 class="filtres-titre" id="titre-golfs">Où
+    <h2 class="filtres-titre" id="titre-golfs">OÃ¹
       <button type="button" id="plier-golfs" class="lien-bascule" aria-expanded="false"
               aria-controls="filtres"></button>
       <button type="button" id="bascule-golfs" class="lien-bascule"></button>
@@ -80,7 +92,7 @@
 
   <section class="filtres" aria-labelledby="titre-formule">
     <h2 class="filtres-titre" id="titre-formule">Formule
-      <span class="filtres-note">rien de coché = toutes</span>
+      <span class="filtres-note">rien de cochÃ© = toutes</span>
     </h2>
     <div id="formules" class="rangee"></div>
   </section>
@@ -88,7 +100,7 @@
   <section class="filtres" aria-labelledby="titre-ligue">
     <h2 class="filtres-titre" id="titre-ligue">Aussi afficher
       <button type="button" id="plier-ligue" class="lien-bascule" aria-expanded="false"
-              aria-controls="bloc-ligue">épreuves de la ligue AURA</button>
+              aria-controls="bloc-ligue">Ã©preuves de la ligue AURA</button>
     </h2>
     <div id="bloc-ligue" hidden>
       <div id="types" class="rangee"></div>
@@ -96,17 +108,17 @@
   </section>
 
   <div id="compteur" class="compteur"></div>
-  <nav id="mois-index" class="mois-index" aria-label="Aller à un mois" hidden></nav>
+  <nav id="mois-index" class="mois-index" aria-label="Aller Ã  un mois" hidden></nav>
   <section id="liste"></section>
-  <p id="vide" class="vide" hidden>Aucune compétition à venir pour cette sélection.</p>
+  <p id="vide" class="vide" hidden>Aucune compÃ©tition Ã  venir pour cette sÃ©lection.</p>
 
-  <!-- Inscription e-mail. Posée SOUS l'agenda : on rend service d'abord.
-       Le formulaire poste directement chez Brevo : aucune clé n'est exposée,
-       et c'est Brevo qui gère la confirmation (double opt-in). -->
+  <!-- Inscription e-mail. PosÃ©e SOUS l'agenda : on rend service d'abord.
+       Le formulaire poste directement chez Brevo : aucune clÃ© n'est exposÃ©e,
+       et c'est Brevo qui gÃ¨re la confirmation (double opt-in). -->
   <section class="optin" id="recevoir" aria-labelledby="titre-recevoir">
-    <h2 id="titre-recevoir">Recevoir les compétitions par mail</h2>
-    <p>Chaque semaine, les compétitions à venir dans les clubs de la région,
-       directement dans ta boîte. Rien d'autre, et tu te désinscris en un clic.</p>
+    <h2 id="titre-recevoir">Recevoir les compÃ©titions par mail</h2>
+    <p>Chaque semaine, les compÃ©titions Ã  venir dans les clubs de la rÃ©gion,
+       directement dans ta boÃ®te. Rien d'autre, et tu te dÃ©sinscris en un clic.</p>
 
     <form class="form" id="form-optin" data-envoi="brevo" action="https://2b5438bc.sibforms.com/serve/MUIFAMVslC1fZ4hUSEpfmMFUvvUI4uKM8mZm1TXIngSHoS-DCHkE8vXhkZma8bkk-QiJFt7vBD3iutAIqiwUKjLjIHyE7aGSuzpITejUlWrKBYAFVAOAOYSzHHkiPVx4muZbEM_atj51p9LHXsRiMQhFx4hmMz_FjqClTSqb-iFgEJZ6KUaaoaHzqMiZvz2P7sa1N14jPdF2bFiC2Q==" method="POST">
       <div class="champ">
@@ -117,12 +129,12 @@
 
       <label class="consentement">
         <input type="checkbox" required>
-        <span>J'accepte de recevoir cet e-mail. Mon adresse sert uniquement à ça,
-          n'est transmise à personne, et je peux me désinscrire à tout moment
-          (<a href="confidentialite.html">confidentialité</a>).</span>
+        <span>J'accepte de recevoir cet e-mail. Mon adresse sert uniquement Ã  Ã§a,
+          n'est transmise Ã  personne, et je peux me dÃ©sinscrire Ã  tout moment
+          (<a href="confidentialite.html">confidentialitÃ©</a>).</span>
       </label>
 
-      <!-- Piège à robots attendu par Brevo : doit rester vide et invisible. -->
+      <!-- PiÃ¨ge Ã  robots attendu par Brevo : doit rester vide et invisible. -->
       <input type="text" name="email_address_check" value="" tabindex="-1"
              autocomplete="off" aria-hidden="true"
              style="position:absolute;left:-9999px;width:1px;height:1px">
@@ -131,7 +143,7 @@
       <button type="submit" class="bouton">Je m'inscris</button>
       <p style="font-size:12px;color:var(--muted);margin:10px 0 0">
         Tu recevras un mail de confirmation : l'inscription n'est active
-        qu'une fois le lien cliqué.
+        qu'une fois le lien cliquÃ©.
       </p>
     </form>
   </section>
@@ -140,17 +152,17 @@
 
 <footer>
   <div class="wrap">
-    <p>Données mises à jour chaque matin depuis les sites des clubs. Vérifiez toujours l'horaire exact auprès du golf avant de vous déplacer.</p>
+    <p>DonnÃ©es mises Ã  jour chaque matin depuis les sites des clubs. VÃ©rifiez toujours l'horaire exact auprÃ¨s du golf avant de vous dÃ©placer.</p>
     <p class="mini" id="pied-golfs"></p>
-    <p class="mini"><a href="le-projet.html">Le projet</a> ·
-      <a href="contact.html">Écrivez-moi</a> ·
-      <a href="installer.html">Installer l'app</a> ·
-      <a href="confidentialite.html">Confidentialité</a> ·
-      <a href="mentions-legales.html">Mentions légales</a></p>
+    <p class="mini"><a href="le-projet.html">Le projet</a> Â·
+      <a href="contact.html">Ãcrivez-moi</a> Â·
+      <a href="installer.html">Installer l'app</a> Â·
+      <a href="confidentialite.html">ConfidentialitÃ©</a> Â·
+      <a href="mentions-legales.html">Mentions lÃ©gales</a></p>
   </div>
 </footer>
 
-<!-- Données injectées par scripts/collect.mjs (ou seed-vichy.mjs) -->
+<!-- DonnÃ©es injectÃ©es par scripts/collect.mjs (ou seed-vichy.mjs) -->
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="formulaires.js"></script>
