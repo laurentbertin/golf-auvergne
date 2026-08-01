@@ -28,9 +28,10 @@ header{background:var(--entete);border-bottom:1px solid var(--line);padding:18px
    propre ligne, ce qui rendait l'en-tête inutilement haut. */
 .entete-haut{display:flex;align-items:center;justify-content:space-between;
   gap:8px 22px;flex-wrap:wrap}
-h1{margin:0;font-size:22px;letter-spacing:-.3px;text-wrap:balance}
-h1 span{color:var(--muted);font-weight:500;font-size:15px;margin-left:.4em;
-  display:inline-block;white-space:nowrap}
+h1{margin:0;font-size:22px;letter-spacing:-.3px;text-wrap:balance;line-height:1.15}
+/* Sous-titre sur sa propre ligne, sous le titre. */
+h1 span{display:block;color:var(--muted);font-weight:500;font-size:14px;
+  letter-spacing:0;margin-top:2px}
 .tagline{color:var(--muted);margin:9px 0 0;font-size:14px;max-width:60ch}
 main{padding:20px 0 60px}
 
@@ -250,10 +251,12 @@ footer a:hover{text-decoration:underline}
   padding:16px 18px;color:var(--ink);max-width:560px}
 
 /* ------------------------------------------------------------ partage */
-/* Bandeau compact en tête de page : discret, sur une ligne, tout de suite vu. */
-.partage-haut{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:10px 0 18px}
-.partage-haut-txt{font-size:13px;color:var(--muted);font-weight:600}
-.partage-boutons{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+/* Bandeau compact en tête de page : discret, sur une ligne, tout de suite vu.
+   Noms de classe volontairement neutres (voir partage.js) : les bloqueurs de
+   pub masquent tout ce qui ressemble à un widget social. */
+.relais{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:10px 0 18px}
+.relais-txt{font-size:13px;color:var(--muted);font-weight:600}
+.relais-liste{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .rs{width:36px;height:36px;border-radius:50%;display:inline-flex;
   align-items:center;justify-content:center;border:1px solid var(--line);
   background:var(--panel);color:var(--ink);text-decoration:none;cursor:pointer;
@@ -261,12 +264,13 @@ footer a:hover{text-decoration:underline}
 .rs svg{width:17px;height:17px;fill:currentColor}
 .rs:hover{transform:translateY(-1px);border-color:var(--green)}
 /* Chaque réseau à sa couleur ; X suit le thème (noir en clair, blanc en sombre). */
-.rs-facebook{color:#1877f2}
-.rs-linkedin{color:#0a66c2}
-.rs-natif{color:var(--green2)}
-.rs-copier{color:var(--muted)}
-.partage-copie{font-size:13px;color:var(--green2);opacity:0;transition:opacity .2s}
-.partage-copie.ok{opacity:1}
+.rs-fb{color:#1877f2}
+.rs-wa{color:#25d366}
+.rs-in{color:#0a66c2}
+.rs-nat{color:var(--green2)}
+.rs-cp{color:var(--muted)}
+.relais-echo{font-size:13px;color:var(--green2);opacity:0;transition:opacity .2s}
+.relais-echo.ok{opacity:1}
 
 /* ------------------------------------------- pas-à-pas d'installation */
 .guide-note{color:var(--muted);font-size:13.5px;margin:0 0 10px}
