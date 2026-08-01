@@ -106,6 +106,31 @@
       </p>
     </form>
   </section>
+
+  <!-- Partage. X, Facebook et LinkedIn ont une URL de partage web ; Instagram
+       n'en a pas (le partage natif du téléphone le couvre). -->
+  <section class="partage" id="partager" aria-labelledby="titre-partage">
+    <h2 id="titre-partage">Fais tourner</h2>
+    <p>Un golfeur près de chez toi ne connaît pas encore l'agenda ? Un partage suffit.</p>
+    <div class="partage-boutons">
+      <button type="button" class="rs rs-natif" data-partage="natif" hidden aria-label="Partager">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 16a3 3 0 00-2.06.82l-6.24-3.42a3 3 0 000-1.8l6.24-3.42A3 3 0 1015 6l-6.24 3.42a3 3 0 100 5.16L15 18a3 3 0 103-2z"/></svg>
+      </button>
+      <a class="rs rs-x" data-partage="x" aria-label="Partager sur X" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.68l7.73-8.84L1.25 2.25H8.08l4.71 6.23zm-1.16 17.52h1.83L7.01 4.13H5.05z"/></svg>
+      </a>
+      <a class="rs rs-facebook" data-partage="facebook" aria-label="Partager sur Facebook" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6 4.39 10.97 10.13 11.87v-8.4H7.08v-3.47h3.05V9.43c0-3 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.52c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.4C19.61 23.04 24 18.07 24 12.07z"/></svg>
+      </a>
+      <a class="rs rs-linkedin" data-partage="linkedin" aria-label="Partager sur LinkedIn" href="#">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <button type="button" class="rs rs-copier" data-partage="copier" aria-label="Copier le lien">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 007.07 0l1.41-1.41a5 5 0 00-7.07-7.07L10 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 00-7.07 0L5.5 12.4a5 5 0 007.07 7.07L14 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <span class="partage-copie" role="status" aria-live="polite">Lien copié ✓</span>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -114,6 +139,7 @@
     <p class="mini" id="pied-golfs"></p>
     <p class="mini"><a href="le-projet.html">Le projet</a> ·
       <a href="contact.html">Écrivez-moi</a> ·
+      <a href="installer.html">Installer l'app</a> ·
       <a href="confidentialite.html">Confidentialité</a> ·
       <a href="mentions-legales.html">Mentions légales</a></p>
   </div>
@@ -123,6 +149,7 @@
 <script src="data.js"></script>
 <script src="app.js"></script>
 <script src="formulaires.js"></script>
+<script src="partage.js"></script>
 <script src="installation.js"></script>
 </body>
 </html>

@@ -64,8 +64,10 @@ if ("serviceWorker" in navigator) {
       return `<span class="installer-texte">Installe l'agenda comme une application.</span>
               <button type="button" class="installer-go">Installer</button>`;
     }
+    // Sans bouton (iOS, Safari, Firefox), le mode d'emploi tient en une ligne,
+    // mais beaucoup s'y perdent : un lien mène au pas-à-pas illustré.
     return `<span class="installer-texte">Garde l'agenda à portée de main :
-            ${modeDEmploi()}.</span>`;
+            ${modeDEmploi()}. <a class="installer-aide" href="/installer.html">Comment&nbsp;faire&nbsp;?</a></span>`;
   }
 
   function poser() {

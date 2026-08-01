@@ -245,6 +245,45 @@ footer a:hover{text-decoration:underline}
 .merci{background:var(--panel2);border:1px solid var(--green2);border-radius:12px;
   padding:16px 18px;color:var(--ink);max-width:560px}
 
+/* ------------------------------------------------------------ partage */
+.partage{margin:22px 0 0;padding:18px 20px 20px;border:1px solid var(--line);
+  border-radius:14px;background:var(--panel2)}
+.partage h2{margin:0 0 6px;font-size:17px}
+.partage p{margin:0 0 12px;color:var(--muted);font-size:14px;line-height:1.55}
+.partage-boutons{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rs{width:44px;height:44px;border-radius:50%;display:inline-flex;
+  align-items:center;justify-content:center;border:1px solid var(--line);
+  background:var(--panel);color:var(--ink);text-decoration:none;cursor:pointer;
+  transition:transform .12s,border-color .12s}
+.rs svg{width:20px;height:20px;fill:currentColor}
+.rs:hover{transform:translateY(-1px);border-color:var(--green)}
+/* Chaque réseau à sa couleur ; X suit le thème (noir en clair, blanc en sombre). */
+.rs-facebook{color:#1877f2}
+.rs-linkedin{color:#0a66c2}
+.rs-natif{color:var(--green2)}
+.rs-copier{color:var(--muted)}
+.partage-copie{font-size:13px;color:var(--green2);opacity:0;transition:opacity .2s}
+.partage-copie.ok{opacity:1}
+
+/* ------------------------------------------- pas-à-pas d'installation */
+.guide-note{color:var(--muted);font-size:13.5px;margin:0 0 10px}
+.guide{counter-reset:pas;list-style:none;padding:0;margin:0 0 22px;max-width:62ch}
+.guide li{counter-increment:pas;position:relative;padding:12px 14px 12px 52px;
+  margin:8px 0;background:var(--panel2);border-radius:10px;line-height:1.55;
+  font-size:14.5px}
+.guide li::before{content:counter(pas);position:absolute;left:12px;top:11px;
+  width:28px;height:28px;border-radius:50%;background:var(--green2);
+  color:var(--puce-ink);font-weight:700;font-size:14px;
+  display:flex;align-items:center;justify-content:center}
+.guide svg.ui{width:1.2em;height:1.2em;vertical-align:-.25em;margin:0 .12em;
+  fill:currentColor;color:var(--green2)}
+.guide-aide{color:var(--muted);font-size:13.5px;max-width:62ch;line-height:1.6;
+  border-top:1px solid var(--line);padding-top:14px}
+
+/* Lien « Comment faire ? » dans la bannière d'installation. */
+.installer-aide{color:var(--green2);white-space:nowrap;text-decoration:underline;
+  text-underline-offset:2px}
+
 @media(max-width:560px){
   .nav-site{gap:14px;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;
     margin:12px -18px 0;padding:0 18px 2px;scrollbar-width:none}
