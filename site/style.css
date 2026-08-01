@@ -77,6 +77,14 @@ main{padding:20px 0 60px}
 
 .compteur{color:var(--muted);font-size:13px;margin:0 2px 14px}
 
+/* Deux rappels discrets juste avant la liste : recevoir le mail, offrir une
+   bière. Petits et sobres — un service proposé, pas une réclame. */
+.rappels{margin:0 0 16px}
+.rappel{font-size:13px;color:var(--muted);margin:4px 2px}
+.rappel a{color:var(--green2);text-decoration:none;font-weight:600}
+.rappel a:hover{text-decoration:underline}
+.rappel-note{opacity:.75}
+
 /* Liseré coloré sur la carte : lisible d'un coup d'œil en faisant défiler,
    sans alourdir la mise en page. */
 .comp-grand-prix{border-left:3px solid var(--gp)}
