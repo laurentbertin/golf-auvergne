@@ -246,16 +246,15 @@ footer a:hover{text-decoration:underline}
   padding:16px 18px;color:var(--ink);max-width:560px}
 
 /* ------------------------------------------------------------ partage */
-.partage{margin:22px 0 0;padding:18px 20px 20px;border:1px solid var(--line);
-  border-radius:14px;background:var(--panel2)}
-.partage h2{margin:0 0 6px;font-size:17px}
-.partage p{margin:0 0 12px;color:var(--muted);font-size:14px;line-height:1.55}
-.partage-boutons{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.rs{width:44px;height:44px;border-radius:50%;display:inline-flex;
+/* Bandeau compact en tête de page : discret, sur une ligne, tout de suite vu. */
+.partage-haut{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 16px}
+.partage-haut-txt{font-size:13px;color:var(--muted);font-weight:600}
+.partage-boutons{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rs{width:36px;height:36px;border-radius:50%;display:inline-flex;
   align-items:center;justify-content:center;border:1px solid var(--line);
   background:var(--panel);color:var(--ink);text-decoration:none;cursor:pointer;
   transition:transform .12s,border-color .12s}
-.rs svg{width:20px;height:20px;fill:currentColor}
+.rs svg{width:17px;height:17px;fill:currentColor}
 .rs:hover{transform:translateY(-1px);border-color:var(--green)}
 /* Chaque réseau à sa couleur ; X suit le thème (noir en clair, blanc en sombre). */
 .rs-facebook{color:#1877f2}
