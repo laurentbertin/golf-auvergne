@@ -123,6 +123,13 @@
     .heroGrid,.grid3,.grid2,.side,footer .wrap{grid-template-columns:1fr;}
     .ev{grid-template-columns:52px 1fr;}
     .ev .tag{grid-column:2;justify-self:start;}
+    /* Sur mobile, la barre d'onglets tient sur une seule ligne qui défile,
+       plutôt que de se replier sur trois rangs. */
+    .bar{align-items:stretch;}
+    nav{flex-wrap:nowrap;overflow-x:auto;width:100%;
+      scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+    nav::-webkit-scrollbar{display:none;}
+    nav button{white-space:nowrap;padding:11px 12px;}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
 </style>
@@ -146,15 +153,10 @@
     <nav role="tablist" aria-label="Sections du site">
       <button id="t-accueil" role="tab" aria-selected="true" aria-controls="accueil">Accueil</button>
       <button id="t-competitions" role="tab" aria-selected="false" aria-controls="competitions">Compétitions</button>
-      <button id="t-resultats" role="tab" aria-selected="false" aria-controls="resultats">Résultats</button>
-      <button id="t-epreuve" role="tab" aria-selected="false" aria-controls="epreuve">Une épreuve</button>
       <button id="t-tour" role="tab" aria-selected="false" aria-controls="tour">Classements</button>
-      <button id="t-calendrier" role="tab" aria-selected="false" aria-controls="calendrier">Calendrier</button>
-      <button id="t-jeunes" role="tab" aria-selected="false" aria-controls="jeunes">Jeunes</button>
-      <button id="t-actus" role="tab" aria-selected="false" aria-controls="actus">Actualités</button>
       <button id="t-golfs" role="tab" aria-selected="false" aria-controls="golfs">Les golfs</button>
+      <button id="t-jeunes" role="tab" aria-selected="false" aria-controls="jeunes">Jeunes</button>
       <button id="t-comite" role="tab" aria-selected="false" aria-controls="comite">Le comité</button>
-      <button id="t-principe" role="tab" aria-selected="false" aria-controls="principe">Le principe</button>
     </nav>
   </div>
 </header>
@@ -172,6 +174,7 @@
           <div style="display:flex;gap:12px;margin-top:26px;flex-wrap:wrap">
             <a class="btn" href="#" data-go="resultats">Tous les résultats</a>
             <a class="btn ghost" href="#" data-go="calendrier">Calendrier 2026</a>
+            <a class="btn ghost" href="#" data-go="principe">Comment ça marche</a>
           </div>
         </div>
         <div class="panel" style="color:var(--encre)">
@@ -246,6 +249,7 @@
             <div style="padding:14px 16px 18px"><div class="lab" style="font-size:10px">2 sept · Actu sport</div>
               <h3 style="font-size:16px;margin-top:6px;line-height:1.35">L'Auvergne termine 3<sup>e</sup> du TIC AURA</h3></div>
           </article>
+          <div style="font-weight:700;font-size:13.5px"><a href="#" data-go="actus">Toutes les actualités →</a></div>
         </div>
       </div>
     </div>
@@ -263,6 +267,31 @@
         <a class="panel cc" href="#" data-go="competitions"><h3>Pitch &amp; Putt</h3><span class="meta">Championnats départementaux et interclubs</span></a>
       </div>
     </div>
+
+    <div class="sect">
+      <h2>Le comité</h2>
+      <div class="side" style="margin-top:16px">
+        <div class="panel" style="padding:22px 24px">
+          <h3 style="font-size:18px">Fédérer le golf des Pays d'Auvergne</h3>
+          <p style="color:var(--encre-doux);margin:10px 0 0;max-width:60ch">
+            Né en 2020 de la fusion des comités de l'Allier, du Cantal et du Puy-de-Dôme, le
+            comité territorial réunit les 15 golfs et 21 associations d'entreprise du secteur.
+            Son équipe s'est donné trois missions : fédérer les acteurs du golf, doter le
+            territoire d'outils qui fonctionnent, et bien gérer les saisons golfiques.</p>
+          <div style="margin-top:16px;display:flex;gap:18px;flex-wrap:wrap;font:700 13.5px/1 Archivo,sans-serif">
+            <a href="#" data-go="comite">Le comité en détail →</a>
+            <a href="#" data-go="comite">Nous écrire →</a>
+          </div>
+        </div>
+        <div class="panel" style="padding:18px 20px"><div class="lab">Le comité en chiffres</div>
+          <div style="margin-top:12px;display:flex;flex-direction:column;gap:10px;font-size:14px">
+            <span style="display:flex;justify-content:space-between"><span style="color:var(--encre-doux)">Golfs</span><b>15</b></span>
+            <span style="display:flex;justify-content:space-between"><span style="color:var(--encre-doux)">AS entreprise</span><b>21</b></span>
+            <span style="display:flex;justify-content:space-between"><span style="color:var(--encre-doux)">Départements</span><b>3</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -275,6 +304,11 @@
           Chaque épreuve a sa page : règlement, équipes engagées, départs, résultats.
           Tout est au même endroit, et rien n'est dupliqué d'une saison sur l'autre.</p></div>
       <span class="live"><i></i> Résultats alimentés par la ffgolf</span>
+    </div>
+
+    <div style="margin-top:18px;display:flex;gap:18px;flex-wrap:wrap;font:700 13.5px/1 Archivo,sans-serif">
+      <a href="#" data-go="calendrier">Voir le calendrier 2026 →</a>
+      <a href="#" data-go="resultats">Tous les résultats →</a>
     </div>
 
     <div class="sect">
@@ -883,9 +917,14 @@
 <script>
   (function () {
     var tabs = Array.prototype.slice.call(document.querySelectorAll('nav button[role="tab"]'));
+    // Les sous-pages (résultats, calendrier, fiche épreuve…) n'ont plus d'onglet
+    // propre : on garde l'onglet parent allumé pour ne pas perdre le fil.
+    var parent = { resultats:'competitions', calendrier:'competitions', epreuve:'competitions',
+                   actus:'accueil', principe:'accueil' };
     function show(id) {
+      var hi = parent[id] || id;
       tabs.forEach(function (t) {
-        t.setAttribute('aria-selected', t.getAttribute('aria-controls') === id ? 'true' : 'false');
+        t.setAttribute('aria-selected', t.getAttribute('aria-controls') === hi ? 'true' : 'false');
       });
       document.querySelectorAll('.screen').forEach(function (s) {
         s.classList.toggle('on', s.id === id);
