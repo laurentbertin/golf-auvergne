@@ -41,14 +41,16 @@
   .bar{display:flex;align-items:center;justify-content:space-between;gap:18px;
     padding-block:16px;flex-wrap:wrap;}
   .mark{display:flex;align-items:center;gap:12px;}
-  .mark .n1{font-family:Archivo,sans-serif;font-weight:700;font-size:15px;line-height:1.1;}
-  .mark .n2{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#BBD3B0;}
+  .mark .n1{font-family:Archivo,sans-serif;font-weight:700;font-size:15px;line-height:1.1;display:block;}
+  .mark .n2{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#BBD3B0;display:block;margin-top:2px;}
   nav{display:flex;gap:2px;flex-wrap:wrap;}
   nav button{font:600 13px/1 Archivo,"Helvetica Neue",Arial,sans-serif;color:#D3E3CB;
     background:transparent;border:0;border-bottom:3px solid transparent;padding:11px 11px;cursor:pointer;}
   nav button:hover{color:#fff;}
   nav button[aria-selected="true"]{color:#fff;border-bottom-color:var(--jaune);}
   nav button:focus-visible{outline:2px solid var(--jaune);outline-offset:2px;}
+  .burger{display:none;background:transparent;border:0;color:#fff;cursor:pointer;padding:6px;}
+  .burger:focus-visible{outline:2px solid var(--jaune);outline-offset:2px;}
 
   .screen{display:none;}
   .screen.on{display:block;}
@@ -123,24 +125,20 @@
     .heroGrid,.grid3,.grid2,.side,footer .wrap{grid-template-columns:1fr;}
     .ev{grid-template-columns:52px 1fr;}
     .ev .tag{grid-column:2;justify-self:start;}
-    /* Sur mobile, la barre d'onglets tient sur une seule ligne qui défile,
-       plutôt que de se replier sur trois rangs. */
-    .bar{align-items:stretch;}
-    nav{flex-wrap:nowrap;overflow-x:auto;width:100%;
-      scrollbar-width:none;-webkit-overflow-scrolling:touch;}
-    nav::-webkit-scrollbar{display:none;}
-    nav button{white-space:nowrap;padding:11px 12px;}
+    /* Sur mobile : menu hamburger. La liste d'onglets se déplie sous la barre. */
+    .burger{display:inline-flex;}
+    nav{display:none;flex-direction:column;width:100%;gap:0;order:3;margin-top:6px;
+      border-top:1px solid rgba(255,255,255,.14);}
+    nav.open{display:flex;}
+    nav button{width:100%;text-align:left;padding:14px 4px;border-bottom:0;
+      border-left:3px solid transparent;}
+    nav button[aria-selected="true"]{border-bottom-color:transparent;border-left-color:var(--jaune);}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;}}
 </style>
 </head>
 <body>
 
-
-<div class="flag"><div class="wrap">
-  <span><b>Maquette de proposition</b> — page de démonstration, sans lien officiel avec le comité.</span>
-  <span style="color:#8D8C86">Résultats réels de la Seniors D1 du 10 septembre 2026, repris de la ffgolf.</span>
-</div></div>
 
 <header>
   <div class="wrap bar">
@@ -158,6 +156,9 @@
       <button id="t-jeunes" role="tab" aria-selected="false" aria-controls="jeunes">Jeunes</button>
       <button id="t-comite" role="tab" aria-selected="false" aria-controls="comite">Le comité</button>
     </nav>
+    <button class="burger" aria-label="Menu" aria-expanded="false">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
   </div>
 </header>
 
@@ -938,6 +939,9 @@
 <script>
   (function () {
     var tabs = Array.prototype.slice.call(document.querySelectorAll('nav button[role="tab"]'));
+    var nav = document.querySelector('nav');
+    var burger = document.querySelector('.burger');
+    function closeMenu(){ if (nav) nav.classList.remove('open'); if (burger) burger.setAttribute('aria-expanded', 'false'); }
     // Les sous-pages (résultats, calendrier, fiche épreuve…) n'ont plus d'onglet
     // propre : on garde l'onglet parent allumé pour ne pas perdre le fil.
     var parent = { resultats:'competitions', calendrier:'competitions', epreuve:'competitions',
@@ -951,12 +955,17 @@
         s.classList.toggle('on', s.id === id);
       });
       window.scrollTo({ top: 0, behavior: 'auto' });
+      closeMenu();
     }
     tabs.forEach(function (t) {
       t.addEventListener('click', function () { show(t.getAttribute('aria-controls')); });
     });
     document.querySelectorAll('[data-go]').forEach(function (a) {
       a.addEventListener('click', function (e) { e.preventDefault(); show(a.getAttribute('data-go')); });
+    });
+    if (burger) burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   })();
 </script>
