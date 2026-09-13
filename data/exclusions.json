@@ -18,6 +18,7 @@
     { "golf": "forez", "contient": "seniors scramble", "raison": "série réservée au club, récurrente, non ludique" },
     { "golf": "forez", "contient": "seniors stableford", "raison": "série réservée au club, récurrente, non ludique" },
     { "golf": "val-dauzon", "contient": "finale lipp de france", "raison": "finale de sélection, pas une compétition ouverte" },
-    { "golf": "val-dauzon", "contient": "finale dames du puy", "raison": "finale départementale de sélection" }
+    { "golf": "val-dauzon", "contient": "finale dames du puy", "raison": "finale départementale de sélection" },
+    { "golf": "val-dauzon", "contient": "tous au golf", "raison": "journée découverte, pas une compétition" }
   ]
 }
