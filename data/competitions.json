@@ -305,7 +305,7 @@
     "derniere_maj": "2026-09-12",
     "valide": true,
     "recurrent": false,
-    "exclu": false
+    "exclu": true
   },
   {
     "id": "vichy-sc__2026-09-13__championnat-du-club-2-eme-tour",
@@ -915,7 +915,7 @@
     "depart": null,
     "trous": null,
     "sponsor": null,
-    "url_inscription": "https://www.golfdesavenelles.com/liste/b6i7pu6mu2dh4fnecg14oldr",
+    "url_inscription": "https://www.golfdesavenelles.com/inscription/b6i7pu6mu2dh4fnecg14oldr",
     "source_url": "https://www.golfdesavenelles.com/competitions",
     "source_type": "avenelles",
     "derniere_maj": "2026-09-13",
@@ -3081,6 +3081,34 @@
     "url_inscription": "https://golf-chambon.com/events/coupe-marcel-2026/",
     "source_url": "https://golf-chambon.com/competitions-2026/",
     "source_type": "chambon",
+    "derniere_maj": "2026-09-13",
+    "valide": true,
+    "recurrent": false,
+    "exclu": false
+  },
+  {
+    "id": "volcans__2026-10-11__coupe-du-personnel-11-10",
+    "golf_id": "volcans",
+    "golf_nom": "Golf des Volcans",
+    "type": "club",
+    "zone": "Puy-de-Dôme",
+    "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
+    "nom": "COUPE DU PERSONNEL 11.10",
+    "date_debut": "2026-10-11",
+    "date_fin": "2026-10-11",
+    "format": "Individuel",
+    "depart": "départs échelonnés",
+    "trous": null,
+    "sponsor": null,
+    "url_inscription": "https://www.golfdesvolcans.fr/competition/coupe-du-personnel-11-10/",
+    "source_url": "https://www.golfdesvolcans.fr/les-competitions-au-golf-des-volcans/",
+    "source_type": "volcans",
     "derniere_maj": "2026-09-13",
     "valide": true,
     "recurrent": false,
