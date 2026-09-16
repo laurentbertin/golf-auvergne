@@ -209,6 +209,9 @@ export function toRecord(raw, golf, sourceType, aujourdhui = isoToday()) {
     depart: lisibiliserDepart(raw.depart),
     trous: raw.trous ?? null,
     sponsor: raw.sponsor ?? detectSponsor(raw.nom),
+    // Détail publié par le club, quand son connecteur le lit (Val d'Auzon) : texte brut.
+    tarifs: raw.tarifs ?? null,
+    description: raw.description ?? null,
     url_inscription: raw.url_inscription ?? null,
     source_url: raw.source_url ?? golf.page ?? null,
     source_type: sourceType,
