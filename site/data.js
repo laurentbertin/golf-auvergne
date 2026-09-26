@@ -2911,6 +2911,36 @@ window.COMPETITIONS = [
     "exclu": false
   },
   {
+    "id": "chambon-lignon__2026-10-18__coupe-des-familles-o-bailo",
+    "golf_id": "chambon-lignon",
+    "golf_nom": "Golf du Chambon-sur-Lignon",
+    "type": "club",
+    "zone": "Haute-Loire",
+    "ville": null,
+    "formules": [
+      "scramble-2"
+    ],
+    "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
+    "nom": "Coupe des Familles – O. Bailo",
+    "date_debut": "2026-10-18",
+    "date_fin": "2026-10-18",
+    "format": "Scramble à 2 NEW",
+    "depart": null,
+    "trous": null,
+    "sponsor": null,
+    "tarifs": null,
+    "description": null,
+    "url_inscription": "https://golf-chambon.com/events/coupe-des-familles-o-bailo-scramble-a-2-%e2%93%98/",
+    "source_url": "https://golf-chambon.com/competitions-2026/",
+    "source_type": "chambon",
+    "derniere_maj": "2026-09-26",
+    "valide": true,
+    "recurrent": false,
+    "exclu": false
+  },
+  {
     "id": "forez__2026-10-20__seniors-scramble",
     "golf_id": "forez",
     "golf_nom": "Golf Club du Forez",
