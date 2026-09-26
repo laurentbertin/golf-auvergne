@@ -32,11 +32,19 @@ jobs:
       - name: Collecte des compétitions
         run: node scripts/collect.mjs
 
+      # Prévient Laurent par mail quand un golf bascule à zéro compétition à venir.
+      # N'échoue jamais le job : un mail raté ne doit pas bloquer la publication.
+      - name: Alerte golfs sans compétition
+        continue-on-error: true
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: node scripts/alerte-golfs-vides.mjs
+
       - name: Committer les données rafraîchies
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/competitions.json site/data.js
+          git add data/competitions.json site/data.js data/etat-alertes.json
           git commit -m "Données : rafraîchissement automatique" || echo "Rien de neuf à committer"
           git push || echo "Rien à pousser"
 
