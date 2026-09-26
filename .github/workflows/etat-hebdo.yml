@@ -1,0 +1,23 @@
+name: État hebdo par mail
+
+# Envoie à Laurent le tableau de bord de la collecte, une fois par semaine.
+# La collecte quotidienne (deploy.yml) tourne à 5h UTC : à 6h, les données
+# committées sont fraîches du jour. On ne recollecte donc pas, on lit l'état
+# déjà publié — celui que le site affiche.
+on:
+  schedule:
+    - cron: "0 6 * * 1"      # lundi ~8h (heure de Paris)
+  workflow_dispatch: {}      # + un bouton manuel pour tester l'envoi
+
+jobs:
+  mail:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Envoi du point hebdo
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+        run: node scripts/etat-mail.mjs
