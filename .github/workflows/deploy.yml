@@ -40,11 +40,16 @@ jobs:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         run: node scripts/alerte-golfs-vides.mjs
 
+      # Tableau de bord interne (site/etat.html) : santé de la collecte, un golf
+      # par ligne. Lecture seule, régénéré à chaque passage.
+      - name: Page d'état
+        run: node scripts/etat.mjs
+
       - name: Committer les données rafraîchies
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/competitions.json site/data.js data/etat-alertes.json
+          git add data/competitions.json site/data.js data/etat-alertes.json site/etat.html
           git commit -m "Données : rafraîchissement automatique" || echo "Rien de neuf à committer"
           git push || echo "Rien à pousser"
 
