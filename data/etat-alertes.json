@@ -1,7 +1,8 @@
 {
   "_lisezmoi": "Golfs sans compétition à venir au dernier passage. Sert à n'alerter qu'au basculement, jamais en boucle. Réécrit par scripts/alerte-golfs-vides.mjs.",
-  "maj": "2026-10-04",
+  "maj": "2026-10-05",
   "golfs_vides": [
+    "montpensier",
     "mont-dore"
   ]
 }
