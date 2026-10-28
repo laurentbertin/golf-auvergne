@@ -1,13 +1,12 @@
 {
   "_lisezmoi": "Golfs sans compétition à venir au dernier passage. Sert à n'alerter qu'au basculement, jamais en boucle. Réécrit par scripts/alerte-golfs-vides.mjs.",
-  "maj": "2026-10-27",
+  "maj": "2026-10-28",
   "golfs_vides": [
     "vichy-sc",
     "volcans",
     "mont-dore",
     "haute-auvergne",
     "sainte-agathe",
-    "vezac",
-    "avenelles"
+    "vezac"
   ]
 }
