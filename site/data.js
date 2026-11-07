@@ -1,35 +1,5 @@
 window.COMPETITIONS = [
   {
-    "id": "etangs__2026-11-06__journee-de-l-amitie",
-    "golf_id": "etangs",
-    "golf_nom": "Golf des Étangs",
-    "type": "club",
-    "zone": "Loire",
-    "ville": null,
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "equipe": false,
-    "ouverte": true,
-    "nom": "Journée de l'amitié",
-    "date_debut": "2026-11-06",
-    "date_fin": "2026-11-06",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "tarifs": null,
-    "description": null,
-    "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
-    "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
-    "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
-    "valide": true,
-    "recurrent": false,
-    "exclu": false
-  },
-  {
     "id": "etangs__2026-11-07__green-cup",
     "golf_id": "etangs",
     "golf_nom": "Golf des Étangs",
@@ -54,7 +24,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -84,7 +54,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -144,7 +114,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfdupuyenvelay.com/competitions-golf-puy-en-velay/",
     "source_url": "https://www.golfdupuyenvelay.com/wp-content/uploads/2026/03/calendrier-competition-golf-1.pdf-2.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -204,7 +174,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -234,7 +204,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -295,7 +265,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -325,7 +295,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -355,7 +325,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -415,7 +385,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/trophee-de-la-limagne/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": true,
     "formule_deduite": true,
@@ -446,7 +416,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -476,7 +446,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/competition-du-beaujolais-3/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -506,7 +476,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -536,7 +506,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfdesavenelles.com/inscription/trg8mkx7ezcdzkhv7v84et3u",
     "source_url": "https://www.golfdesavenelles.com/competitions",
     "source_type": "avenelles",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -549,7 +519,7 @@ window.COMPETITIONS = [
     "zone": "Puy-de-Dôme",
     "ville": null,
     "formules": [
-      "individuel"
+      "scramble"
     ],
     "moment": "journee",
     "equipe": false,
@@ -557,7 +527,7 @@ window.COMPETITIONS = [
     "nom": "Coupe du Beaujolais",
     "date_debut": "2026-11-22",
     "date_fin": "2026-11-22",
-    "format": "Stableford",
+    "format": "Scramble à 3",
     "depart": "08h00",
     "trous": null,
     "sponsor": null,
@@ -566,7 +536,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -596,7 +566,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -626,7 +596,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -656,7 +626,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -686,7 +656,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/competition-amene-un-pote/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": true,
     "exclu": false
@@ -746,7 +716,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -776,7 +746,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -806,7 +776,37 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
+    "valide": true,
+    "recurrent": false,
+    "exclu": false
+  },
+  {
+    "id": "royat__2026-12-10__pitch-putt-de-no-euml-l",
+    "golf_id": "royat",
+    "golf_nom": "Golf de Royat-Charade",
+    "type": "club",
+    "zone": "Puy-de-Dôme",
+    "ville": null,
+    "formules": [
+      "individuel"
+    ],
+    "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
+    "nom": "Pitch & Putt de No&euml;l",
+    "date_debut": "2026-12-10",
+    "date_fin": "2026-12-10",
+    "format": "Stableford en ShotGun",
+    "depart": "09h30",
+    "trous": 18,
+    "sponsor": null,
+    "tarifs": null,
+    "description": null,
+    "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
+    "source_url": "https://www.golfderoyatcharade.fr/competitions1",
+    "source_type": "royat",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -836,7 +836,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -866,7 +866,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/12:grand-prix-les-chanalets",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -896,7 +896,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/174:grand-prix-de-lisere",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -926,7 +926,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/175:grand-prix-de-la-drome",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -956,7 +956,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/176:grand-prix-de-lyon-salvagny",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -986,7 +986,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/177:grand-prix-de-haute-savoie",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1016,7 +1016,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/18:grand-prix-daix-les-bains",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1046,7 +1046,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/178:grand-prix-de-lardeche",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1076,7 +1076,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/179:grand-prix-de-champlong",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1106,7 +1106,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/180:grand-prix-du-lac-dannecy",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1136,7 +1136,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/181:grand-prix-du-rhone",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1166,7 +1166,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/182:grand-prix-du-gcl",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1196,7 +1196,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/154:grand-prix-de-la-bresse",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1226,7 +1226,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/183:grand-prix-vichy",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1256,7 +1256,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/184:grand-prix-de-la-loire",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1286,7 +1286,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/185:grand-prix-du-clou",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1316,7 +1316,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/186:grand-prix-les-volcans",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1346,7 +1346,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/187:grand-prix-dalbon",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1376,7 +1376,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/188:grand-prix-gouverneur",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -1406,7 +1406,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.liguegolfaura.com/component/jem/event/189:grand-prix-messieurs-de-chamonix",
     "source_url": "https://www.liguegolfaura.com/competitions/grand-prix",
     "source_type": "ligue-aura",
-    "derniere_maj": "2026-11-06",
+    "derniere_maj": "2026-11-07",
     "valide": true,
     "recurrent": false,
     "exclu": false
