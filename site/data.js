@@ -55,7 +55,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -85,7 +85,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -115,7 +115,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -206,7 +206,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -296,7 +296,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -326,7 +326,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfdesavenelles.com/inscription/trg8mkx7ezcdzkhv7v84et3u",
     "source_url": "https://www.golfdesavenelles.com/competitions",
     "source_type": "avenelles",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -356,7 +356,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -386,7 +386,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -416,7 +416,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -446,7 +446,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -536,7 +536,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -566,7 +566,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -596,7 +596,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -626,7 +626,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -656,7 +656,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-13",
+    "derniere_maj": "2026-11-14",
     "valide": true,
     "recurrent": false,
     "exclu": false
