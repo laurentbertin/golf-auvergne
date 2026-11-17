@@ -24,7 +24,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -50,11 +50,11 @@ window.COMPETITIONS = [
     "trous": null,
     "sponsor": null,
     "tarifs": "Droits de jeu : 10€ pour tous Extérieurs : prix du Green Fee et 10€",
-    "description": "Idéale pour faire évoluer votre index ou tout simplement pour une partie « plaisir ». L’association vous convie au Pot de l’amitié autour du Beaujolais Nouveau & charcuterie Inscriptions jusqu’au mercredi 19 novembre avant 12h00. Attention, places limitées ! Droits de jeu : 10€ pour tous Extérieurs : prix du Green Fee et 10€ de droits de participation",
+    "description": "Idéale pour faire évoluer votre index ou tout simplement pour une partie « plaisir ». L’association vous convie au Pot de l’amitié autour du Beaujolais Nouveau & charcuterie Inscriptions jusqu’au mercredi 18 novembre avant 12h00. Attention, places limitées ! Droits de jeu : 10€ pour tous Extérieurs : prix du Green Fee et 10€ de droits de participation",
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/competition-du-beaujolais-3/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -84,7 +84,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/le-bistronome-vous-ses-suggestions-de-paques/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -114,7 +114,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -150,6 +150,37 @@ window.COMPETITIONS = [
     "exclu": false
   },
   {
+    "id": "avenelles__2026-11-21__greensome-des-benevoles",
+    "golf_id": "avenelles",
+    "golf_nom": "Golf des Avenelles",
+    "type": "club",
+    "zone": "Allier",
+    "ville": null,
+    "formules": [
+      "scramble-2",
+      "double"
+    ],
+    "moment": "journee",
+    "equipe": false,
+    "ouverte": true,
+    "nom": "Greensome des Bénévoles",
+    "date_debut": "2026-11-21",
+    "date_fin": "2026-11-21",
+    "format": "Shotgun - Scramble à deux",
+    "depart": null,
+    "trous": null,
+    "sponsor": null,
+    "tarifs": null,
+    "description": null,
+    "url_inscription": "https://www.golfdesavenelles.com/inscription/trg8mkx7ezcdzkhv7v84et3u",
+    "source_url": "https://www.golfdesavenelles.com/competitions",
+    "source_type": "avenelles",
+    "derniere_maj": "2026-11-17",
+    "valide": true,
+    "recurrent": false,
+    "exclu": false
+  },
+  {
     "id": "royat__2026-11-22__coupe-du-beaujolais",
     "golf_id": "royat",
     "golf_nom": "Golf de Royat-Charade",
@@ -174,7 +205,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -204,7 +235,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -234,7 +265,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -264,7 +295,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -294,7 +325,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/competition-amene-un-pote/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -354,7 +385,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -384,7 +415,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -414,7 +445,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -444,7 +475,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -474,7 +505,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -504,7 +535,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -534,7 +565,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -564,7 +595,7 @@ window.COMPETITIONS = [
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-16",
+    "derniere_maj": "2026-11-17",
     "valide": true,
     "recurrent": false,
     "exclu": false
