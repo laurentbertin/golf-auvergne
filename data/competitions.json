@@ -1,35 +1,5 @@
 [
   {
-    "id": "val-dauzon__2026-11-20__le-bistronome-degustation-tripes-au-vin-blanc",
-    "golf_id": "val-dauzon",
-    "golf_nom": "Golf du Val d'Auzon",
-    "type": "club",
-    "zone": "Puy-de-Dôme",
-    "ville": null,
-    "formules": [
-      "autre"
-    ],
-    "moment": "journee",
-    "equipe": false,
-    "ouverte": true,
-    "nom": "Le Bistronome – Dégustation « Tripes » au vin blanc",
-    "date_debut": "2026-11-20",
-    "date_fin": "2026-11-20",
-    "format": null,
-    "depart": null,
-    "trous": null,
-    "sponsor": null,
-    "tarifs": "€",
-    "description": "A partir de 9h30 et pour le déjeuner Christine vous concoctera un plat de saison qui se déguste à toute heure. Formule à 21.50€ : tripes au vin blanc et pomme de terre vapeur persilléees / pompes aux pommes Réservation de votre table conseillée 04.73.78.23.23",
-    "url_inscription": "https://www.golfduvaldauzon.fr/competitions/le-bistronome-vous-ses-suggestions-de-paques/",
-    "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
-    "source_type": "valdauzon",
-    "derniere_maj": "2026-11-19",
-    "valide": true,
-    "recurrent": false,
-    "exclu": false
-  },
-  {
     "id": "forez__2026-11-21__competition-beaujolais",
     "golf_id": "forez",
     "golf_nom": "Golf Club du Forez",
@@ -54,7 +24,7 @@
     "url_inscription": "https://www.golfclubduforez.com/competitions",
     "source_url": "https://www.golfclubduforez.com/competitions",
     "source_type": "forez",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -145,7 +115,7 @@
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -175,7 +145,7 @@
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -205,7 +175,7 @@
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -235,7 +205,7 @@
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -257,15 +227,15 @@
     "date_debut": "2026-11-29",
     "date_fin": "2026-11-29",
     "format": "Scramble à deux",
-    "depart": "09:30",
+    "depart": "10:00",
     "trous": null,
     "sponsor": null,
-    "tarifs": null,
-    "description": null,
+    "tarifs": "Droits de jeu : 10€",
+    "description": "Départ en Shotgun à 10h00 L’équipe 1 organise sa compétition, « Amène un pote! ». Ton index n’est pas important, ta passion prendra le dessus. Ton pote découvrira le plaisir du golf à tes côtés et vivra la compétition en se concentrant uniquement sur les approches et les putts. Tu l’a compris, tu joueras les départs, sécurité oblige ! Toi aussi, jeune de l’école de golf, viens partager un parcours avec un joueur de l’équipe 1, il sera là pour te guider et t’encourager! Droits de jeu : 10€ pour tous. Remise de prix : De nombreux lots à gagner! L’équipe 1 remettra par tirage au sort les lots qu’elle a remportée tout au long de l’année. Le Bistronome vous accueillera pour le déjeuner Réservation fortement conseillée. Votre inscription jusqu’au samedi 28 novembre avant 12h00.",
     "url_inscription": "https://www.golfduvaldauzon.fr/competitions/competition-amene-un-pote/",
     "source_url": "https://www.golfduvaldauzon.fr/les-competitions/",
     "source_type": "valdauzon",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -325,7 +295,7 @@
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -355,7 +325,7 @@
     "url_inscription": "https://www.golf-riom.fr/calendrier/",
     "source_url": "https://www.golf-riom.fr/wp-content/uploads/2026/09/Affiche-Competition-fin-de-saison.png",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -385,7 +355,7 @@
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -415,7 +385,7 @@
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -445,7 +415,7 @@
     "url_inscription": "https://www.golfderoyatcharade.fr/competitions1",
     "source_url": "https://www.golfderoyatcharade.fr/competitions1",
     "source_type": "royat",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -475,7 +445,7 @@
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -505,7 +475,7 @@
     "url_inscription": "https://golfdesetangs-savigneux.fr/calendrier/",
     "source_url": "https://golfdesetangs-savigneux.fr/wp-content/uploads/2026/06/CALENDRIER-2026-09062026.pdf",
     "source_type": "calendrier-image",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
@@ -535,7 +505,7 @@
     "url_inscription": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_url": "https://www.domaine-de-champlong.com/les-competitions.html",
     "source_type": "champlong",
-    "derniere_maj": "2026-11-20",
+    "derniere_maj": "2026-11-21",
     "valide": true,
     "recurrent": false,
     "exclu": false
