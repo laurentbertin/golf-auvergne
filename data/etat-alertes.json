@@ -1,6 +1,6 @@
 {
   "_lisezmoi": "Golfs sans compétition à venir au dernier passage. Sert à n'alerter qu'au basculement, jamais en boucle. Réécrit par scripts/alerte-golfs-vides.mjs.",
-  "maj": "2026-11-21",
+  "maj": "2026-11-22",
   "golfs_vides": [
     "vichy-sc",
     "montpensier",
@@ -9,7 +9,9 @@
     "haute-auvergne",
     "puy-en-velay",
     "sainte-agathe",
+    "forez",
     "vezac",
+    "avenelles",
     "chambon-lignon"
   ]
 }
